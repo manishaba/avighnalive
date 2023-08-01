@@ -165,6 +165,9 @@ body{
 .about-digital{
     padding: 60px 0;
 }
+.about-banner{
+    padding: 60px 0;
+}
 
 .about-transformation{
     height: 474px;
@@ -435,6 +438,20 @@ h3.inner_heading-600{
     margin-bottom: 20px;
 }
 h3.inner_heading-600 span{
+    display: block;
+}
+h3.inner_heading-50{
+    font-family: 'Roboto';
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: -1px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #1D3679;
+    margin-bottom: 20px;
+}
+h3.inner_heading-50 span{
     display: block;
 }
 
@@ -975,4 +992,83 @@ section.customization-services p{
     position: relative;
     bottom: 50%;
     height: 612px;
+}
+
+.specifications-range{
+    background: #F5F7FD;
+    padding: 20px;
+}
+.specifications-range-image{
+    text-align: center;
+    padding: 22px;
+    height: 100%;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+}
+.specifications-range-image h3{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #FE7A19;
+    margin-top: 10px;
+}
+.specifications-range-image p{
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #1D3679;
+    margin-top: 10px;
+}
+.specifications-range-image img{
+    width: auto;
+    padding: 24px;
+}
+
+
+.bis-standards{
+    padding: 30px;
+}
+.bis-standards-main{
+    text-align: center;
+    margin: 15px auto;
+    padding: 22px 22px 0px 22px;
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px 0px #00000014;
+
+}
+.bis-standards-content h3{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #1D3679;
+    margin-top: 10px;
+}
+.bis-standards-content h4{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #FD6202;
+    margin-top: 10px;
+}
+.bis-standards-content p{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #5B5B5B;
+    margin-top: 10px;
+}
+.bis-standards-content img{
+    width: auto;
+    padding: 24px;
 }
