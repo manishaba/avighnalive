@@ -335,7 +335,7 @@ body{
     font-weight: 600;
     line-height: 26px;
     color: #5B5B5B;
-    margin-left: 2%;
+    margin-bottom: 5%;
     font-family: 'Roboto';
 }
 .our_services_ul_icons a p{
@@ -581,52 +581,39 @@ span.readmore{
     color: #49499A;
 }
 .our-services{
-    margin-top: 50px;    
+    margin-top: 50px;
 }
-.our-services-images-sec{
-    display: flex;
-    justify-content: center;
-}
-.our-services-images-sec-card{
-    margin: 20px auto;
-}
-.our-services .our-services-images {
-    margin-bottom: 20px;
+.our-services-inner h5{
     position: relative;
-    width: 215px;
-    height: 207px;
-    margin-left: 20px;
-}
-.our-services img {
-    width: 100%;
-}
-.our-services h5 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 143px;
-    margin: 0px;
     color: #1D3679;
     text-align: center;
     font-weight: 700;
     font-size: 20px;
-    padding: 12px;
+    padding-top: 18px;
+    height: 60px;
     text-transform: capitalize;
     background: #FFFFFF;
     font-family: 'Roboto';
     border: 1px solid #F1F1F1;
     box-shadow: 0px 4px 30px 0px #00000014;
 }
-.our-services-images-sec-card img {
+.our-services-inner {
+    flex: 1;
+    text-align: center;
+}
+.our-services-inner img{
+    margin: 0 auto;
+    width: 100%;
+}
+.our-services-inner img {
     width: 100%;
     transition: transform 0.3s ease;
 }
-.our-services-images-sec-card img:hover {
+.our-services-inner img:hover {
     transform: scale(1.1);
     border-radius: 10px;
 }
-.our-services-images-sec-card img:hover:after {
+.our-services-inner img:hover:after {
     content: '';
     display: block;
     position: absolute;
@@ -638,7 +625,7 @@ span.readmore{
     background-color: rgba(255, 255, 255, 0.8);
     transition: opacity 0.3s ease;
 }
-.our-services-images-sec-card img:hover:before {
+.our-services-inner img:hover:before {
     content: '';
     display: block;
     position: absolute;
@@ -650,7 +637,7 @@ span.readmore{
     background-color: rgba(255, 255, 255, 0.8);
     transition: opacity 0.3s ease;
 }  
-.our-services-images-sec-card img:hover:after {
+.our-services-inner img:hover:after {
     opacity: 0;
 }
 section.customization-services p{
@@ -671,49 +658,27 @@ section.customization-services p{
     line-height: 29px;
     color: #49499A;
 }
-
-@media screen and (max-width: 767px) {
-    .our-services-images-sec {
-        flex-direction: column;
-        align-items: center;
-    }
-    .our-services .our-services-images {
-        width: 100%;
-        max-width: 215px;
-        margin: 20px 0;
-    }
-    .our-services h5 {
-        /* top: auto; */
-        /* bottom: -40px; */
-        font-size: 16px;
-    }
+.our-suppliers{
+    padding: 50px;
 }
-.our-suppliers {
-    margin-top: 50px;
-    margin-bottom: 30px;
+.our-suppliers-inner {
+    flex: 1;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 30px 0px #00000014;
+    border: 1px solid #F1F1F1;
 }
-.our-suppliers-sec {
-    position: relative;
-}
-
-.our-suppliers-images {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.our-suppliers-images img {
-    width: fit-content;
-    width: auto;
+.our-suppliers-inner img{
+    margin: 0 auto;
+    width: 100%;
     transition: transform 0.3s ease;
-}
-.our-suppliers-images img:hover {
-    transform: scale(1.1);
+}    
+.our-suppliers-inner img:hover {
+    transform: scale(1.2);
     border-radius: 10px;
 }
-.our-suppliers-images img:hover:after {
+.our-suppliers-inner img:hover:after {
     content: '';
     display: block;
     position: absolute;
@@ -725,7 +690,7 @@ section.customization-services p{
     background-color: rgba(255, 255, 255, 0.8);
     transition: opacity 0.3s ease;
 }
-.our-suppliers-images img:hover:before {
+.our-suppliers-inner img:hover:before {
     content: '';
     display: block;
     position: absolute;
@@ -737,7 +702,7 @@ section.customization-services p{
     background-color: rgba(255, 255, 255, 0.8);
     transition: opacity 0.3s ease;
 }  
-.our-suppliers-images img:hover:after {
+.our-suppliers-inner img:hover:after {
     opacity: 0;
 }
 .newsletter-bg{
@@ -863,7 +828,6 @@ section.customization-services p{
     font-size: 45px;
     color: #FFFFFF;
     font-family: 'Roboto';
-
 }
 .and-because-your {
     font-weight: 400;
@@ -1303,10 +1267,10 @@ th[scope="row"] {
     color: #5B5B5B;
     font-family: 'Roboto';
 }
-.table>:not(caption)>*>* {
+.cold-rolled-grades table td,
+.cold-rolled-grades table th {
     padding: 1.5rem 1.5rem !important;
 }
-
 tr:nth-child(even) {
     background-color: #F1F1F1;
 }
@@ -1318,4 +1282,80 @@ tr:nth-child(odd) {
 }
 .table-hover>tbody>tr:hover {
     color: #747474;
+}
+
+
+.developing_end_to_end_digital_sec{
+    padding: 30px 30px;
+}
+.etp_steel_inner p{
+    font-weight: 500;
+    font-family: 'Roboto';
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FE7A19;
+    margin-top: 10px;
+    display: inline-block;
+}
+.etp_steel_inner {
+    flex: 1;
+    text-align: center;
+}
+.etp_steel_inner img{
+    margin: 0 auto;
+    display: block;
+}
+
+@media(max-width:767px) {
+    .etp_steel_inner {
+        flex: 0 0 50%;
+        margin-bottom: 25px;
+    }
+    .our-services-inner {
+        flex: 0 0 50%;
+        margin-bottom: 25px;
+    }
+    .our-suppliers-inner {
+        flex: 0 0 50%;
+        margin-bottom: 25px;
+    }    
+}
+
+
+.specifications-tin-free-sheet{
+    background-color: #F5F7FD;
+}
+.specifications-tin-free-sheet table td,
+.specifications-tin-free-sheet table th {
+    padding: 0.5rem 0.5rem !important;
+    border: 1px solid #747474;
+}
+.specifications-tin-free-sheet table th{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Roboto';
+}
+.specifications-tin-free-sheet table td{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto';
+}
+.specifications-tin-free-sheet th.centered-header {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Roboto';
+}
+.specifications-tin-free-sheet td {
+    background-color: white;
+}
+.table-responsive td[rowspan="2"] {
+    text-align: center;
+    vertical-align: middle;
+    margin: 10px;
+    max-width: 150px;
+}
+.specifications-tin-free-sheet td.bg {
+    background-color: #F1F1F1;
 }
