@@ -2,7 +2,7 @@
     <div class="container-fluid container-justify">
         <div class="navbar-main">
             <div class="logo">
-                <a class="navbar-brand" href="#"><img src="assets/images/logo.png" class="logo-main" alt="Logo"></a>
+                <a class="navbar-brand" href="./"><img src="assets/images/logo.png" class="logo-main" alt="Logo"></a>
             </div>
             <div>
                 <form class="d-flex">
@@ -26,7 +26,7 @@
         <div class="w-100">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse navbar-collapse-border" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Company Profile</a>
@@ -41,8 +41,8 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="cold-rolled.html">Cold Rolled</a></li>
                                 <li><a class="dropdown-item" href="electrolytic-tinplate.html">Electrolytic Tinplate</a></li>
-                                <li><a class="dropdown-item" href="">Tinfree Steal</a></li>
-                                <li><a class="dropdown-item" href="">Tin Mill Black Plate</a></li>
+                                <li><a class="dropdown-item" href="tinfree-steel.html">Tinfree Steal</a></li>
+                                <li><a class="dropdown-item" href="tinmill-black-plate.html">Tin Mill Black Plate</a></li>
                                 <li><a class="dropdown-item" href="">Glavanized</a></li>
                                 <li><a class="dropdown-item" href="">Color Coated</a></li>
                             </ul>
@@ -63,16 +63,3 @@
         </div>
     </div>
 </nav>
-
-
-<script>
-$(document).ready(function(e){
-    $('.search-panel .dropdown-menu').find('a').click(function(e) {
-		e.preventDefault();
-		var param = $(this).attr("href").replace("#","");
-		var concept = $(this).html();
-		$('.search-panel span#search_concept').html(concept);
-		$('.input-group #search_param').val(param);
-	});
-});
-</script>
