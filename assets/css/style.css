@@ -151,7 +151,6 @@ body{
     font-family: 'Roboto';
 }
 
-
 .banner-home{
     position: relative;
     top: 110px;
@@ -938,6 +937,13 @@ section.vision .vision-main h3{
     font-size: 16px;
     line-height: 23px;
 }
+.galvanized-products-cat-center-image{
+    display: flex;
+}
+.galvanized-products-cat-center-image img{
+    width: auto;
+    margin-right: 10px;
+}
 .cotact-us{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -1548,10 +1554,15 @@ tr:nth-child(odd) {
 .tin-catalog img{
     transition: transform 0.3s ease;
     width: 100%;
-
+}
+.avighna-logistics{
+    margin-bottom: 80px;
 }
 
 @media (min-width: 280px) and (max-width: 767px) {
+    .galvanized-products-cat{
+        height: auto;
+    }
     .shoping_cart {
         display: none;
     }
@@ -1654,6 +1665,9 @@ tr:nth-child(odd) {
     }
 }
 @media(min-width:767px) and (max-width: 991px) {
+    .galvanized-products-cat{
+        height: auto;
+    }
     .etp_steel_inner {
         flex: 0 0 50%;
         margin-left: 0;
