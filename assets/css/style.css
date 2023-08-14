@@ -42,9 +42,9 @@ body{
     justify-content: space-between;
 }
 .navbar-collapse-border{
-    /* border: 1px solid; */
+    margin-left: -12px;
     color: #FFFFFF;
-    width: 100%;
+    width: 110%;
     padding: 10px 10px;
     box-shadow: 0px 1px 4px 0px #00000029;
 }
@@ -486,6 +486,9 @@ span.green{
     line-height: 45px;
     color: #21BE14;
 }
+span.green-b{
+    color: #21BE14;
+}
 span.readmore{
     font-family: 'Roboto';
     font-weight: 600;
@@ -755,12 +758,13 @@ section.customization-services p{
     top: 0;
     left: 0;
     height: 400px;
+    width: 100%;
 }
 .subscribe-to-our-newsletters-parent {
     position: absolute;
     top: 57px;
     left: 61.88px;
-    width: 400px;
+    /* width: 400px; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1558,8 +1562,134 @@ tr:nth-child(odd) {
 .avighna-logistics{
     margin-bottom: 80px;
 }
+.progress {
+    margin-top: 20%;
+    display: flex;
+    height: 27px;
+    overflow: hidden;
+    font-size: .75rem;
+    font-family: 'Roboto';
+    border: 3px solid #1D3679;
+    background-color: #FFFFFF !important;
+    border-radius: 20px;
+}
+.progress-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 49px;
+    height: 49px;
+    border-radius: 100%;
+    overflow: hidden;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #FE7A19;
+    color: #FFFFFF;
+}
+.bg-blue{
+    background: #1D3679;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-white{
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-content-up {
+    position: absolute;
+    transform: translateY(-100%);
+    /* top: 0; */
+    /* left: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.progress-icon,
+.progress-text {
+    display: inline-block;
+}
+
+.progress-icon img {
+    width: 24px; /* Adjust as needed */
+    height: 24px; /* Adjust as needed */
+}
+
+.progress-text p {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: #1D3679;
+    margin-top: 8px; /* Adjust as needed */
+}
+
+
+
+
+.progress-content-down {
+    position: absolute;
+    transform: translateY(100%);
+    /* bottom: 0; */
+    /* left: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.progress-content-down img {
+    width: 24px; /* Adjust as needed */
+    height: 24px; /* Adjust as needed */
+}
+
+.progress-content-down p {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: #1D3679;
+    margin-top: 8px; /* Adjust as needed */
+}
 
 @media (min-width: 280px) and (max-width: 767px) {
+    .cold-rolled-application {
+        margin-bottom: 0;
+    }
+    .subscribe-to-our-newsletters-parent {
+        top: 3%;
+        left: 3%;
+    }
+    .subscribe-to-our {
+        font-size: 22px;
+    }
+    .and-because-your {
+        font-size: 12px;
+    }
+    .newsletters{
+        margin-top: 100px;
+    }
+    .newsletters-right-sec h3 {
+        font-size: 22px;
+        margin-top: 0;
+    }
+    .cotact-us-content {
+        left: auto;
+    }
     .galvanized-products-cat{
         height: auto;
     }
@@ -1624,6 +1754,7 @@ tr:nth-child(odd) {
     }
     .mask-group-icon {
         height: auto;
+        width: 100%;
     }
     .contact-us-main-form {
         box-shadow: 0px 4px 28px 0px #0000000D;
@@ -1659,7 +1790,7 @@ tr:nth-child(odd) {
         flex-direction: column;
     }
     .about-transformation img {
-        width: auto;
+        /* width: auto; */
         height: auto;
         object-fit: cover;
     }
@@ -1669,16 +1800,16 @@ tr:nth-child(odd) {
         height: auto;
     }
     .etp_steel_inner {
-        flex: 0 0 50%;
+        flex: 0 0 48%;
         margin-left: 0;
         margin-bottom: 25px;
     }
     .our-services-inner {
-        flex: 0 0 50%;
+        flex: 0 0 48%;
         margin-bottom: 25px;
     }
     .our-suppliers-inner {
-        flex: 0 0 50%;
+        flex: 0 0 48%;
         margin-left: 0;
         margin-bottom: 25px;
     }
@@ -1691,8 +1822,7 @@ tr:nth-child(odd) {
     .search-input {
         width: 100%;
     }
-    .shoping_cart {
-        
+    .shoping_cart {        
         margin: 25px 0px 10px 0px;
         position: relative;
     }
