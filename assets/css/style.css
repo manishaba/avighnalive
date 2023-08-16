@@ -501,6 +501,24 @@ span.readmore{
     margin-top: 40px;
     position: relative;    
 }
+.our-product-range h1 {
+    position: absolute;
+    top: 60%;
+    left: 10px;
+    right: 10px;
+    height: 120px;
+    color: #1D3679;
+    text-align: center;
+    transform: translateY(59px);
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    background: #FFFFFF;
+    font-family: 'Roboto';
+    border: 1px solid #F1F1F1;
+    text-transform: capitalize;
+    box-shadow: 0px 4px 30px 0px #00000014;
+}
 .our-product-range h2 {
     position: absolute;
     top: 65%;
@@ -1563,7 +1581,7 @@ tr:nth-child(odd) {
     margin-bottom: 80px;
 }
 .progress {
-    margin-top: 20%;
+    margin-top: 10%;
     display: flex;
     height: 27px;
     overflow: hidden;
@@ -1623,8 +1641,8 @@ tr:nth-child(odd) {
 }
 
 .progress-icon img {
-    width: 24px; /* Adjust as needed */
-    height: 24px; /* Adjust as needed */
+    width: 24px;
+    height: 24px;
 }
 
 .progress-text p {
@@ -1634,12 +1652,8 @@ tr:nth-child(odd) {
     line-height: 24px;
     text-align: center;
     color: #1D3679;
-    margin-top: 8px; /* Adjust as needed */
+    margin-top: 8px;
 }
-
-
-
-
 .progress-content-down {
     position: absolute;
     transform: translateY(100%);
@@ -1664,6 +1678,10 @@ tr:nth-child(odd) {
     text-align: center;
     color: #1D3679;
     margin-top: 8px; /* Adjust as needed */
+}
+.in-house-coil{
+    margin-bottom: 70px;
+    padding: 30px 30px;
 }
 
 @media (min-width: 280px) and (max-width: 767px) {
