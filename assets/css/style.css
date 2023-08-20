@@ -67,6 +67,7 @@ Avighna header css
     object-fit: cover;
     left: 6%;
     margin-bottom: 10px;
+    max-width: 150px;
 }
 .bg-light {
     background-color: #FFFFFF!important;
@@ -350,6 +351,9 @@ Avighna footer css
 .footer-updated {
     padding: 10px 0px 0px;
     background: #FBF6F2;    
+}
+.logo-footer {
+    max-width: 150px;
 }
 .social-contact h5{
     font-size: 18px;
