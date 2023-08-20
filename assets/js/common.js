@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     $("#header").load("header.html");
     $("#footer").load("footer.html");
+    $("#query").load("query.html");
     
     var scrollPositionToShow = 200;
     var scrollUpButton = document.createElement("div");
@@ -33,5 +34,5 @@ document.addEventListener("DOMContentLoaded", function() {
                 requestAnimationFrame(scrollToTopAnimation);
             }
         }
-    }       
+    }  
 });

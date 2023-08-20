@@ -1056,27 +1056,27 @@ section.vision .vision-main h3{
     width: auto;
     margin-right: 10px;
 }
-.cotact-us{
+.contact-us{
     margin-top: 50px;
     margin-bottom: 50px;
     background: #F0F4FF;
     position: relative;
 }
-.cotact-us h3{
+.contact-us h3{
     font-family: 'Roboto';
     color: #023047;
     font-weight: 600;
     font-size: 35px;
     line-height: 40px;
 }
-.cotact-us h4{
+.contact-us h4{
     font-family: 'Roboto';
     color: #023047;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
 }
-.cotact-us-content{
+.contact-us-content{
     height: 436px;
     position: relative;
     top: 20%;
@@ -1086,29 +1086,29 @@ section.vision .vision-main h3{
     align-items: baseline;
     align-content: center;
 }
-.cotact-us-form{
+.contact-us-form{
     position: relative;
     margin-bottom: -15%;
     padding-bottom: 0;
 }
-.cotact-us-form-content{
+.contact-us-form-content{
     display: flex;
 }
-.cotact-us-form h4{
+.contact-us-form h4{
     font-family: 'Roboto';
     color: #023047;
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
 }
-.cotact-us-form p{
+.contact-us-form p{
     font-family: 'Roboto';
     color: #023047;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
 }
-.cotact-us-form img{
+.contact-us-form img{
     padding-right: 20px;
 }
 .contact-us-main-form h4{
@@ -1845,7 +1845,7 @@ Avighna responsive Adjust styles for all screens css
         font-size: 22px;
         margin-top: 0;
     }
-    .cotact-us-content {
+    .contact-us-content {
         left: auto;
     }
     .galvanized-products-cat{
