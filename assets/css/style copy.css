@@ -78,6 +78,12 @@ Avighna header css
 .container-justify{
     flex-direction: column;
 }
+.w-100 {
+    margin-bottom: 10px;
+    text-align: right;
+    position: relative;
+    bottom: 39px;
+}
 .navbar {
     padding-bottom: 0.0rem !important;
 }
@@ -89,6 +95,7 @@ Avighna header css
 }
 .navbar-collapse-border{
     margin-left: -12px;
+    text-align: center;
     color: #FFFFFF;
     width: 110%;
     padding: 10px 10px;
@@ -130,6 +137,7 @@ Avighna header css
     font-weight: 400;
     line-height: 17px;
     padding: 8.5px 16px;
+    text-align: center;
     font-family: 'Roboto';
 }
 .dropdown-menu {
@@ -1811,12 +1819,6 @@ Avighna responsive Adjust styles for all screens css
     }    
 }
 @media (min-width: 280px) and (max-width: 767px) {
-    .w-100 {
-        margin-bottom: 10px;
-        text-align: right;
-        position: relative;
-        bottom: 39px;
-    }
     .ecommerce-transformation img {
         display: none;
     }
