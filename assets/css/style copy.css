@@ -369,7 +369,8 @@ Avighna footer css
 }
 .social-address img:hover{
     cursor: pointer;
-    opacity: 0.5;
+    /* opacity: 0.5; */
+    color: #FE7A19;
  }
 .social-address img{
     margin: 10px auto;
@@ -1088,8 +1089,9 @@ section.vision .vision-main h3{
 }
 .contact-us-form{
     position: relative;
-    margin-bottom: -15%;
+    /* margin-bottom: -15%; */
     padding-bottom: 0;
+    height: auto;
 }
 .contact-us-form-content{
     display: flex;

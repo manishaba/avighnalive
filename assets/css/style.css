@@ -91,7 +91,7 @@ Avighna header css
 .navbar-collapse-border{
     margin-left: -12px;
     color: #FFFFFF;
-    width: 110%;
+    width: 106%;
     padding: 10px 10px;
     box-shadow: 0px 1px 4px 0px #00000029;
 }
@@ -366,6 +366,7 @@ Avighna footer css
 .social-address img:hover{
     cursor: pointer;
     opacity: 0.5;
+    /* color: #FE7A19; */
  }
 .social-address img{
     margin: 10px auto;
@@ -1085,7 +1086,7 @@ section.vision .vision-main h3{
 .contact-us-form{
     position: relative;
     /* margin-bottom: -15%; */
-    height: 400px;
+    height: auto;
     padding-bottom: 0;
 }
 .contact-us-form-content{
@@ -1817,10 +1818,19 @@ Avighna responsive Adjust styles for all screens css
 }
 @media (min-width: 280px) and (max-width: 767px) {
     .w-100 {
-        margin-bottom: 10px;
         text-align: right;
-        position: relative;
-        bottom: 39px;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+    }
+    .navbar-toggler {
+        margin-bottom: 17px;
+    }
+    div#navbarSupportedContent {
+        background-color: #fff;
+    }
+    .service_area {
+        margin-top: 85px;
     }
     .ecommerce-transformation img {
         display: none;
@@ -1837,19 +1847,36 @@ Avighna responsive Adjust styles for all screens css
     .subscribe-to-our-newsletters-parent {
         top: 3%;
         left: 3%;
+        gap: 18px;
+    }
+    .container-justify {
+        position: relative;
     }
     .subscribe-to-our {
         font-size: 22px;
+        line-height: 25px;
     }
     .and-because-your {
         font-size: 12px;
-    }    
+    } 
+    .newsletters-right-sec{
+        left: 0%;
+    }
+    .newsletters-right-sec-input input, .newsletters-right-sec-input button {
+        height: 38px;
+        padding: 5px;
+    }
+    .newsletters-right-sec-input {
+        margin: 5px auto 10px;
+    }
     .newsletters-right-sec h3 {
         font-size: 22px;
         margin-top: 0;
     }
     .contact-us-content {
         left: auto;
+        height: auto;
+        padding: 80px 0px;
     }
     .galvanized-products-cat{
         height: auto;
@@ -1876,6 +1903,10 @@ Avighna responsive Adjust styles for all screens css
     }
     .transmission-center {
         padding: 20px;
+    }
+    .transmission-center h1 {
+        margin-top: 45px;
+        line-height: 40px;
     }
     .ecommerce-transformation h2 {
         font-size: 16px;
@@ -1965,9 +1996,17 @@ Avighna responsive Adjust styles for all screens css
         flex-direction: column;
     }
     .about-transformation img {
-        /* width: auto; */
         height: auto;
         object-fit: cover;
+    }
+    .social-contact h5 {
+        margin-top: 5%;
+    }
+    .logo-footer {
+        margin-bottom: 15px;
+    }
+    .social-address {
+        margin-bottom: 20px;
     }
 }
 @media(min-width:767px) and (max-width: 991px) {
