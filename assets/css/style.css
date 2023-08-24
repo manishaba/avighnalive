@@ -255,12 +255,12 @@ Avighna about css
     line-height: 29px;
 }
 .service_area{
-    margin-top: 110px;
+    margin-top: 125px;
 }
 .transmission-center{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 .ecommerce-transformation{
     background-color: #1D3679;
@@ -300,9 +300,25 @@ Avighna about css
     font-size: 15px;
     line-height: 18px;
 }
-.product-details{
-    font-weight: 600;
+.Breadcrum ul {
+    display: flex;
+    gap: 5px;
+    padding-left: 0px;
+}
+.Breadcrum ul li {
+    list-style: none;
+}
+.Breadcrum ul li a{
+   text-decoration: none;
+   color: #fff;
+   font-weight: 400;
+   font-size: 15px;
+}
+.Breadcrum ul li a:active {
     color: #FE7A19;
+}
+.selected-page{
+    color: #FE7A19 !important;
 }
 .about-us h1{
     font-family: 'Roboto';
@@ -363,10 +379,19 @@ Avighna footer css
     margin-top: 20%;
     font-family: 'Roboto';
 }
-.social-address img:hover{
+/* .social-address img:hover{
     cursor: pointer;
     opacity: 0.5;
-    /* color: #FE7A19; */
+    color: #FE7A19;
+ } */
+ .social-media-icons {
+    color: #1D3679;
+    margin-right: 5px;
+    font-size: 22px;
+    cursor: pointer;
+ }
+ .social-media-icons:hover {
+    color: #FE7A19;
  }
 .social-address img{
     margin: 10px auto;
@@ -1177,7 +1202,7 @@ section.vision .vision-main h3{
 .specifications-range-main h3{
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 35px;
     text-align: center;
     color: #FE7A19;
@@ -1186,7 +1211,7 @@ section.vision .vision-main h3{
 .specifications-range-main p{
     font-family: 'Roboto';
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     text-align: center;
     color: #1D3679;
