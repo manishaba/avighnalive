@@ -120,3 +120,8 @@
 .our-suppliers-images img:hover:after {
     opacity: 0;
 }
+
+/* common css for elements  */
+li {
+    font-size: 16px;
+}

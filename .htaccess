@@ -1,7 +1,0 @@
- RewriteEngine On
- RewriteBase /
- RewriteRule ^Pages - [L] 
- #ignore Pages in which I put important files, but no works for the website
- RewriteCond %{REQUEST_URI} !^/Pages(.*)
- RewriteRule (.*) /Pages/$1
- 
