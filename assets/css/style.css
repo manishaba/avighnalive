@@ -37,21 +37,43 @@ Template Name: Avighna
 body{
     font-family: 'Roboto';
 }
+* {
+    --white: #fff;
+    --primary-white: #F1F1F1;
+    --secondary-white: #F0F0F0;
+    --off-white: #F0F4FF;
+    --clear-white: #F4F7FF;
+    --primary-color: #FE7A19;
+    --secondary-orange: #FD6202;
+    --primary-blue: #49499A;
+    --secondary-blue: #1D3679;
+    --dark-blue: #023047;
+    --primary-grey: #5B5B5B;
+    --secondary-grey: #747474;
+    --off-grey: #637381;
+    --dark-grey: #525252;
+    --shadow-color: #00000014;
+    --green: #21BE14;
+    font-size: 1rem = 15px;
+}
 /*====================================================
 Avighna scrool css
 ======================================================*/
 #scrollUp {
-    background: #FE7A19 none repeat scroll 0 0;
+    background: var(--primary-color) none repeat scroll 0 0;
     bottom: 30px;
-    color: #fff;
+    color:var(--white);
     font-family: 'Roboto';
     font-size: 22px;
     height: 40px;
     line-height: 40px;
-    right: 10px;
+    right: 20px !important; 
     text-align: center;
     width: 40px;
     border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
 }
 #scrollUp {
     display: none;
@@ -70,7 +92,7 @@ Avighna header css
     max-width: 150px;
 }
 .bg-light {
-    background-color: #FFFFFF!important;
+    background-color: var(--white)!important;
     position: fixed;
     width: 100%;
     top: 0;
@@ -90,17 +112,17 @@ Avighna header css
 }
 .navbar-collapse-border{
     margin-left: -12px;
-    color: #FFFFFF;
+    color: var(--white);
     width: 106%;
     padding: 10px 10px;
     box-shadow: 0px 1px 4px 0px #00000029;
 }
 .product-button{
-    background: #F0F0F0;
+    background: var(--secondary-white);
     list-style: none;
 }
 .product-button a{
-    color: #747474;
+    color: var(--secondary-grey);
     font-size: 14px;
     font-weight: 400;
     padding: 8.5px 16px;
@@ -108,7 +130,7 @@ Avighna header css
     font-family: 'Roboto';
 }
 .navbar-light .navbar-nav .nav-link {
-    color: #747474 !important;
+    color: var(--secondary-grey) !important;
     /* font-size: 14px; */
     font-weight: 400;
     line-height: 17px;
@@ -116,17 +138,17 @@ Avighna header css
     font-family: 'Roboto';
 }
 .nav-link:focus, .nav-link:hover {
-    color: #747474 !important;
+    color: var(--secondary-grey) !important;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #FE7A19 !important;
+    color: var(--primary-color) !important;
 }
 .dropdown-item:focus, .dropdown-item:hover {
-    color: #525252 !important;
-    background-color: #FE7A19 !important;
+    color: var(--dark-grey) !important;
+    background-color: var(--primary-color) !important;
 }
 .dropdown-item {
-    color: #747474 !important;
+    color: var(--secondary-grey) !important;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -137,7 +159,7 @@ Avighna header css
     padding: 0;
 }
 .dropdown-item:active {
-    background-color: #FE7A19 !important;
+    background-color: var(--primary-color) !important;
 }
 .input-group .form-control {
     height: 40px;
@@ -146,7 +168,7 @@ Avighna header css
     font-family: 'Roboto';
 }
 .search-input{
-    border: 1px solid #F0F0F0;
+    border: 1px solid var(--secondary-white);
     width: 400px;
     font-size: 14px;
     font-weight: 400;
@@ -156,7 +178,7 @@ Avighna header css
     color: #D2D2D2 !important;
 }
 .form-control:focus {
-    border-color: #F0F0F0 !important;
+    border-color: var(--secondary-white) !important;
     box-shadow: none !important;
 }
 .camera-icon{
@@ -165,7 +187,7 @@ Avighna header css
     top: 0;
 }
 .searchbar-icon{
-    background: #1D3679;
+    background: var(--secondary-blue);
     width: 43px;
     height: 40px;
     position: relative;
@@ -181,16 +203,16 @@ Avighna header css
 }
 .shoping_cart a{
     text-decoration: none!important;
-    color: #525252;
+    color: var(--dark-grey);
     padding-left: 10px;
 }
 .shoping_cart span{
     font-weight: 400;
     position: relative;
-    background: #FE7A19;
+    background: var(--primary-color);
     border-radius: 50%;
     padding: 5px;
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 10px;
     bottom: 22px;
     right: 46px;
@@ -212,7 +234,7 @@ Avighna about css
     padding: 60px 0;
 }
 .about-transformation{
-    height: 474px;
+    height: 521px;
 }
 .about-transformation img{
     width: 100%;
@@ -221,7 +243,7 @@ Avighna about css
 }
 .about-transformation h1{
     font-family: 'Roboto';
-    color: #49499A;
+    color: var(--primary-blue);
     margin-top:0;
     font-weight: 700;
     font-size: 32px;
@@ -230,7 +252,7 @@ Avighna about css
 }
 .about-transformation p{
     font-family: 'Roboto';
-    color: #5B5B5B;
+    color: var(--primaary-grey);
     font-weight: 400;
     font-size: 16px;
     line-height: 23px;
@@ -263,8 +285,9 @@ Avighna about css
     justify-content: left;
 }
 .ecommerce-transformation{
-    background-color: #1D3679;
-    height: 450px;        
+    background-color: var(--secondary-blue);
+    height: 450px;     
+    padding-left: 118px;   
 }
 .ecommerce-transformation img{
     width: 100%;
@@ -273,7 +296,7 @@ Avighna about css
 }
 .ecommerce-transformation h1{
     font-family: 'Roboto';
-    color: #FFFFFF;
+    color: var(--white);
     margin-top:0;
     font-weight: 700;
     font-size: 55px;
@@ -281,7 +304,7 @@ Avighna about css
 }
 .ecommerce-transformation h2{
     font-family: 'Roboto';
-    color: #FFFFFF;
+    color:var(--white);
     margin-top:0;
     font-weight: 600;
     font-size: 24px;
@@ -293,7 +316,7 @@ Avighna about css
 }
 .ecommerce-transformation p{
     font-family: 'Roboto';
-    color: #FFFFFF;
+    color:var(--white);
     margin-top:0;
     bottom: 0;
     font-weight: 400;
@@ -310,19 +333,19 @@ Avighna about css
 }
 .Breadcrum ul li a{
    text-decoration: none;
-   color: #fff;
+   color:var(--white);
    font-weight: 400;
    font-size: 15px;
 }
 .Breadcrum ul li a:active {
-    color: #FE7A19;
+    color: var(--primary-color);
 }
 .selected-page{
-    color: #FE7A19 !important;
+    color: var(--primary-color) !important;
 }
 .about-us h1{
     font-family: 'Roboto';
-    color: #1D3679;
+    color: var(--secondary-blue);
     margin-top:0;
     font-weight: 800;
     font-size: 45px;
@@ -331,14 +354,14 @@ Avighna about css
 }
 .about-us p{
     font-family: 'Roboto';
-    color: #5B5B5B;
+    color: var(--primaary-grey);
     font-weight: 400;
     font-size: 16px;
     line-height: 27px;
 }
 .about-us h2{
     font-family: 'Roboto';
-    color: #1D3679;
+    color: var(--secondary-blue);
     margin-top:0;
     font-weight: 700;
     font-size: 50px;
@@ -348,7 +371,7 @@ Avighna about css
 }
 .about-us h6{
     font-family: 'Roboto';
-    color: #5B5B5B;
+    color: var(--primary-grey);
     font-weight: 400;
     font-size: 16px;
     line-height: 23px;
@@ -356,7 +379,7 @@ Avighna about css
 }
 .about-us p span{
     font-family: 'Roboto';
-    color: #5B5B5B;
+    color: var(--primary-grey);
     font-weight: 500;
     font-size: 16px;
     line-height: 27px;
@@ -375,7 +398,7 @@ Avighna footer css
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
-    color: #1D3679;
+    color: var(--secondary-blue);
     margin-top: 20%;
     font-family: 'Roboto';
 }
@@ -385,13 +408,13 @@ Avighna footer css
     color: #FE7A19;
  } */
  .social-media-icons {
-    color: #1D3679;
+    color: var(--secondary-blue);
     margin-right: 5px;
     font-size: 22px;
     cursor: pointer;
  }
  .social-media-icons:hover {
-    color: #FE7A19;
+    color: var(--primary-color);
  }
 .social-address img{
     margin: 10px auto;
@@ -400,7 +423,7 @@ Avighna footer css
     font-size: 20px;
     font-weight: 600;
     line-height: 26px;
-    color: #5B5B5B;
+    color: var(--primary-grey);
     margin-bottom: 24px;
     font-family: 'Roboto';
 }
@@ -408,7 +431,7 @@ Avighna footer css
     font-size: 20px;
     font-weight: 600;
     line-height: 26px;
-    color: #5B5B5B;
+    color: var(--primary-grey);
     margin-bottom: 5%;
     font-family: 'Roboto';
 }
@@ -416,16 +439,16 @@ Avighna footer css
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
-    color: #5B5B5B;
+    color: var(--primary-grey);
     margin-top: 20px;
     font-family: 'Roboto';
 }
 .our_services_ul_icons a p:hover{
-    color: #FE7A19;
+    color: var(--primary-color);
 }
 .our_services_ul_icons a{
     text-decoration: none!important;
-    color: #5B5B5B!important;
+    color: var(--primary-grey)!important;
 }
 .footer-address{
     display: flex;
@@ -433,7 +456,7 @@ Avighna footer css
 }
 .content h5{
     margin-left: 10px;
-    color: #5B5B5B;
+    color: var(--primary-grey);
     font-size: 16px;
     font-weight: 500;
     margin-top: 0px;
@@ -442,7 +465,7 @@ Avighna footer css
 }
 .content p{
     margin-left: 10px;
-    color: #5B5B5B;
+    color: var(--primary-grey);
     font-size: 16px;
     font-weight: 400;
     font-family: 'Roboto';
@@ -471,7 +494,7 @@ Avighna footer css
     font-size: 16px;
     line-height: 24px;
     text-transform: capitalize;
-    color: #637381;
+    color: var(--off-grey);
     cursor: pointer;
     margin-right: 30px;
 }
@@ -482,7 +505,7 @@ Avighna footer css
     font-size: 16px;
     line-height: 32px;
     text-transform: capitalize;
-    color: #637381;
+    color: var(--off-grey);
 }
 .bottom_right_area {
     margin: 8px 30px 14px 0px;
@@ -511,7 +534,7 @@ h3.inner_heading{
     line-height: 53px;
     text-align: center;
     text-transform: capitalize;
-    color: #1D3679;
+    color: var(--secondary-blue);
     margin-bottom: 20px;
 }
 h3.inner_heading span{
@@ -524,7 +547,7 @@ h3.inner_heading-600{
     line-height: 59px;
     text-align: center;
     text-transform: capitalize;
-    color: #1D3679;
+    color: var(--secondary-blue);
     margin-bottom: 20px;
 }
 h3.inner_heading-600 span{
@@ -538,7 +561,7 @@ h3.inner_heading-50{
     letter-spacing: -1px;
     text-align: center;
     text-transform: capitalize;
-    color: #1D3679;
+    color: var(--secondary-blue);
     margin-bottom: 20px;
 }
 h3.inner_heading-50 span{
@@ -558,14 +581,14 @@ h3.inner_heading-50 span{
     font-weight: 600;
     font-size: 38px;
     line-height: 45px;
-    color: #FD6202;
+    color: var(--secondary-orange);
 }
 .developing_main_ausiness_activities_content h6 {
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 30px;
     line-height: 36px;
-    color: #1D3679;
+    color: var(--secondary-blue);
 }
 .developing_main_ausiness_activities_content p {
     font-weight: 400;
@@ -574,24 +597,24 @@ h3.inner_heading-50 span{
     line-height: 1.6;
     margin-top: 10px;
     margin-bottom: 20px;
-    color: #5B5B5B;
+    color: var(--primary-grey);
 }
 span.green{
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 38px;
     line-height: 45px;
-    color: #21BE14;
+    color: var(--green);
 }
 span.green-b{
-    color: #21BE14;
+    color: var(--green);
 }
 span.readmore{
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 16px;
     font-style: italic;
-    color: #FD6202;
+    color: var(--secondary-orange);
 }
 .our-product-range-images {
     margin-bottom: 60px;
@@ -604,17 +627,17 @@ span.readmore{
     left: 10px;
     right: 10px;
     height: 120px;
-    color: #1D3679;
+    color: var(--secondary-blue);
     text-align: center;
     transform: translateY(59px);
     font-weight: 700;
     font-size: 20px;
     padding: 10px;
-    background: #FFFFFF;
+    background: var(--white);
     font-family: 'Roboto';
-    border: 1px solid #F1F1F1;
+    border: 1px solid var(--primary-white);
     text-transform: capitalize;
-    box-shadow: 0px 4px 30px 0px #00000014;
+    box-shadow: 0px 4px 30px 0px var(--shadow-color);
 }
 .our-product-range h2 {
     position: absolute;
@@ -622,17 +645,17 @@ span.readmore{
     left: 10px;
     right: 10px;
     height: 93px;
-    color: #1D3679;
+    color: var(--secondary-blue);
     text-align: center;
     transform: translateY(59px);
     font-weight: 700;
     font-size: 20px;
     padding: 14px;
-    background: #FFFFFF;
+    background: var(--white);
     font-family: 'Roboto';
-    border: 1px solid #F1F1F1;
+    border: 1px solid var(--primary-white);
     text-transform: capitalize;
-    box-shadow: 0px 4px 30px 0px #00000014;
+    box-shadow: 0px 4px 30px 0px var(--shadow-color);
 }
 .our-product-range h5 {
     position: absolute;
@@ -640,17 +663,17 @@ span.readmore{
     left: 10px;
     right: 10px;
     height: 68px;
-    color: #1D3679;
+    color: var(--secondary-blue);
     text-align: center;
     transform: translateY(59px);
     font-weight: 700;
     font-size: 20px;
     padding: 20px;
-    background: #FFFFFF;
+    background: var(--white);
     font-family: 'Roboto';
-    border: 1px solid #F1F1F1;
+    border: 1px solid var(--primary-white);
     text-transform: capitalize;
-    box-shadow: 0px 4px 30px 0px #00000014;
+    box-shadow: 0px 4px 30px 0px var(--shadow-color);
 }
 .our-product-range h4 {
     position: absolute;
@@ -658,35 +681,35 @@ span.readmore{
     left: 10px;
     right: 10px;
     height: 68px;
-    color: #1D3679;
+    color: var(--secondary-blue);
     text-align: center;
     transform: translateY(59px);
     font-weight: 700;
     font-size: 20px;
     padding: 14px;
-    background: #FFFFFF;
+    background: var(--white);
     font-family: 'Roboto';
-    border: 1px solid #F1F1F1;
+    border: 1px solid var(--primary-white);
     text-transform: capitalize;
-    box-shadow: 0px 4px 30px 0px #00000014;
+    box-shadow: 0px 4px 30px 0px var(--shadow-color);
 }
 .our-product-range h6 {
     position: absolute;
     top: 78%;
     width: 100%;
     height: 117px;
-    color: #1D3679;
+    color: var(--secondary-blue);
     text-align: center;
     transform: translateY(59px);
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
     padding: 14px;
-    background: #FFFFFF;
+    background: var(--white);
     font-family: 'Roboto';
-    border: 1px solid #F1F1F1;
+    border: 1px solid var(--primary-white);
     text-transform: capitalize;
-    box-shadow: 0px 4px 30px 0px #00000014;
+    box-shadow: 0px 4px 30px 0px var(--shadow-color);
 }
 .our-product-range p {
     font-family: 'Roboto';
@@ -694,7 +717,7 @@ span.readmore{
     font-size: 16px;
     text-align: center;
     line-height: 23px;
-    color: #747474;
+    color: var(--secondary-grey);
 }
 .our-product-range img {
     width: 100%;
@@ -736,34 +759,34 @@ span.readmore{
 }
 .our-services-inner h5{
     position: relative;
-    color: #1D3679;
+    color: var(--secondary-blue);
     text-align: center;
     font-weight: 700;
     font-size: 20px;
     padding-top: 18px;
     height: 60px;
     text-transform: capitalize;
-    background: #FFFFFF;
+    background: var(--white);
     font-family: 'Roboto';
-    border: 1px solid #F1F1F1;
-    box-shadow: 0px 4px 30px 0px #00000014;
+    border: 1px solid var(--primary-white);
+    box-shadow: 0px 4px 30px 0px var(--shadow-color);
 }
 .our-services-inner h6{
     position: relative;
     bottom: 10%;
     margin-left: 10px;
     margin-right: 10px;
-    color: #1D3679;
+    color: var(--secondary-blue);
     text-align: center;
     font-weight: 700;
     font-size: 20px;
     padding-top: 12px;
     height: 75px;
     text-transform: capitalize;
-    background: #FFFFFF;
+    background: var(--white);
     font-family: 'Roboto';
-    border: 1px solid #F1F1F1;
-    box-shadow: 0px 4px 30px 0px #00000014;
+    border: 1px solid var(--primary-white);
+    box-shadow: 0px 4px 30px 0px var(--shadow-color);
 }
 .our-services-inner {
     flex: 1;
@@ -815,7 +838,7 @@ section.customization-services p{
     font-size: 16px;
     line-height: 23px;
     text-align: center;
-    color: #747474;
+    color: var(--secondary-grey);
 }
 
 .our-services p {
@@ -824,7 +847,7 @@ section.customization-services p{
     font-weight: 500;
     font-size: 16px;
     line-height: 29px;
-    color: #49499A;
+    color: var(--primary-blue);
 }
 .our-suppliers{
     padding: 50px;
@@ -835,8 +858,8 @@ section.customization-services p{
     width: 100%;
     margin: 5px;
     height: auto;
-    box-shadow: 0px 4px 30px 0px #00000014;
-    border: 1px solid #F1F1F1;
+    box-shadow: 0px 4px 30px 0px var(--shadow-color);
+    border: 1px solid var(--primary-white);
 }
 .our-suppliers-inner img{
     margin: 0 auto;
@@ -879,7 +902,7 @@ section.customization-services p{
     /* margin-top: 100px; */
 }
 .newsletter-bg{
-    background-color: #f0f4ff;
+    background-color: var(--off-white);
 }
 .newsletters-left-sec{
     position: relative;
@@ -911,14 +934,14 @@ section.customization-services p{
     font-weight: 600;
     line-height: 54px;
     font-size: 45px;
-    color: #FFFFFF;
+    color: var(--white);
     font-family: 'Roboto';
 }
 .and-because-your {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: var(--white);
     font-family: 'Roboto';
 }
 .newsletters-right-sec{
@@ -929,7 +952,7 @@ section.customization-services p{
     font-size: 35px;
     font-weight: 600;
     font-family: 'Roboto';
-    color: #1d3679;
+    color: var(--secondary-blue);
     margin-top: 25%;
 }
 .newsletters-right-sec-input{
@@ -939,7 +962,7 @@ section.customization-services p{
 }
 .newsletters-right-sec-input input{
     font-family: 'Roboto';
-    color: #637381;
+    color: var(--off-grey);
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
@@ -948,8 +971,8 @@ section.customization-services p{
 }
 .newsletters-right-sec-input button{
     font-family: 'Roboto';
-    color: #FFFFFF;
-    background: #1D3679;
+    color: var(--white);
+    background: var(--secondary-blue);
     width: 97px;
     height: 50px;
     font-weight: 400;
@@ -958,9 +981,9 @@ section.customization-services p{
     margin-left: 10px;
 }
 .btn-primary:hover {
-    color: #fff;
-    background-color: #1D3679 !important;
-    border-color: #1D3679 !important;
+    color: var(--white);
+    background-color: var(--secondary-blue) !important;
+    border-color: var(--secondary-blue) !important;
 }
 .newsletters-right-sec p{
     position: relative;
@@ -968,7 +991,7 @@ section.customization-services p{
     font-weight: 400;
     font-family: 'Roboto';
     line-height: 22px;
-    color: #637381;
+    color: var(--off-grey);
 }
 .vision{
     margin-top: 50px;
@@ -981,7 +1004,7 @@ section.vision p{
     line-height: 42px;
     font-style: italic;
     text-align: center;
-    color: #FD6202;
+    color: var(--secondary-orange);
 }
 section.vision .vision-main h3{
     font-family: 'Roboto';
@@ -989,7 +1012,7 @@ section.vision .vision-main h3{
     font-size: 20px;
     line-height: 28px;
     text-align: center;
-    color: #5B5B5B;
+    color: var(--primary-grey);
     margin-top: 10px;
 }
 .service_area-new{
@@ -1008,7 +1031,7 @@ section.vision .vision-main h3{
     position: relative;
 }
 .ecommerce-transformation-new{
-    background-color: #F4F7FF;
+    background-color: var(--clear-white);
     height: 380px;
     position: relative;
     align-items: center;     
@@ -1020,7 +1043,7 @@ section.vision .vision-main h3{
 }
 .ecommerce-transformation-new h1{
     font-family: 'Roboto';
-    color: #1D3679;
+    color: var(--secondary-blue);
     font-weight: 700;
     font-size: 32px;
     line-height: 40px;
@@ -1030,7 +1053,7 @@ section.vision .vision-main h3{
 }
 .ecommerce-transformation-new p{
     font-family: 'Roboto';
-    color: #5B5B5B;
+    color: var(--primary-grey);
     font-weight: 400;
     font-size: 16px;
     line-height: 23px;
@@ -1056,7 +1079,7 @@ section.vision .vision-main h3{
 }
 .galvanized-products-cat h1{
     font-family: 'Roboto';
-    color: #1D3679;
+    color: var(--secondary-blue);
     font-weight: 700;
     font-size: 32px;
     line-height: 40px;
@@ -1066,7 +1089,7 @@ section.vision .vision-main h3{
 }
 .galvanized-products-cat p{
     font-family: 'Roboto';
-    color: #5B5B5B;
+    color: var(--primary-grey);
     font-weight: 400;
     font-size: 16px;
     line-height: 23px;
@@ -1081,19 +1104,19 @@ section.vision .vision-main h3{
 .contact-us{
     margin-top: 50px;
     margin-bottom: 50px;
-    background: #F0F4FF;
+    background: var(--off-white);
     position: relative;
 }
 .contact-us h3{
     font-family: 'Roboto';
-    color: #023047;
+    color: var(--dark-blue);
     font-weight: 600;
     font-size: 35px;
     line-height: 40px;
 }
 .contact-us h4{
     font-family: 'Roboto';
-    color: #023047;
+    color: var(--dark-blue);
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
@@ -1119,14 +1142,14 @@ section.vision .vision-main h3{
 }
 .contact-us-form h4{
     font-family: 'Roboto';
-    color: #023047;
+    color: var(--dark-blue);
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
 }
 .contact-us-form p{
     font-family: 'Roboto';
-    color: #023047;
+    color: var(--dark-blue);
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
@@ -1136,21 +1159,21 @@ section.vision .vision-main h3{
 }
 .contact-us-main-form h4{
     font-family: 'Roboto';
-    color: #023047;
+    color: var(--dark-blue);
     font-weight: 600;
     font-size: 28px;
     line-height: 35px;
 }
 .contact-us-main-form label{
     font-family: 'Roboto';
-    color: #637381;
+    color: var(--off-grey);
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
 }
 .contact-us-main-form input{
     font-family: 'Roboto';
-    color: #637381;
+    color: var(--off-grey);
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
@@ -1160,12 +1183,12 @@ section.vision .vision-main h3{
     margin: 10px auto;
     box-sizing: border-box;
     border: none;  
-    border-bottom: 1px solid #F1F1F1;
+    border-bottom: 1px solid var(--primary-white);
 }
 .contact-us-main-form button{
     font-family: 'Roboto';
-    color: #FFFFFF;
-    background: #1D3679;
+    color: var(--white);
+    background: var(--secondary-blue);
     width: 125px;
     height: 45px;
     font-weight: 400;
@@ -1174,9 +1197,9 @@ section.vision .vision-main h3{
 }
 .contact-us-main-form{
     box-shadow: 0px 4px 28px 0px #0000000D;
-    background: #FFFFFF;
+    background: var(--white);
     padding: 40px;
-    border: 1px solid #F1F1F1;
+    border: 1px solid var(--primary-white);
     border-radius: 5px;
     position: relative;
     bottom: 50%;
@@ -1187,7 +1210,7 @@ section.vision .vision-main h3{
     padding: 20px;
 }
 .specifications-range-main{
-    background: #FFFFFF;
+    background: var(--white);
     box-shadow: 0px 0px 30px rgba(31, 45, 61, 0.15);
     /* border-radius: 10px; */
     padding: 20px;
@@ -1205,7 +1228,7 @@ section.vision .vision-main h3{
     font-size: 24px;
     line-height: 35px;
     text-align: center;
-    color: #FE7A19;
+    color: var(--primary-color);
     margin-top: 10px;
 }
 .specifications-range-main p{
@@ -1214,7 +1237,7 @@ section.vision .vision-main h3{
     font-size: 18px;
     line-height: 24px;
     text-align: center;
-    color: #1D3679;
+    color: var(--secondary-blue);
     margin-top: 10px;
 }
 .specifications-range-main:hover {
@@ -1236,7 +1259,7 @@ section.vision .vision-main h3{
     right: 0;
     border-radius: 10px;
     width: 0;
-    background: #FE7A19;
+    background: var(--primary-color);
     -moz-transition: ease all 0.35s;
     -o-transition: ease all 0.35s;
     -webkit-transition: ease all 0.35s;
@@ -1256,12 +1279,12 @@ section.vision .vision-main h3{
     padding: 10px
 }
 .specifications-range-main:hover span{
-    color: #fff;
+    color: var(--white);
     position: relative;
     z-index: 1;
  }
 .specifications-range-main:hover h3, .specifications-range-main:hover p, .specifications-range-main:hover a{
-    color: #fff !important;
+    color: var(--white) !important;
     position: relative;
     z-index: 1;
 }
@@ -1269,7 +1292,7 @@ section.vision .vision-main h3{
     padding: 30px;
 }
 .bis-standards-main{
-    background: #FFFFFF;
+    background: var(--white);
     box-shadow: 0px 0px 30px rgba(31, 45, 61, 0.15);
     border-radius: 10px;
     padding: 20px;
@@ -1287,7 +1310,7 @@ section.vision .vision-main h3{
     font-size: 30px;
     line-height: 35px;
     text-align: center;
-    color: #FE7A19;
+    color: var(--primary-color);
     margin-top: 10px;
 }
 .bis-standards-main h4{
@@ -1296,7 +1319,7 @@ section.vision .vision-main h3{
     font-size: 30px;
     line-height: 35px;
     text-align: center;
-    color: #FE7A19;
+    color: var(--primary-color);
     margin-top: 10px;
 }
 .bis-standards-main p{
@@ -1305,7 +1328,7 @@ section.vision .vision-main h3{
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    color: #1D3679;
+    color: var(--secondary-blue);
     margin-top: 10px;
 }
 .bis-standards-main:hover {
@@ -1327,7 +1350,7 @@ section.vision .vision-main h3{
     right: 0;
     border-radius: 10px;
     width: 0;
-    background: #FE7A19;
+    background: var(--primary-color);
     -moz-transition: ease all 0.35s;
     -o-transition: ease all 0.35s;
     -webkit-transition: ease all 0.35s;
@@ -1344,12 +1367,12 @@ section.vision .vision-main h3{
     padding: 10px
 }
 .bis-standards-main:hover span{
-    color: #fff;
+    color: var(--white);
     position: relative;
     z-index: 1;
  }
 .bis-standards-main:hover h3, .bis-standards-main:hover h4, .bis-standards-main:hover p, .bis-standards-main-main:hover a{
-    color: #fff !important;
+    color: var(--white) !important;
     position: relative;
     z-index: 1;
 }
@@ -1358,8 +1381,8 @@ section.vision .vision-main h3{
     margin: 15px auto;
     padding: 22px 22px 0px 22px;
     height: 100%;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 30px 0px #00000014;
+    background: var(--white);
+    box-shadow: 0px 4px 30px 0px var(--shadow-color);
 }
 .bis-standards-content h3{
     font-family: 'Roboto';
@@ -1367,7 +1390,7 @@ section.vision .vision-main h3{
     font-size: 20px;
     line-height: 26px;
     text-align: center;
-    color: #1D3679;
+    color: var(--secondary-blue);
     margin-top: 10px;
 }
 .bis-standards-content h4{
@@ -1376,7 +1399,7 @@ section.vision .vision-main h3{
     font-size: 16px;
     line-height: 21px;
     text-align: center;
-    color: #FD6202;
+    color: var(--secondary-orange);
     margin-top: 10px;
 }
 .bis-standards-content p{
@@ -1385,7 +1408,7 @@ section.vision .vision-main h3{
     font-size: 18px;
     line-height: 24px;
     text-align: center;
-    color: #5B5B5B;
+    color: var(--primary-grey);
     margin-top: 10px;
 }
 .bis-standards-content img{
@@ -1397,12 +1420,12 @@ Avighna section table css
 ======================================================*/
 .table {
     margin-top: 20px;
-    border: 1px solid #5B5B5B !important;
+    border: 1px solid var(--primary-grey) !important;
     
 }
 .table thead tr {
-    background-color: #1D3679;
-    color: #FFFFFF;
+    background-color: var(--secondary-blue);
+    color: var(--white);
     font-size: 20px;
     font-weight: 500;
     line-height: 26px;
@@ -1410,7 +1433,7 @@ Avighna section table css
     font-family: 'Roboto';
 }
 .table td {
-    color: #5B5B5B;
+    color: var(--primary-grey);
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -1418,13 +1441,13 @@ Avighna section table css
     font-family: 'Roboto';
 }
 th[scope="row"] {
-    background: #F4F7FF;
-    border: 1px solid #5B5B5B;
+    background: var(--clear-white);
+    border: 1px solid var(--primary-grey);
     text-align: center;
     font-size: 20px;
     font-weight: 500;
     line-height: 26px;
-    color: #5B5B5B;
+    color: var(--primary-grey);
     font-family: 'Roboto';
 }
 .cold-rolled-grades table td,
@@ -1432,7 +1455,7 @@ th[scope="row"] {
     padding: 1.5rem 1.5rem !important;
 }
 tr:nth-child(even) {
-    background-color: #F1F1F1;
+    background-color: var(--primary-white);
 }
 tr:nth-child(odd) {
     background-color: white;
@@ -1441,7 +1464,7 @@ tr:nth-child(odd) {
     --bs-table-accent-bg: none;
 }
 .table-hover>tbody>tr:hover {
-    color: #747474;
+    color: var(--secondary-grey);
 }
 .table-shadow{
     box-shadow: 0px 1px 4px 0px #00000029;
@@ -1452,7 +1475,7 @@ tr:nth-child(odd) {
 .specifications-tin-free-sheet table td,
 .specifications-tin-free-sheet table th {
     padding: 0.5rem 0.5rem !important;
-    border: 1px solid #5B5B5B;
+    border: 1px solid var(--primary-grey);
 }
 .galvanized-table-section table th {
     padding: 0.5rem 0.5rem !important;
@@ -1483,7 +1506,7 @@ tr:nth-child(odd) {
     max-width: 150px;
 }
 .specifications-tin-free-sheet td.bg {
-    background-color: #F1F1F1;
+    background-color: var(--primary-white);
 }
 /*====================================================
 Avighna end table section css
@@ -1501,7 +1524,7 @@ Avighna all section css
     font-size: 16px;
     text-align: center;
     text-transform: capitalize;
-    color: #FE7A19;
+    color: var(--primary-color);
     margin-top: 10px;
     display: inline-block;
 }
@@ -1524,7 +1547,7 @@ Avighna all section css
     font-size: 20px;
     text-align: center;
     text-transform: capitalize;
-    color: #1D3679;
+    color: var(--secondary-blue);
     margin-top: 10px;
     display: inline-block;
 }
@@ -1574,8 +1597,8 @@ Avighna all section css
     height: 100%;
 }
 .advantages-color-coated-main{
-    box-shadow: 0px 4px 30px 0px #00000014;
-    background: linear-gradient(180deg, #FFFFFF 0%, #F4FDFF 100%);
+    box-shadow: 0px 4px 30px 0px var(--shadow-color);
+    background: linear-gradient(180deg, var(--white) 0%, #F4FDFF 100%);
     padding: 16px;
     height: 100%;
 }
@@ -1584,7 +1607,7 @@ Avighna all section css
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color: #49499A;
+    color: var(--primary-blue);
     margin-top: 20px;
 }
 .advantages-color-coated-main p{
@@ -1592,7 +1615,7 @@ Avighna all section css
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    color: #5B5B5B;
+    color: var(--primary-grey);
     margin-top: 10px;
 }
 .advantages-color-coated-main img{
@@ -1648,8 +1671,8 @@ Avighna all section css
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    color: #FFFFFF;
-    background-color: #1D3679;
+    color: var(--white);
+    background-color: var(--secondary-blue);
     padding: 10px;
 }
 .our-processes img{
@@ -1686,9 +1709,9 @@ Avighna all section css
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: var(--white);
     text-align: center;
-    background-color: #1D3679;
+    background-color: var(--secondary-blue);
     padding: 14px;
     margin-left: 10px;
     margin-right: 10px;
@@ -1709,8 +1732,8 @@ Avighna all section css
     overflow: hidden;
     font-size: .75rem;
     font-family: 'Roboto';
-    border: 3px solid #1D3679;
-    background-color: #FFFFFF !important;
+    border: 3px solid var(--secondary-blue);
+    background-color: var(--white) !important;
     border-radius: 20px;
 }
 .progress-center{
@@ -1730,8 +1753,8 @@ Avighna all section css
     font-family: 'Roboto';
     font-size: 20px;
     font-weight: 500;
-    background-color: #FE7A19;
-    color: #FFFFFF;
+    background-color: var(--primary-color);
+    color: var(--white);
 }
 .upicon-style{
     position: absolute;
@@ -1745,7 +1768,7 @@ Avighna all section css
     font-weight: 500;
     font-family: 'Roboto';
     line-height: 24px;
-    color: #1D3679;
+    color: var(--secondary-blue);
     white-space: normal;
     text-transform: capitalize;
 }
@@ -1757,7 +1780,7 @@ Avighna all section css
     font-weight: 500;
     font-family: 'Roboto';
     line-height: 24px;
-    color: #1D3679;
+    color: var(--secondary-blue);
     white-space: normal;
     text-transform: capitalize;
 }
@@ -1773,7 +1796,7 @@ Avighna all section css
     font-weight: 500;
     font-family: 'Roboto';
     line-height: 24px;
-    color: #1D3679;
+    color: var(--secondary-blue);
     white-space: normal;
     text-transform: capitalize;
 }
@@ -1785,19 +1808,19 @@ Avighna all section css
     font-weight: 500;
     font-family: 'Roboto';
     line-height: 24px;
-    color: #1D3679;
+    color: var(--secondary-blue);
     white-space: normal;
     text-transform: capitalize;
 }
 
 .bg-blue{
-    background: #1D3679;
+    background: var(--secondary-blue);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .bg-white{
-    background: #FFFFFF;
+    background: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1852,7 +1875,7 @@ Avighna responsive Adjust styles for all screens css
         margin-bottom: 17px;
     }
     div#navbarSupportedContent {
-        background-color: #fff;
+        background-color: var(--white);
     }
     .service_area {
         margin-top: 85px;
@@ -1913,7 +1936,7 @@ Avighna responsive Adjust styles for all screens css
         display: none !important;
     }
     .ecommerce-transformation {
-        background-color: #1D3679;
+        background-color: var(--secondary-blue);
         height: auto;
     }
     .banner-home {
@@ -1987,9 +2010,9 @@ Avighna responsive Adjust styles for all screens css
     }
     .contact-us-main-form {
         box-shadow: 0px 4px 28px 0px #0000000D;
-        background: #FFFFFF;
+        background: var(--white);
         padding: 40px;
-        border: 1px solid #F1F1F1;
+        border: 1px solid var(--primary-white);
         border-radius: 5px;
         position: relative;
         bottom: 0% !important;
@@ -2072,16 +2095,16 @@ Avighna responsive Adjust styles for all screens css
     }
     .contact-us-main-form {
         box-shadow: 0px 4px 28px 0px #0000000D;
-        background: #FFFFFF;
+        background: var(--white);
         padding: 40px;
-        border: 1px solid #F1F1F1;
+        border: 1px solid var(--primary-white);
         border-radius: 5px;
         position: relative;
         bottom: 50%;
         left: 10%;
     }
     .search-input{
-        border: 1px solid #F0F0F0;
+        border: 1px solid var(--secondary-white);
         width: 158px;
     }
 }
@@ -2091,14 +2114,14 @@ Avighna responsive Adjust styles for all screens css
         position: relative;
     }    
     .search-input{
-        border: 1px solid #F0F0F0;
+        border: 1px solid var(--secondary-white);
         width: 300px;
     }
     .contact-us-main-form {
         box-shadow: 0px 4px 28px 0px #0000000D;
-        background: #FFFFFF;
+        background: var(--white);
         padding: 40px;
-        border: 1px solid #F1F1F1;
+        border: 1px solid var(--primary-white);
         border-radius: 5px;
         position: relative;
         bottom: 50%;
