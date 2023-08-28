@@ -1221,7 +1221,7 @@ section.vision .vision-main h3{
     border-radius: 0.313rem;
     position: relative;
     bottom: 50%;
-    height: 60.75rem;
+    height: 38.25rem;
 }
 .specifications-range{
     background: #F5F7FD;
@@ -1230,7 +1230,7 @@ section.vision .vision-main h3{
 .specifications-range-main{
     background: var(--white);
     box-shadow: 0rem 0rem 1.875rem rgba(31, 45, 61, 0.15);
-    /* border-radius: 0.625rem; */
+    border-radius: 0.625rem;
     padding: 1.25rem;
     height: 90%;
     margin-bottom: 1.25rem;

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
-    $("#header").load("../../components/Header/header.html");
-    $("#footer").load("../../components/Footer/footer.html");
-    $("#query").load("../../components/Query/query.html");
+    // $("#header").load("../../components/header.html");
+    // $("#footer").load("../../components/footer.html");
+    // $("#query").load("../../components.query.html");
     
     var scrollPositionToShow = 200;
     var scrollUpButton = document.createElement("div");
