@@ -54,22 +54,38 @@ body{
     --dark-grey: #525252;
     --shadow-color: #00000014;
     --green: #21BE14;
-    font-size: 1rem = 15px;
+    --desktop-font:16px;
+    --tablet-font: 14px;
+    --mobile-font: 12px;
+}
+
+html{
+	font-size: var(--desktop-font);
+}
+@media(max-width:1199px){
+    html{
+        font-size: var(--tablet-font);
+    }
+}
+@media(max-width:767px){
+    html{
+        font-size: var(--mobile-font);
+    }
 }
 /*====================================================
 Avighna scrool css
 ======================================================*/
 #scrollUp {
     background: var(--primary-color) none repeat scroll 0 0;
-    bottom: 30px;
+    bottom: 1.875rem;
     color:var(--white);
     font-family: 'Roboto';
-    font-size: 22px;
-    height: 40px;
-    line-height: 40px;
-    right: 20px !important; 
+    font-size: 1.375rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    right: 1.25rem !important; 
     text-align: center;
-    width: 40px;
+    width: 2.5rem;
     border-radius: 50%;
     display: flex !important;
     align-items: center;
@@ -88,7 +104,7 @@ Avighna header css
     height: auto;
     object-fit: cover;
     left: 6%;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     max-width: 150px;
 }
 .bg-light {
@@ -111,11 +127,11 @@ Avighna header css
     justify-content: space-between;
 }
 .navbar-collapse-border{
-    margin-left: -12px;
+    margin-left: -0.75rem;
     color: var(--white);
     width: 106%;
-    padding: 10px 10px;
-    box-shadow: 0px 1px 4px 0px #00000029;
+    padding: 0.625rem 0.625rem;
+    box-shadow: 0rem 0.063rem 0.25rem 0rem #00000029;
 }
 .product-button{
     background: var(--secondary-white);
@@ -123,18 +139,18 @@ Avighna header css
 }
 .product-button a{
     color: var(--secondary-grey);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
-    padding: 8.5px 16px;
-    border-radius: 5px;
+    padding: 8.0.313rem 1rem;
+    border-radius: 0.313rem;
     font-family: 'Roboto';
 }
 .navbar-light .navbar-nav .nav-link {
     color: var(--secondary-grey) !important;
-    /* font-size: 14px; */
+    /* font-size: 0.875rem; */
     font-weight: 400;
-    line-height: 17px;
-    padding: 8.5px 16px;
+    line-height: 1.063rem;
+    padding: 0.531rem 1rem;
     font-family: 'Roboto';
 }
 .nav-link:focus, .nav-link:hover {
@@ -149,10 +165,10 @@ Avighna header css
 }
 .dropdown-item {
     color: var(--secondary-grey) !important;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
-    line-height: 17px;
-    padding: 8.5px 16px;
+    line-height: 1.063rem;
+    padding: 0.531rem 1rem;
     font-family: 'Roboto';
 }
 .dropdown-menu {
@@ -162,15 +178,15 @@ Avighna header css
     background-color: var(--primary-color) !important;
 }
 .input-group .form-control {
-    height: 40px;
-    font-size: 14px;
+    height: 2.5rem;
+    font-size: 0.875rem;
     font-family: 400;
     font-family: 'Roboto';
 }
 .search-input{
-    border: 1px solid var(--secondary-white);
-    width: 400px;
-    font-size: 14px;
+    border: 0.063rem solid var(--secondary-white);
+    width: 400;
+    font-size: 0.875rem;
     font-weight: 400;
     font-family: 'Roboto';
 }
@@ -188,34 +204,34 @@ Avighna header css
 }
 .searchbar-icon{
     background: var(--secondary-blue);
-    width: 43px;
-    height: 40px;
+    width: 2.688rem;
+    height: 2.5rem;
     position: relative;
     right: 5%;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0rem 0.625rem 0.625rem 0rem;
 }
 .searchbar-icon img{
-    padding: 12px;
+    padding: 0.75rem;
 }
 .shoping_cart{
-    margin: 16px;
+    margin: 1rem;
     position: relative;
 }
 .shoping_cart a{
     text-decoration: none!important;
     color: var(--dark-grey);
-    padding-left: 10px;
+    padding-left: 0.625rem;
 }
 .shoping_cart span{
     font-weight: 400;
     position: relative;
     background: var(--primary-color);
     border-radius: 50%;
-    padding: 5px;
+    padding: 0.313rem;
     color: var(--white);
-    font-size: 10px;
-    bottom: 22px;
-    right: 46px;
+    font-size: 0.625rem;
+    bottom: 1.375rem;
+    right: 2.875rem;
     text-align: center;
     font-family: 'Roboto';
 }
@@ -225,13 +241,13 @@ Avighna about css
 ======================================================*/
 .banner-home{
     position: relative;
-    top: 110px;    
+    top: 8rem;    
 }
 .about-digital{
-    padding: 60px 0;
+    padding: 3.75rem 0;
 }
 .about-banner{
-    padding: 60px 0;
+    padding: 3.75rem 0;
 }
 .about-transformation{
     height: 521px;
@@ -239,45 +255,45 @@ Avighna about css
 .about-transformation img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 .about-transformation h1{
     font-family: 'Roboto';
     color: var(--primary-blue);
     margin-top:0;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2rem;
+    line-height: 2.375rem;
     text-transform: capitalize;
 }
 .about-transformation p{
     font-family: 'Roboto';
     color: var(--primaary-grey);
     font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 1rem;
+    line-height: 1.438rem;
 }
 .about-icon{
     display: flex;
 }
 .about-icon img{
-    width: 42px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    height: 42px;
-    gap: 20px;
+    width: 2.625rem;
+    padding-right: 0.625rem;
+    padding-bottom: 0.625rem;
+    height: 2.625rem;
+    gap: 1.25rem;
 }
 .about-icon h3{
     font-family: 'Roboto';
     color: #1A4186;
     margin-top:0;
     font-weight: 500;
-    font-size: 24px;
-    margin-left: 10px;
-    line-height: 29px;
+    font-size: 1.5rem;
+    margin-left: 0.625rem;
+    line-height: 1.813rem;
 }
 .service_area{
-    margin-top: 125px;
+    margin-top: 7.813rem;
 }
 .transmission-center{
     display: flex;
@@ -287,7 +303,6 @@ Avighna about css
 .ecommerce-transformation{
     background-color: var(--secondary-blue);
     height: 450px;     
-    padding-left: 118px;   
 }
 .ecommerce-transformation img{
     width: 100%;
@@ -299,16 +314,16 @@ Avighna about css
     color: var(--white);
     margin-top:0;
     font-weight: 700;
-    font-size: 55px;
-    line-height: 65px;
+    font-size: 3.438rem;
+    line-height: 4.063rem;
 }
 .ecommerce-transformation h2{
     font-family: 'Roboto';
     color:var(--white);
     margin-top:0;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
     text-transform: capitalize;
 }
 .break-word{
@@ -320,13 +335,13 @@ Avighna about css
     margin-top:0;
     bottom: 0;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 0.938rem;
+    line-height: 1.125rem;
 }
 .Breadcrum ul {
     display: flex;
-    gap: 5px;
-    padding-left: 0px;
+    gap: 0.313rem;
+    padding-left: 0rem;
 }
 .Breadcrum ul li {
     list-style: none;
@@ -335,7 +350,7 @@ Avighna about css
    text-decoration: none;
    color:var(--white);
    font-weight: 400;
-   font-size: 15px;
+   font-size: 0.938rem;
 }
 .Breadcrum ul li a:active {
     color: var(--primary-color);
@@ -348,24 +363,24 @@ Avighna about css
     color: var(--secondary-blue);
     margin-top:0;
     font-weight: 800;
-    font-size: 45px;
-    line-height: 53px;
+    font-size: 2.813rem;
+    line-height: 3.313rem;
     text-transform: capitalize;
 }
 .about-us p{
     font-family: 'Roboto';
     color: var(--primaary-grey);
     font-weight: 400;
-    font-size: 16px;
-    line-height: 27px;
+    font-size: 1rem;
+    line-height: 1.688rem;
 }
 .about-us h2{
     font-family: 'Roboto';
     color: var(--secondary-blue);
     margin-top:0;
     font-weight: 700;
-    font-size: 50px;
-    line-height: 65px;
+    font-size: 3.125rem;
+    line-height: 4.063rem;
     text-align: center;
     text-transform: capitalize;
 }
@@ -373,31 +388,31 @@ Avighna about css
     font-family: 'Roboto';
     color: var(--primary-grey);
     font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 1rem;
+    line-height: 1.438rem;
     text-align: center;
 }
 .about-us p span{
     font-family: 'Roboto';
     color: var(--primary-grey);
     font-weight: 500;
-    font-size: 16px;
-    line-height: 27px;
+    font-size: 1rem;
+    line-height: 1.688rem;
 }
 /*====================================================
 Avighna footer css
 ======================================================*/
 .footer-updated {
-    padding: 10px 0px 0px;
+    padding: 0.625rem 0rem 0rem;
     background: #FBF6F2;    
 }
 .logo-footer {
     max-width: 150px;
 }
 .social-contact h5{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 1.375rem;
     color: var(--secondary-blue);
     margin-top: 20%;
     font-family: 'Roboto';
@@ -409,38 +424,38 @@ Avighna footer css
  } */
  .social-media-icons {
     color: var(--secondary-blue);
-    margin-right: 5px;
-    font-size: 22px;
+    margin-right: 0.313rem;
+    font-size: 1.375rem;
     cursor: pointer;
  }
  .social-media-icons:hover {
     color: var(--primary-color);
  }
 .social-address img{
-    margin: 10px auto;
+    margin: 0.625rem auto;
 }
 .footer-head h4{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
-    line-height: 26px;
+    line-height: 1.625rem;
     color: var(--primary-grey);
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     font-family: 'Roboto';
 }
 .footer-head-address h4{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
-    line-height: 26px;
+    line-height: 1.625rem;
     color: var(--primary-grey);
     margin-bottom: 5%;
     font-family: 'Roboto';
 }
 .our_services_ul_icons a p{
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     font-weight: 500;
     color: var(--primary-grey);
-    margin-top: 20px;
+    margin-top: 1.25rem;
     font-family: 'Roboto';
 }
 .our_services_ul_icons a p:hover{
@@ -452,21 +467,21 @@ Avighna footer css
 }
 .footer-address{
     display: flex;
-    padding: 0px;
+    padding: 0rem;
 }
 .content h5{
-    margin-left: 10px;
+    margin-left: 0.625rem;
     color: var(--primary-grey);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
-    margin-top: 0px;
+    margin-top: 0rem;
     font-family: 'Roboto';
 
 }
 .content p{
-    margin-left: 10px;
+    margin-left: 0.625rem;
     color: var(--primary-grey);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     font-family: 'Roboto';
 }
@@ -477,7 +492,7 @@ Avighna footer css
 .bottom_area_footer {
     margin-top: 1rem;
     display: flex;
-    padding-top: 30px;
+    padding-top: 1.875rem;
 }
 .bottom_area_footer .bottom_left_area {
     width: 45%;
@@ -491,24 +506,24 @@ Avighna footer css
     font-style: normal;
     font-weight: 500;
     font-family: 'Roboto';
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     text-transform: capitalize;
     color: var(--off-grey);
     cursor: pointer;
-    margin-right: 30px;
+    margin-right: 1.875rem;
 }
 .bottom_right_area p {
     font-style: normal;
     font-weight: 400;
     font-family: 'Roboto';
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 1rem;
+    line-height: 2rem;
     text-transform: capitalize;
     color: var(--off-grey);
 }
 .bottom_right_area {
-    margin: 8px 30px 14px 0px;
+    margin: 0.5rem 1.875rem 0.875rem 0rem;
     display: flex;
     justify-content: flex-end;
 }
@@ -518,7 +533,7 @@ Avighna footer css
     font-weight: 600;
 }
 .bottom_right_area img{
-    margin-left: 10px;
+    margin-left: 0.625rem;
     display: flex;
     justify-content: flex-end;
     height: fit-content;
@@ -529,47 +544,47 @@ Avighna all section css
 ======================================================*/
 h3.inner_heading{
     font-family: 'Roboto';
-    font-size: 45px;
+    font-size: 2.813rem;
     font-weight: 800;
-    line-height: 53px;
+    line-height: 3.313rem;
     text-align: center;
     text-transform: capitalize;
     color: var(--secondary-blue);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 h3.inner_heading span{
     display: block;
 }
 h3.inner_heading-600{
     font-family: 'Roboto';
-    font-size: 45px;
+    font-size: 2.813rem;
     font-weight: 600;
-    line-height: 59px;
+    line-height: 3.688rem;
     text-align: center;
     text-transform: capitalize;
     color: var(--secondary-blue);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 h3.inner_heading-600 span{
     display: block;
 }
 h3.inner_heading-50{
     font-family: 'Roboto';
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 700;
-    line-height: 65px;
-    letter-spacing: -1px;
+    line-height: 4.063rem;
+    letter-spacing: -0.063rem;
     text-align: center;
     text-transform: capitalize;
     color: var(--secondary-blue);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 h3.inner_heading-50 span{
     display: block;
 }
 .developing_main_ausiness_activities_images {
     position: relative;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 .developing_main_ausiness_activities_images img {
     position: relative;
@@ -579,31 +594,31 @@ h3.inner_heading-50 span{
 .developing_main_ausiness_activities_content h5 {
     font-family: 'Roboto';
     font-weight: 600;
-    font-size: 38px;
-    line-height: 45px;
+    font-size: 2.375rem;
+    line-height: 2.813rem;
     color: var(--secondary-orange);
 }
 .developing_main_ausiness_activities_content h6 {
     font-family: 'Roboto';
     font-weight: 600;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
     color: var(--secondary-blue);
 }
 .developing_main_ausiness_activities_content p {
     font-weight: 400;
     font-family: 'Roboto';
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.6;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 0.625rem;
+    margin-bottom: 1.25rem;
     color: var(--primary-grey);
 }
 span.green{
     font-family: 'Roboto';
     font-weight: 600;
-    font-size: 38px;
-    line-height: 45px;
+    font-size: 2.375rem;
+    line-height: 2.813rem;
     color: var(--green);
 }
 span.green-b{
@@ -612,111 +627,111 @@ span.green-b{
 span.readmore{
     font-family: 'Roboto';
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: italic;
     color: var(--secondary-orange);
 }
 .our-product-range-images {
-    margin-bottom: 60px;
-    margin-top: 40px;
+    margin-bottom: 3.75rem;
+    margin-top: 2.5rem;
     position: relative;    
 }
 .our-product-range h1 {
     position: absolute;
     top: 60%;
-    left: 10px;
-    right: 10px;
-    height: 120px;
+    left: 0.625rem;
+    right: 0.625rem;
+    height: 11.25rem;
     color: var(--secondary-blue);
     text-align: center;
     transform: translateY(59px);
     font-weight: 700;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 1.25rem;
+    padding: 0.625rem;
     background: var(--white);
     font-family: 'Roboto';
-    border: 1px solid var(--primary-white);
+    border: 0.063rem solid var(--primary-white);
     text-transform: capitalize;
-    box-shadow: 0px 4px 30px 0px var(--shadow-color);
+    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
 }
 .our-product-range h2 {
     position: absolute;
     top: 65%;
-    left: 10px;
-    right: 10px;
+    left: 0.625rem;
+    right: 0.625rem;
     height: 93px;
     color: var(--secondary-blue);
     text-align: center;
     transform: translateY(59px);
     font-weight: 700;
-    font-size: 20px;
-    padding: 14px;
+    font-size: 1.25rem;
+    padding: 0.875rem;
     background: var(--white);
     font-family: 'Roboto';
-    border: 1px solid var(--primary-white);
+    border: 0.063rem solid var(--primary-white);
     text-transform: capitalize;
-    box-shadow: 0px 4px 30px 0px var(--shadow-color);
+    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
 }
 .our-product-range h5 {
     position: absolute;
     top: 70%;
-    left: 10px;
-    right: 10px;
-    height: 68px;
+    left: 0.625rem;
+    right: 0.625rem;
+    height: 4.25rem;
     color: var(--secondary-blue);
     text-align: center;
     transform: translateY(59px);
     font-weight: 700;
-    font-size: 20px;
-    padding: 20px;
+    font-size: 1.25rem;
+    padding: 1.25rem;
     background: var(--white);
     font-family: 'Roboto';
-    border: 1px solid var(--primary-white);
+    border: 0.063rem solid var(--primary-white);
     text-transform: capitalize;
-    box-shadow: 0px 4px 30px 0px var(--shadow-color);
+    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
 }
 .our-product-range h4 {
     position: absolute;
     top: 65%;
-    left: 10px;
-    right: 10px;
+    left: 0.625rem;
+    right: 0.625rem;
     height: 68px;
     color: var(--secondary-blue);
     text-align: center;
     transform: translateY(59px);
     font-weight: 700;
-    font-size: 20px;
-    padding: 14px;
+    font-size: 1.25rem;
+    padding: 0.875rem;
     background: var(--white);
     font-family: 'Roboto';
-    border: 1px solid var(--primary-white);
+    border: 0.063rem solid var(--primary-white);
     text-transform: capitalize;
-    box-shadow: 0px 4px 30px 0px var(--shadow-color);
+    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
 }
 .our-product-range h6 {
     position: absolute;
     top: 78%;
     width: 100%;
-    height: 117px;
+    height: 11.063rem;
     color: var(--secondary-blue);
     text-align: center;
     transform: translateY(59px);
     font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
-    padding: 14px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    padding: 0.875rem;
     background: var(--white);
     font-family: 'Roboto';
-    border: 1px solid var(--primary-white);
+    border: 0.063rem solid var(--primary-white);
     text-transform: capitalize;
-    box-shadow: 0px 4px 30px 0px var(--shadow-color);
+    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
 }
 .our-product-range p {
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
-    line-height: 23px;
+    line-height: 1.438rem;
     color: var(--secondary-grey);
 }
 .our-product-range img {
@@ -725,7 +740,7 @@ span.readmore{
 }
 .our-product-range img:hover {
     transform: scale(1.1);
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 .our-product-range-images img:hover:after {
     content: '';
@@ -755,38 +770,38 @@ span.readmore{
     opacity: 0;
 }
 .our-services{
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 .our-services-inner h5{
     position: relative;
     color: var(--secondary-blue);
     text-align: center;
     font-weight: 700;
-    font-size: 20px;
-    padding-top: 18px;
+    font-size: 1.25rem;
+    padding-top: 1.125rem;
     height: 60px;
     text-transform: capitalize;
     background: var(--white);
     font-family: 'Roboto';
-    border: 1px solid var(--primary-white);
-    box-shadow: 0px 4px 30px 0px var(--shadow-color);
+    border: 0.063rem solid var(--primary-white);
+    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
 }
 .our-services-inner h6{
     position: relative;
     bottom: 10%;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
     color: var(--secondary-blue);
     text-align: center;
     font-weight: 700;
-    font-size: 20px;
-    padding-top: 12px;
+    font-size: 1.25rem;
+    padding-top: 0.75rem;
     height: 75px;
     text-transform: capitalize;
     background: var(--white);
     font-family: 'Roboto';
-    border: 1px solid var(--primary-white);
-    box-shadow: 0px 4px 30px 0px var(--shadow-color);
+    border: 0.063rem solid var(--primary-white);
+    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
 }
 .our-services-inner {
     flex: 1;
@@ -802,7 +817,7 @@ span.readmore{
 }
 .our-services-inner img:hover {
     transform: scale(1.1);
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 .our-services-inner img:hover:after {
     content: '';
@@ -833,33 +848,33 @@ span.readmore{
 }
 section.customization-services p{
     font-family: 'Roboto';
-    padding: 20px;
+    padding: 1.25rem;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 1rem;
+    line-height: 1.438rem;
     text-align: center;
     color: var(--secondary-grey);
 }
 
 .our-services p {
     font-family: 'Roboto';
-    padding: 20px;
+    padding: 1.25rem;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 29px;
+    font-size: 1rem;
+    line-height: 1.813rem;
     color: var(--primary-blue);
 }
 .our-suppliers{
-    padding: 50px;
+    padding: 3.125rem;
 }
 .our-suppliers-inner {
     flex: 1;
     text-align: center;
     width: 100%;
-    margin: 5px;
+    margin: 0.313rem;
     height: auto;
-    box-shadow: 0px 4px 30px 0px var(--shadow-color);
-    border: 1px solid var(--primary-white);
+    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
+    border: 0.063rem solid var(--primary-white);
 }
 .our-suppliers-inner img{
     margin: 0 auto;
@@ -868,7 +883,7 @@ section.customization-services p{
 }    
 .our-suppliers-inner img:hover {
     transform: scale(1.2);
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 .our-suppliers-inner img:hover:after {
     content: '';
@@ -898,7 +913,7 @@ section.customization-services p{
     opacity: 0;
 }
 .newsletters{
-    padding: 30px 30px;
+    padding: 1.875rem 1.875rem;
     /* margin-top: 100px; */
 }
 .newsletter-bg{
@@ -924,7 +939,7 @@ section.customization-services p{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 25px;
+    gap: 1.563rem;
 }
 .and-because-your, .subscribe-to-our {
     position: relative;
@@ -932,15 +947,15 @@ section.customization-services p{
 }
 .subscribe-to-our{
     font-weight: 600;
-    line-height: 54px;
-    font-size: 45px;
+    line-height: 3.375rem;
+    font-size: 2.813rem;
     color: var(--white);
     font-family: 'Roboto';
 }
 .and-because-your {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: var(--white);
     font-family: 'Roboto';
 }
@@ -949,7 +964,7 @@ section.customization-services p{
     left: 5%;
 }
 .newsletters-right-sec h3{
-    font-size: 35px;
+    font-size: 2.188rem;
     font-weight: 600;
     font-family: 'Roboto';
     color: var(--secondary-blue);
@@ -957,28 +972,28 @@ section.customization-services p{
 }
 .newsletters-right-sec-input{
     display: flex;
-    margin: 20px auto;
-    left: 10px;
+    margin: 1.25rem auto;
+    left: 0.625rem;
 }
 .newsletters-right-sec-input input{
     font-family: 'Roboto';
     color: var(--off-grey);
     font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 0.938rem;
+    line-height: 1.25rem;
     width: 60%;
-    height: 50px;
+    height: 3.125rem;
 }
 .newsletters-right-sec-input button{
     font-family: 'Roboto';
     color: var(--white);
     background: var(--secondary-blue);
     width: 97px;
-    height: 50px;
+    height: 3.125rem;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    margin-left: 10px;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-left: 0.625rem;
 }
 .btn-primary:hover {
     color: var(--white);
@@ -987,21 +1002,21 @@ section.customization-services p{
 }
 .newsletters-right-sec p{
     position: relative;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     font-family: 'Roboto';
-    line-height: 22px;
+    line-height: 1.375rem;
     color: var(--off-grey);
 }
 .vision{
-    margin-top: 50px;
-    padding: 10px;
+    margin-top: 3.125rem;
+    padding: 0.625rem;
 }
 section.vision p{
     font-family: 'Roboto';
     font-weight: 600;
-    font-size: 30px;
-    line-height: 42px;
+    font-size: 1.875rem;
+    line-height: 2.625rem;
     font-style: italic;
     text-align: center;
     color: var(--secondary-orange);
@@ -1009,18 +1024,21 @@ section.vision p{
 section.vision .vision-main h3{
     font-family: 'Roboto';
     font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     text-align: center;
     color: var(--primary-grey);
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 .service_area-new{
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 .banner-home-new{
     position: relative;
-    top: 110px;    
+    top: 10.625rem;    
+}
+.banner-content {
+    padding-left: 10%;
 }
 .about-digital-new{
     position: relative;
@@ -1045,8 +1063,8 @@ section.vision .vision-main h3{
     font-family: 'Roboto';
     color: var(--secondary-blue);
     font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 2rem;
+    line-height: 2.5rem;
 }
 .ecommerce-transformation-new span{
     display: block;
@@ -1055,12 +1073,12 @@ section.vision .vision-main h3{
     font-family: 'Roboto';
     color: var(--primary-grey);
     font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 1rem;
+    line-height: 1.438rem;
 }
 .galvanized-products{
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-top: 1.25rem;
+    margin-bottom: 3.125rem;
 }
 .galvanized-center-new{
     display: flex;
@@ -1081,8 +1099,8 @@ section.vision .vision-main h3{
     font-family: 'Roboto';
     color: var(--secondary-blue);
     font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 2rem;
+    line-height: 2.5rem;
 }
 .galvanized-products-cat span{
     display: block;
@@ -1091,19 +1109,19 @@ section.vision .vision-main h3{
     font-family: 'Roboto';
     color: var(--primary-grey);
     font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 1rem;
+    line-height: 1.438rem;
 }
 .galvanized-products-cat-center-image{
     display: flex;
 }
 .galvanized-products-cat-center-image img{
     width: auto;
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 .contact-us{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
     background: var(--off-white);
     position: relative;
 }
@@ -1111,15 +1129,15 @@ section.vision .vision-main h3{
     font-family: 'Roboto';
     color: var(--dark-blue);
     font-weight: 600;
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 2.188rem;
+    line-height: 2.5rem;
 }
 .contact-us h4{
     font-family: 'Roboto';
     color: var(--dark-blue);
     font-weight: 600;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 0.938rem;
+    line-height: 1.25rem;
 }
 .contact-us-content{
     height: 436px;
@@ -1144,78 +1162,78 @@ section.vision .vision-main h3{
     font-family: 'Roboto';
     color: var(--dark-blue);
     font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
 }
 .contact-us-form p{
     font-family: 'Roboto';
     color: var(--dark-blue);
     font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 1rem;
+    line-height: 1.75rem;
 }
 .contact-us-form img{
-    padding-right: 20px;
+    padding-right: 1.25rem;
 }
 .contact-us-main-form h4{
     font-family: 'Roboto';
     color: var(--dark-blue);
     font-weight: 600;
-    font-size: 28px;
-    line-height: 35px;
+    font-size: 1.75rem;
+    line-height: 2.188rem;
 }
 .contact-us-main-form label{
     font-family: 'Roboto';
     color: var(--off-grey);
     font-weight: 400;
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 0.813rem;
+    line-height: 1.25rem;
 }
 .contact-us-main-form input{
     font-family: 'Roboto';
     color: var(--off-grey);
     font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 0.938rem;
+    line-height: 1.25rem;
 }
 .contact-us-main-form input, .contact-us-main-form textarea{
-    padding: 8px 0px 8px 0px;
-    margin: 10px auto;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    margin: 0.625rem auto;
     box-sizing: border-box;
     border: none;  
-    border-bottom: 1px solid var(--primary-white);
+    border-bottom: 0.063rem solid var(--primary-white);
 }
 .contact-us-main-form button{
     font-family: 'Roboto';
     color: var(--white);
     background: var(--secondary-blue);
     width: 125px;
-    height: 45px;
+    height: 2.813rem;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 0.938rem;
+    line-height: 1.25rem;
 }
 .contact-us-main-form{
-    box-shadow: 0px 4px 28px 0px #0000000D;
+    box-shadow: 0rem 0.25rem 1.75rem 0rem #0000000D;
     background: var(--white);
-    padding: 40px;
-    border: 1px solid var(--primary-white);
-    border-radius: 5px;
+    padding: 2.5rem;
+    border: 0.063rem solid var(--primary-white);
+    border-radius: 0.313rem;
     position: relative;
     bottom: 50%;
-    height: 612px;
+    height: 60.75rem;
 }
 .specifications-range{
     background: #F5F7FD;
-    padding: 20px;
+    padding: 1.25rem;
 }
 .specifications-range-main{
     background: var(--white);
-    box-shadow: 0px 0px 30px rgba(31, 45, 61, 0.15);
-    /* border-radius: 10px; */
-    padding: 20px;
+    box-shadow: 0rem 0rem 1.875rem rgba(31, 45, 61, 0.15);
+    /* border-radius: 0.625rem; */
+    padding: 1.25rem;
     height: 90%;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     position: relative;
     -moz-transition: ease all 0.35s;
     -o-transition: ease all 0.35s;
@@ -1225,28 +1243,28 @@ section.vision .vision-main h3{
 .specifications-range-main h3{
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 24px;
-    line-height: 35px;
+    font-size: 1.5rem;
+    line-height: 2.188rem;
     text-align: center;
     color: var(--primary-color);
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 .specifications-range-main p{
     font-family: 'Roboto';
     font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
     text-align: center;
     color: var(--secondary-blue);
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 .specifications-range-main:hover {
-    top: -5px;
+    top: -0.313rem;
 }
 .specifications-range-main:hover:after {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     left: 0;
     right: auto;
 }
@@ -1257,7 +1275,7 @@ section.vision .vision-main h3{
     bottom: 0;
     left: auto;
     right: 0;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     width: 0;
     background: var(--primary-color);
     -moz-transition: ease all 0.35s;
@@ -1268,15 +1286,15 @@ section.vision .vision-main h3{
 .specifications-range-main span {
     display: flex;
     align-items: left;
-    justify-content: left;
+    justify-content: center;
     object-fit: cover;
     margin: 0 auto;
     /* border-radius: 50%; */
     /* background: white; */
     /* border-radius: 60%; */
     height: 90px;
-    width: 100px;
-    padding: 10px
+    width: 100%;
+    padding: 0.625rem
 }
 .specifications-range-main:hover span{
     color: var(--white);
@@ -1289,15 +1307,15 @@ section.vision .vision-main h3{
     z-index: 1;
 }
 .bis-standards{
-    padding: 30px;
+    padding: 1.875rem;
 }
 .bis-standards-main{
     background: var(--white);
-    box-shadow: 0px 0px 30px rgba(31, 45, 61, 0.15);
-    border-radius: 10px;
-    padding: 20px;
+    box-shadow: 0rem 0rem 1.875rem rgba(31, 45, 61, 0.15);
+    border-radius: 0.625rem;
+    padding: 1.25rem;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     position: relative;
     -moz-transition: ease all 0.35s;
     -o-transition: ease all 0.35s;
@@ -1307,37 +1325,37 @@ section.vision .vision-main h3{
 .bis-standards-main h3{
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 1.875rem;
+    line-height: 2.188rem;
     text-align: center;
     color: var(--primary-color);
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 .bis-standards-main h4{
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 1.875rem;
+    line-height: 2.188rem;
     text-align: center;
     color: var(--primary-color);
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 .bis-standards-main p{
     font-family: 'Roboto';
     font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
     text-align: center;
     color: var(--secondary-blue);
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 .bis-standards-main:hover {
-    top: -5px;
+    top: -0.313rem;
 }
 .bis-standards-main:hover:after {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     left: 0;
     right: auto;
 }
@@ -1348,7 +1366,7 @@ section.vision .vision-main h3{
     bottom: 0;
     left: auto;
     right: 0;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     width: 0;
     background: var(--primary-color);
     -moz-transition: ease all 0.35s;
@@ -1362,9 +1380,9 @@ section.vision .vision-main h3{
     justify-content: left;
     object-fit: cover;
     margin: 0 auto;
-    height: 90px;
-    width: 100px;
-    padding: 10px
+    height: 90rem;
+    width: 100rem;
+    padding: 0.625rem
 }
 .bis-standards-main:hover span{
     color: var(--white);
@@ -1378,75 +1396,75 @@ section.vision .vision-main h3{
 }
 .bis-standards-main{
     text-align: center;
-    margin: 15px auto;
-    padding: 22px 22px 0px 22px;
+    margin: 0.938rem auto;
+    padding: 1.375rem 1.375rem 0rem 1.375rem;
     height: 100%;
     background: var(--white);
-    box-shadow: 0px 4px 30px 0px var(--shadow-color);
+    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
 }
 .bis-standards-content h3{
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
     text-align: center;
     color: var(--secondary-blue);
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 .bis-standards-content h4{
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 1rem;
+    line-height: 1.313rem;
     text-align: center;
     color: var(--secondary-orange);
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 .bis-standards-content p{
     font-family: 'Roboto';
     font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
     text-align: center;
     color: var(--primary-grey);
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 .bis-standards-content img{
     width: auto;
-    padding: 24px;
+    padding: 1.5rem;
 }
 /*====================================================
 Avighna section table css
 ======================================================*/
 .table {
-    margin-top: 20px;
-    border: 1px solid var(--primary-grey) !important;
+    margin-top: 1.25rem;
+    border: 0.063rem solid var(--primary-grey) !important;
     
 }
 .table thead tr {
     background-color: var(--secondary-blue);
     color: var(--white);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 1.625rem;
     text-align: center;
     font-family: 'Roboto';
 }
 .table td {
     color: var(--primary-grey);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 1.375rem;
     text-align: center;
     font-family: 'Roboto';
 }
 th[scope="row"] {
     background: var(--clear-white);
-    border: 1px solid var(--primary-grey);
+    border: 0.063rem solid var(--primary-grey);
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 1.625rem;
     color: var(--primary-grey);
     font-family: 'Roboto';
 }
@@ -1467,7 +1485,7 @@ tr:nth-child(odd) {
     color: var(--secondary-grey);
 }
 .table-shadow{
-    box-shadow: 0px 1px 4px 0px #00000029;
+    box-shadow: 0rem 0.063rem 0.25rem 0rem #00000029;
 }
 .specifications-tin-free-sheet{
     background-color: #F5F7FD;
@@ -1475,24 +1493,24 @@ tr:nth-child(odd) {
 .specifications-tin-free-sheet table td,
 .specifications-tin-free-sheet table th {
     padding: 0.5rem 0.5rem !important;
-    border: 1px solid var(--primary-grey);
+    border: 0.063rem solid var(--primary-grey);
 }
 .galvanized-table-section table th {
     padding: 0.5rem 0.5rem !important;
 }
 .specifications-tin-free-sheet table th{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
     font-family: 'Roboto';
 }
 .specifications-tin-free-sheet table td{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     font-family: 'Roboto';
 }
 .specifications-tin-free-sheet th.centered-header {
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     font-family: 'Roboto';
 }
@@ -1502,8 +1520,8 @@ tr:nth-child(odd) {
 .table-responsive td[rowspan="2"] {
     text-align: center;
     vertical-align: middle;
-    margin: 10px;
-    max-width: 150px;
+    margin: 0.625rem;
+    max-width: 150rem;
 }
 .specifications-tin-free-sheet td.bg {
     background-color: var(--primary-white);
@@ -1516,16 +1534,16 @@ Avighna end table section css
 Avighna all section css
 ======================================================*/
 .developing_end_to_end_digital_sec{
-    padding: 30px 30px;
+    padding: 1.875rem 1.875rem;
 }
 .etp_steel_inner p{
     font-weight: 500;
     font-family: 'Roboto';
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
     text-transform: capitalize;
     color: var(--primary-color);
-    margin-top: 10px;
+    margin-top: 0.625rem;
     display: inline-block;
 }
 .etp_steel_inner {
@@ -1544,11 +1562,11 @@ Avighna all section css
 .galvanized-steel_inner p{
     font-weight: 500;
     font-family: 'Roboto';
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
     text-transform: capitalize;
     color: var(--secondary-blue);
-    margin-top: 10px;
+    margin-top: 0.625rem;
     display: inline-block;
 }
 .galvanized-steel_inner img{
@@ -1560,7 +1578,7 @@ Avighna all section css
 }
 .galvanized-steel_inner img:hover {
     transform: scale(1.4);
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 .galvanized-steel_inner img:hover:after {
     content: '';
@@ -1590,33 +1608,33 @@ Avighna all section css
     opacity: 0;
 }
 .advantages-color-coated{
-    padding: 30px 0px;
+    padding: 1.875rem 0rem;
 }
 .advantages-color-coated-main-cate{
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
     height: 100%;
 }
 .advantages-color-coated-main{
-    box-shadow: 0px 4px 30px 0px var(--shadow-color);
+    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
     background: linear-gradient(180deg, var(--white) 0%, #F4FDFF 100%);
-    padding: 16px;
+    padding: 1rem;
     height: 100%;
 }
 .advantages-color-coated-main h3{
     font-family: 'Roboto';
     font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
     color: var(--primary-blue);
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 .advantages-color-coated-main p{
     font-family: 'Roboto';
     font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 1rem;
+    line-height: 1.375rem;
     color: var(--primary-grey);
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 .advantages-color-coated-main img{
     transition: transform 0.3s ease;
@@ -1625,7 +1643,7 @@ Avighna all section css
 }
 .advantages-color-coated-main img:hover {
     transform: scale(1.1);
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 .advantages-color-coated-main img:hover:after {
     content: '';
@@ -1655,13 +1673,13 @@ Avighna all section css
     opacity: 0;
 }
 .color-coated-steel{
-    padding: 0px 30px;
+    padding: 0rem 1.875rem;
 }
 .cold-rolled-application{
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
 }
 .our-processes{
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 .our-processes-images{
     height: 100%;
@@ -1669,11 +1687,11 @@ Avighna all section css
 .our-processes P{
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
     color: var(--white);
     background-color: var(--secondary-blue);
-    padding: 10px;
+    padding: 0.625rem;
 }
 .our-processes img{
     transition: transform 0.3s ease;
@@ -1685,21 +1703,21 @@ Avighna all section css
 }
 .right-arrow {
     display: inline-block;
-    width: 17px;
-    height: 15px;
+    width: 1.063rem;
+    height: 10.313rem;
     background: url('../images/avighnacustomize/right-arrow.png') no-repeat center center;
     background-size: contain;
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 0.625rem;
     transform: translateY(-50%);
 }
 .tin-mill-products{
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .our-processes{
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 .tin-catalog{
     height: 100%;
@@ -1707,34 +1725,34 @@ Avighna all section css
 .tin-catalog P{
     font-family: 'Roboto';
     font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
     color: var(--white);
     text-align: center;
     background-color: var(--secondary-blue);
-    padding: 14px;
-    margin-left: 10px;
-    margin-right: 10px;
-    transform: translateY(-20px);
+    padding: 0.875rem;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+    transform: translateY(-1.25rem);
 }
 .tin-catalog img{
     transition: transform 0.3s ease;
     width: 100%;
 }
 .avighna-logistics{
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
 }
 .progress {
     margin-top: 15%;
     margin-bottom: 10%;
     display: flex;
-    height: 27px;
+    height: 1.688rem;
     overflow: hidden;
     font-size: .75rem;
     font-family: 'Roboto';
-    border: 3px solid var(--secondary-blue);
+    border: 0.188rem solid var(--secondary-blue);
     background-color: var(--white) !important;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 .progress-center{
     display: flex;
@@ -1746,28 +1764,28 @@ Avighna all section css
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 49px;
-    height: 49px;
+    width: 3.063rem;
+    height: 3.063rem;
     border-radius: 100%;
     overflow: hidden;
     font-family: 'Roboto';
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     background-color: var(--primary-color);
     color: var(--white);
 }
 .upicon-style{
     position: absolute;
-    margin-bottom: 76px;
+    margin-bottom: 4.75rem;
 }
 .upicon-text{
     position: absolute;
     width: 203px;
     margin-bottom: 14%;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     font-family: 'Roboto';
-    line-height: 24px;
+    line-height: 1.5rem;
     color: var(--secondary-blue);
     white-space: normal;
     text-transform: capitalize;
@@ -1776,26 +1794,26 @@ Avighna all section css
     position: absolute;
     width: 203px;
     margin-bottom: 10%;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     font-family: 'Roboto';
-    line-height: 24px;
+    line-height: 1.5rem;
     color: var(--secondary-blue);
     white-space: normal;
     text-transform: capitalize;
 }
 .downicon-style{
     position: absolute;
-    margin-top: 76px;
+    margin-top: 4.75rem;
 }
 .downicon-text{
     position: absolute;
     width: 203px;
     margin-top: 15%;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     font-family: 'Roboto';
-    line-height: 24px;
+    line-height: 1.5rem;
     color: var(--secondary-blue);
     white-space: normal;
     text-transform: capitalize;
@@ -1804,10 +1822,10 @@ Avighna all section css
     position: absolute;
     width: 203px;
     margin-top: 10%;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     font-family: 'Roboto';
-    line-height: 24px;
+    line-height: 1.5rem;
     color: var(--secondary-blue);
     white-space: normal;
     text-transform: capitalize;
@@ -1826,8 +1844,8 @@ Avighna all section css
     justify-content: center;
 }
 .in-house-coil{
-    margin-bottom: 70px;
-    padding: 30px 30px;
+    margin-bottom: 4.375rem;
+    padding: 1.875rem 1.875rem;
 }
 /*====================================================
 Avighna end all section css
@@ -1836,7 +1854,7 @@ Avighna end all section css
 /*====================================================
 Avighna responsive Adjust styles for all screens css
 ======================================================*/
-@media (max-width: 768px) {    
+ @media (max-width: 768) {    
     .progress {
         flex-direction: column;
         align-items: center;
@@ -1848,31 +1866,31 @@ Avighna responsive Adjust styles for all screens css
     .progress-center {
         flex-direction: column;
         align-items: center;
-        margin: 20px 0;
+        margin: 1.25rem 0;
     }
     .progress span {
-        font-size: 16px;
+        font-size: 1rem;
     }
     .upicon-style, .downicon-style {
-        margin: 10px 0;
+        margin: 0.625rem 0;
     }
     .upicon-text, .downicon-text, .upicon-text-minheight, .downicon-text-minheight {
-        margin: 10px 0;
+        margin: 0.625rem 0;
         padding: 0;
-        font-size: 14px;
+        font-size: 0.875rem;
         width: auto;
         text-align: center;
     }    
 }
-@media (min-width: 280px) and (max-width: 767px) {
+@media (min-width: 280) and (max-width: 767) {
     .w-100 {
         text-align: right;
         position: absolute;
-        top: 20px;
-        right: 10px;
+        top: 1.25rem;
+        right: 0.625rem;
     }
     .navbar-toggler {
-        margin-bottom: 17px;
+        margin-bottom: 1.063rem;
     }
     div#navbarSupportedContent {
         background-color: var(--white);
@@ -1887,7 +1905,7 @@ Avighna responsive Adjust styles for all screens css
         top: 80%;
     }
     .about-digital {
-        padding: 30px 0;
+        padding: 1.875rem 0;
     }
     .cold-rolled-application {
         margin-bottom: 0;
@@ -1895,36 +1913,36 @@ Avighna responsive Adjust styles for all screens css
     .subscribe-to-our-newsletters-parent {
         top: 3%;
         left: 3%;
-        gap: 18px;
+        gap: 1.125rem;
     }
     .container-justify {
         position: relative;
     }
     .subscribe-to-our {
-        font-size: 22px;
-        line-height: 25px;
+        font-size: 1.375rem;
+        line-height: 1.563rem;
     }
     .and-because-your {
-        font-size: 12px;
+        font-size: 0.75rem;
     } 
     .newsletters-right-sec{
         left: 0%;
     }
     .newsletters-right-sec-input input, .newsletters-right-sec-input button {
-        height: 38px;
-        padding: 5px;
+        height: 2.375rem;
+        padding: 0.313rem;
     }
     .newsletters-right-sec-input {
-        margin: 5px auto 10px;
+        margin: 0.313rem auto 0.625rem;
     }
     .newsletters-right-sec h3 {
-        font-size: 22px;
+        font-size: 1.375rem;
         margin-top: 0;
     }
     .contact-us-content {
         left: auto;
         height: auto;
-        padding: 80px 0px;
+        padding: 80 0rem;
     }
     .galvanized-products-cat{
         height: auto;
@@ -1944,59 +1962,59 @@ Avighna responsive Adjust styles for all screens css
         top: 0;
     }
     .ecommerce-transformation h1 {
-        font-size: 32px !important;
+        font-size: 2rem !important;
     }
     .about-transformation {
         height: auto;
     }
     .transmission-center {
-        padding: 20px;
+        padding: 1.25rem;
     }
     .transmission-center h1 {
-        margin-top: 45px;
-        line-height: 40px;
+        margin-top: 2.813rem;
+        line-height: 2.5rem;
     }
     .ecommerce-transformation h2 {
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 1rem;
+        line-height: 1.375rem;
     }
     .ecommerce-transformation p {
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 0.75rem;
+        line-height: 1.125rem;
     }
     .about-us h1 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
     .about-us p, .about-us p span {
-        font-size: 16px;
+        font-size: 1rem;
     }
     .logo-main {
         width: 100%;
         height: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
         left: 0;
     }
     .search-input {
         width: 100%;
     }
     .about-transformation h1 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
     .inner_heading{
-        font-size: 24px;
+        font-size: 1.5rem;
         top: 0;
         line-height: 0;
     }
     h3.inner_heading-50 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
     h3.inner_heading-600 {
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 0;
     }
     .developing_main_ausiness_activities_images {
         position: relative;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
     .developing_main_ausiness_activities_content {
@@ -2009,11 +2027,11 @@ Avighna responsive Adjust styles for all screens css
         width: 100%;
     }
     .contact-us-main-form {
-        box-shadow: 0px 4px 28px 0px #0000000D;
+        box-shadow: 0rem 0.25rem 1.75rem 0rem #0000000D;
         background: var(--white);
-        padding: 40px;
-        border: 1px solid var(--primary-white);
-        border-radius: 5px;
+        padding: 2.5rem;
+        border: 0.063rem solid var(--primary-white);
+        border-radius: 0.313rem;
         position: relative;
         bottom: 0% !important;
     }
@@ -2025,16 +2043,16 @@ Avighna responsive Adjust styles for all screens css
     }
     .our-services-inner {
         flex: 0 0 100%;
-        margin: 10px auto;
+        margin: 0.625rem auto;
     }
     .our-suppliers-inner {
         flex: 0 0 100%;
-        margin: 10px auto;
+        margin: 0.625rem auto;
     }
     .bottom_area_footer {
         margin-top: 1rem;
         display: flex;
-        padding-top: 30px;
+        padding-top: 1.875rem;
         flex-direction: column;
     }    
     .bottom_left_area ul {
@@ -2051,29 +2069,29 @@ Avighna responsive Adjust styles for all screens css
         margin-top: 5%;
     }
     .logo-footer {
-        margin-bottom: 15px;
+        margin-bottom: 0.938rem;
     }
     .social-address {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 }
-@media(min-width:767px) and (max-width: 991px) {
+@media(min-width:767) and (max-width: 991) {
     .galvanized-products-cat{
         height: auto;
     }
     .etp_steel_inner {
         flex: 0 0 48%;
         margin-left: 0;
-        margin-bottom: 25px;
+        margin-bottom: 1.563rem;
     }
     .our-services-inner {
         flex: 0 0 48%;
-        margin-bottom: 25px;
+        margin-bottom: 1.563rem;
     }
     .our-suppliers-inner {
         flex: 0 0 48%;
         margin-left: 0;
-        margin-bottom: 25px;
+        margin-bottom: 1.563rem;
     }
     .galvanized-steel_inner {
         flex: 0 0 100%;
@@ -2085,44 +2103,44 @@ Avighna responsive Adjust styles for all screens css
         width: 100%;
     }
     .shoping_cart {        
-        margin: 25px 0px 10px 0px;
+        margin: 1.563rem 0rem 0.625rem 0rem;
         position: relative;
     }
     .shoping_cart a{
         position: relative;
-        padding-left: 0px;
-        left: 0px;
+        padding-left: 0rem;
+        left: 0rem;
     }
     .contact-us-main-form {
-        box-shadow: 0px 4px 28px 0px #0000000D;
+        box-shadow: 0rem 0.25rem 1.75rem 0rem #0000000D;
         background: var(--white);
-        padding: 40px;
-        border: 1px solid var(--primary-white);
-        border-radius: 5px;
+        padding: 2.5rem;
+        border: 0.063rem solid var(--primary-white);
+        border-radius: 0.313rem;
         position: relative;
         bottom: 50%;
         left: 10%;
     }
     .search-input{
-        border: 1px solid var(--secondary-white);
-        width: 158px;
+        border: 0.063rem solid var(--secondary-white);
+        width: 158;
     }
 }
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992) and (max-width: 1200) {
     .shoping_cart {
-        margin: 25px 0px 10px 0px;
+        margin: 1.563rem 0rem 0.625rem 0rem;
         position: relative;
     }    
     .search-input{
-        border: 1px solid var(--secondary-white);
-        width: 300px;
+        border: 0.063rem solid var(--secondary-white);
+        width: 300;
     }
     .contact-us-main-form {
-        box-shadow: 0px 4px 28px 0px #0000000D;
+        box-shadow: 0rem 0.25rem 1.75rem 0rem #0000000D;
         background: var(--white);
-        padding: 40px;
-        border: 1px solid var(--primary-white);
-        border-radius: 5px;
+        padding: 2.5rem;
+        border: 0.063rem solid var(--primary-white);
+        border-radius: 0.313rem;
         position: relative;
         bottom: 50%;
     }
