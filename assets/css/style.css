@@ -161,7 +161,7 @@ Avighna header css
 }
 .dropdown-item:focus, .dropdown-item:hover {
     color: var(--dark-grey) !important;
-    background-color: var(--primary-color) !important;
+    /* background-color: var(--primary-color) !important; */
 }
 .dropdown-item {
     color: var(--secondary-grey) !important;
@@ -311,7 +311,7 @@ Avighna about css
 }
 .ecommerce-transformation h1{
     font-family: 'Roboto';
-    color: var(--white);
+    color: var(--green);
     margin-top:0;
     font-weight: 700;
     font-size: 3.438rem;
