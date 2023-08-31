@@ -87,7 +87,7 @@ Avighna scrool css
     text-align: center;
     width: 2.5rem;
     border-radius: 50%;
-    display: flex !important;
+    display: flex;
     align-items: center;
     justify-content: center;
 }

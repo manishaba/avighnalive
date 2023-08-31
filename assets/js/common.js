@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // $("#header").load("../../components/header.html");
-    // $("#footer").load("../../components/footer.html");
-    // $("#query").load("../../components.query.html");
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+    $("#query").load("query.html");
+
     
     var scrollPositionToShow = 200;
     var scrollUpButton = document.createElement("div");
@@ -34,13 +35,5 @@ document.addEventListener("DOMContentLoaded", function() {
                 requestAnimationFrame(scrollToTopAnimation);
             }
         }
-    }  
-    // $('.topics a').on('click', function() {
-    //     $select = $('<div class="syllabus"></div>');
-    //     $(this).parents('li').each(function(n, li) {
-    //         $select.prepend(' / ',$(li).children('a').clone());
-    //     });
-    //     $('.display').html(
-    //     $select.prepend('<a href="#syllabus">Home</a>'));
-    // })
+    }
 });
