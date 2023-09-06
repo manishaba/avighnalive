@@ -294,6 +294,7 @@ Avighna about css
 }
 .service_area{
     margin-top: 7.813rem;
+    overflow-x: none;
 }
 .transmission-center{
     display: flex;
@@ -1042,6 +1043,7 @@ section.vision .vision-main h3{
 }
 .about-digital-new{
     position: relative;
+    overflow-x: none;
 }
 .transmission-center-new{
     display: flex;
