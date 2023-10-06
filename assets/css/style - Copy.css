@@ -172,22 +172,21 @@ Avighna header css
     color: var(--primary-color) !important;
 }
 .dropdown-item:focus, .dropdown-item:hover {
-    color: var(--white) !important;
-    background-color: var(--secondary-blue);
+    color: var(--dark-grey) !important;
 }
 .dropdown-item {
-    color: var(--secondary-blue) !important;
-    font-size: 1rem;
+    color: var(--secondary-grey) !important;
+    font-size: 0.875rem;
     font-weight: 400;
-    line-height: 1.25rem;
+    line-height: 1.063rem;
     padding: 0.531rem 1rem;
-    font-family: 'Poppins';
+    font-family: 'Roboto';
 }
 .dropdown-menu {
     padding: 0;
 }
 .dropdown-item:active {
-    background-color: var(--secondary-blue) !important;
+    background-color: var(--primary-color) !important;
 }
 .input-group .form-control {
     height: 2.5rem;
@@ -251,118 +250,12 @@ Avighna header css
 /*====================================================
 Avighna about css
 ======================================================*/
-.service_area{
-    margin-top: 7.813rem;
-    overflow-x: none;
-    background: url('../images/about/banner.png') no-repeat;
-    background-size: cover;
-    background-position: center;
+.banner-home{
+    position: relative;
+    top: 8rem;    
 }
-.service_area-one{
-    margin-top: 7.813rem;
-    overflow-x: none;
-    background: url('../images/about/banner1.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.transmission-center{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-}
-.ecommerce-transformation-main{
-    height: 450px;     
-}
-.ecommerce-transformation-main h1{
-    font-family: 'Montserrat', sans-serif;
-    color: var(--white);
-    margin-top:0;
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 3.063rem;
-    text-transform: capitalize;
-}
-.ecommerce-transformation-main h2{
-    font-family: 'Montserrat', sans-serif;
-    color:var(--white);
-    margin-top:0;
-    font-weight: 600;
-    font-size: 3.438rem;
-    line-height: 4.188rem;
-    text-transform: capitalize;
-}
-.ecommerce-transformation-main p{
-    font-family: 'Roboto';
-    color:var(--white);
-    margin-top:0;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 2.563rem;
-    /* text-transform: capitalize; */
-}
-.ecommerce-transformation{
-    height: 434px;     
-    border: 20px solid #fff;
-    border-radius: 40px;
-    margin: 40px;
-}
-.ecommerce-transformation img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.ecommerce-transformation-non{
-    height: 434px;     
-    margin: 40px;
-}
-.ecommerce-transformation-non img{
-    width: 100%;
-}
-
 .about-digital{
-    padding: 1.75rem 0;
-}
-.about-us h1{
-    font-family: 'Montserrat', sans-serif;
-    color: var(--secondary-blue);
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 2.813rem;
-    line-height: 3.313rem;
-    letter-spacing: -1;
-    text-transform: capitalize;
-}
-.about-us p{
-    font-family: 'Roboto';
-    color: var(--primary-grey);
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-}
-.about-us h2{
-    font-family: 'Roboto';
-    color: var(--secondary-blue);
-    margin-top:0;
-    font-weight: 700;
-    font-size: 3.125rem;
-    line-height: 4.063rem;
-    text-align: center;
-    text-transform: capitalize;
-}
-.about-us h6{
-    font-family: 'Roboto';
-    color: var(--primary-grey);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.438rem;
-    text-align: center;
-}
-.about-us p span{
-    font-family: 'Roboto';
-    color: var(--primary-grey);
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.688rem;
+    padding: 3.75rem 0;
 }
 .about-banner{
     padding: 3.75rem 0;
@@ -410,162 +303,222 @@ Avighna about css
     margin-left: 0.625rem;
     line-height: 1.813rem;
 }
+.service_area{
+    margin-top: 7.813rem;
+    overflow-x: none;
+    background: url('../images/about/banner.png') no-repeat center center;
+}
+.transmission-center{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.ecommerce-transformation-main{
+    height: 450px;     
+}
+.ecommerce-transformation-main h1{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+    margin-top:0;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.063rem;
+    text-transform: capitalize;
+}
+.ecommerce-transformation-main h2{
+    font-family: 'Montserrat', sans-serif;
+    color:var(--white);
+    margin-top:0;
+    font-weight: 600;
+    font-size: 3.438rem;
+    line-height: 4.188rem;
+    text-transform: capitalize;
+}
+.ecommerce-transformation-main p{
+    font-family: 'Roboto';
+    color:var(--white);
+    margin-top:0;
+    bottom: 0;
+    font-weight: 400;
+    font-size: 0.938rem;
+    line-height: 1.125rem;
+}
+.ecommerce-transformation{
+    height: 434px;     
+    border: 20px solid #fff;
+    border-radius: 40px;
+    margin: 40px;
+}
+.ecommerce-transformation img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 .break-word{
     display: block;
+}
+
+.Breadcrum ul {
+    display: flex;
+    gap: 0.313rem;
+    padding-left: 0rem;
+}
+.Breadcrum ul li {
+    list-style: none;
+}
+.Breadcrum ul li a{
+   text-decoration: none;
+   color:var(--white);
+   font-weight: 400;
+   font-size: 0.938rem;
+}
+.Breadcrum ul li a:active {
+    color: var(--primary-color);
 }
 .selected-page{
     color: var(--primary-color) !important;
 }
-
+.about-us h1{
+    font-family: 'Roboto';
+    color: var(--secondary-blue);
+    margin-top:0;
+    font-weight: 800;
+    font-size: 2.813rem;
+    line-height: 3.313rem;
+    text-transform: capitalize;
+}
+.about-us p{
+    font-family: 'Roboto';
+    color: var(--primaary-grey);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.688rem;
+}
+.about-us h2{
+    font-family: 'Roboto';
+    color: var(--secondary-blue);
+    margin-top:0;
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 4.063rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+.about-us h6{
+    font-family: 'Roboto';
+    color: var(--primary-grey);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.438rem;
+    text-align: center;
+}
+.about-us p span{
+    font-family: 'Roboto';
+    color: var(--primary-grey);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.688rem;
+}
 /*====================================================
 Avighna footer css
 ======================================================*/
 .footer-updated {
     padding: 0.625rem 0rem 0rem;
-    background: url('../images/about/footer-main-section.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-.newsletters{
-    padding: 1.875rem 1.875rem;
-}
-.middle-area {
-    background: linear-gradient(180deg, #1D3679 0%, #162D6C 100%);
-    padding: 20px;
-    top: -20px;
-}
-.bottom-footer-area {
-    background: var(--secondary-blue);
-    padding: 10px;
-}
-.newsletters-left-sec{
-    position: relative;
-    height: 400px;
-}
-.newsletters-left-sec img{
-    width: 100%;
-}
-.logo_area p{
-    font-family: Poppins;
-    color: var(--white);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    margin-top: 20px;
-}
-.newsletters-right-sec{
-    position: relative;
-    left: 5%;
-}
-.newsletters-right-sec h3{
-    font-size: 2.188rem;
-    font-weight: 600;
-    font-family: 'Roboto';
-    color: var(--white);
-    margin-top: 25%;
-}
-.newsletters-right-sec p{
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 400;
-    font-family: 'Roboto';
-    color: var(--white);
-}
-.newsletters-right-sec-input{
-    display: flex;
-    margin: 1.25rem auto;
-    left: 0.625rem;
-}
-.newsletters-right-sec-input input{
-    font-family: 'Roboto';
-    color: var(--off-grey);
-    font-weight: 400;
-    font-size: 0.938rem;
-    line-height: 1.25rem;
-    width: 100%;
-    height: 3.125rem;
-}
-.newsletters-right-sec-input button{
-    font-family: 'Roboto';
-    color: var(--white);
-    background: var(--secondary-orange);
-    width: 97px;
-    height: 3.125rem;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    margin-left: 0.625rem;
-}
-.btn-primary:hover {
-    color: var(--white);
-    background-color: var(--secondary-orange) !important;
-    border-color: var(--secondary-orange) !important;
-    border: none !important;
+    background: #FBF6F2;    
 }
 .logo-footer {
     max-width: 150px;
 }
-
-.social-media-icons {
-    color: var(--white);
+.social-contact h5{
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.375rem;
+    color: var(--secondary-blue);
+    margin-top: 20%;
+    font-family: 'Roboto';
+}
+/* .social-address img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    color: #FE7A19;
+ } */
+ .social-media-icons {
+    color: var(--secondary-blue);
     margin-right: 0.313rem;
     font-size: 1.375rem;
     cursor: pointer;
-}
-.social-media-icons:hover {
-    color: var(--secondary-orange);
-}
-
+ }
+ .social-media-icons:hover {
+    color: var(--primary-color);
+ }
 .social-address img{
     margin: 0.625rem auto;
 }
 .footer-head h4{
     font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.688rem;
-    color: var(--white);
-    margin-bottom: 1rem;
-    margin-left: 1.85rem;
-    font-family: 'Poppins';
+    font-weight: 600;
+    line-height: 1.625rem;
+    color: var(--primary-grey);
+    margin-bottom: 1.5rem;
+    font-family: 'Roboto';
 }
-.footer-head ul li{
-    font-size: 1rem;
-    list-style: none;
-    font-weight: 400;
-    line-height: 1.875rem;
-    color: var(--white);
-    font-family: 'Poppins';
-}
-.footer-head-contact h4{
+.footer-head-address h4{
     font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.625rem;
+    color: var(--primary-grey);
+    margin-bottom: 5%;
+    font-family: 'Roboto';
+}
+.our_services_ul_icons a p{
+    font-size: 1rem;
+    line-height: 1.5rem;
     font-weight: 500;
-    line-height: 1.688rem;
-    color: var(--white);
-    margin-bottom: 1rem;
-    font-family: 'Poppins';
+    color: var(--primary-grey);
+    margin-top: 1.25rem;
+    font-family: 'Roboto';
+}
+.our_services_ul_icons a p:hover{
+    color: var(--primary-color);
+}
+.our_services_ul_icons a{
+    text-decoration: none!important;
+    color: var(--primary-grey)!important;
+}
+.footer-address{
+    display: flex;
+    padding: 0rem;
 }
 .content h5{
-    color: var(--white);
+    margin-left: 0.625rem;
+    color: var(--primary-grey);
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 0rem;
-    font-family: 'Poppins';
+    font-family: 'Roboto';
 
 }
 .content p{
-    color: var(--white);
+    margin-left: 0.625rem;
+    color: var(--primary-grey);
     font-size: 1rem;
     font-weight: 400;
-    font-family: 'Poppins';
+    font-family: 'Roboto';
+}
+.addressicon img{
+    position: relative;
+    top: 0%;
 }
 .bottom_area_footer {
+    margin-top: 1rem;
     display: flex;
+    padding-top: 1.875rem;
 }
 .bottom_area_footer .bottom_left_area {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 45%;
 }
 .bottom_left_area ul {
     display: flex;
@@ -574,15 +527,39 @@ Avighna footer css
 }
 .bottom_left_area ul li {
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-family: 'Roboto';
-    font-size: 0.813rem;
+    font-size: 1rem;
     line-height: 1.5rem;
-    margin-top: 0.5rem;
     text-transform: capitalize;
-    color: var(--white);
+    color: var(--off-grey);
     cursor: pointer;
     margin-right: 1.875rem;
+}
+.bottom_right_area p {
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    line-height: 2rem;
+    text-transform: capitalize;
+    color: var(--off-grey);
+}
+.bottom_right_area {
+    margin: 0.5rem 1.875rem 0.875rem 0rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottom_right_area p span {
+    color: #F85149;
+    font-weight: 600;
+}
+.bottom_right_area img{
+    margin-left: 0.625rem;
+    display: flex;
+    justify-content: flex-end;
+    height: fit-content;
 }
 
 /*====================================================
@@ -601,26 +578,14 @@ h3.inner_heading{
 h3.inner_heading span{
     display: block;
 }
-h3.inner_heading-700{
-    font-family: 'Montserrat';
+h3.inner_heading-600{
+    font-family: 'Roboto';
     font-size: 2.813rem;
-    font-weight: 700;
-    line-height: 3.438rem;
-    text-align: left;
-    text-transform: capitalize;
-    color: var(--white);
-    /* padding-top: 3rem; */
-    margin-bottom: 1.25rem;
-}
-h3.inner_heading-700-blue{
-    font-family: 'Montserrat';
-    font-size: 2.813rem;
-    font-weight: 700;
-    line-height: 3.438rem;
-    text-align: left;
+    font-weight: 600;
+    line-height: 3.688rem;
+    text-align: center;
     text-transform: capitalize;
     color: var(--secondary-blue);
-    /* padding-top: 3rem; */
     margin-bottom: 1.25rem;
 }
 h3.inner_heading-600 span{
@@ -640,14 +605,6 @@ h3.inner_heading-50{
 h3.inner_heading-50 span{
     display: block;
 }
-
-
-
-
-
-
-
-
 .developing_main_ausiness_activities_images {
     position: relative;
     margin-top: 1.25rem;
@@ -658,79 +615,150 @@ h3.inner_heading-50 span{
     height: auto;
 }
 .developing_main_ausiness_activities_content h5 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 2.813rem;
-    line-height: 3.813rem;
-    letter-spacing: -1;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 2.375rem;
+    line-height: 2.813rem;
     color: var(--secondary-orange);
 }
 .developing_main_ausiness_activities_content h6 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 2.625rem;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
     color: var(--secondary-blue);
 }
 .developing_main_ausiness_activities_content p {
     font-weight: 400;
     font-family: 'Roboto';
-    font-size: 1.25rem;
-    line-height: 1.75;
+    font-size: 1rem;
+    line-height: 1.6;
     margin-top: 0.625rem;
     margin-bottom: 1.25rem;
-    letter-spacing: 0.5px;
     color: var(--primary-grey);
 }
-
-p.readmore{
-    font-family: 'Poppins';
-    width: fit-content;
-    padding: 15px 30px 15px 30px;
-    display: block;
-    font-weight: 500;
-    font-size: 1rem;
-    border-radius: 4px;
-    border: 1px solid #1D3679;
-    color: var(--secondary-blue);
+span.green{
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 2.375rem;
+    line-height: 2.813rem;
+    color: var(--green);
 }
-.our-product-range {
-    background-color: #1D3679;
-    padding: 40px 0;
-    /* height: 100vh; */
+span.green-b{
+    color: var(--green);
+}
+span.readmore{
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--secondary-orange);
 }
 .our-product-range-images {
-    height: 157px;
-    width: 157px;
-    border-radius: 16px;
-    background: var(--white);
-    flex: 1;
+    margin-bottom: 3.75rem;
+    margin-top: 2.5rem;
+    position: relative;    
+}
+.our-product-range h1 {
+    position: absolute;
+    top: 60%;
+    left: 0.625rem;
+    right: 0.625rem;
+    height: 11.25rem;
+    color: var(--secondary-blue);
     text-align: center;
-    margin: 20px;
-}
-
-.our-product-range h5 {
-    font-family: 'Montserrat';
-    font-weight: 600;
+    transform: translateY(59px);
+    font-weight: 700;
     font-size: 1.25rem;
-    line-height: 1.563rem;
-    color: var(--white);
-    text-align: left;
-    margin-top: 20px;
-
+    padding: 0.625rem;
+    background: var(--white);
+    font-family: 'Roboto';
+    border: 0.063rem solid var(--primary-white);
+    text-transform: capitalize;
+    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
 }
-
+.our-product-range h2 {
+    position: absolute;
+    top: 65%;
+    left: 0.625rem;
+    right: 0.625rem;
+    height: 93px;
+    color: var(--secondary-blue);
+    text-align: center;
+    transform: translateY(59px);
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 0.875rem;
+    background: var(--white);
+    font-family: 'Roboto';
+    border: 0.063rem solid var(--primary-white);
+    text-transform: capitalize;
+    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
+}
+.our-product-range h5 {
+    position: absolute;
+    top: 70%;
+    left: 0.625rem;
+    right: 0.625rem;
+    height: 4.25rem;
+    color: var(--secondary-blue);
+    text-align: center;
+    transform: translateY(59px);
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 1.25rem;
+    background: var(--white);
+    font-family: 'Roboto';
+    border: 0.063rem solid var(--primary-white);
+    text-transform: capitalize;
+    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
+}
+.our-product-range h4 {
+    position: absolute;
+    top: 65%;
+    left: 0.625rem;
+    right: 0.625rem;
+    height: 68px;
+    color: var(--secondary-blue);
+    text-align: center;
+    transform: translateY(59px);
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 0.875rem;
+    background: var(--white);
+    font-family: 'Roboto';
+    border: 0.063rem solid var(--primary-white);
+    text-transform: capitalize;
+    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
+}
+.our-product-range h6 {
+    position: absolute;
+    top: 78%;
+    width: 100%;
+    height: 11.063rem;
+    color: var(--secondary-blue);
+    text-align: center;
+    transform: translateY(59px);
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    padding: 0.875rem;
+    background: var(--white);
+    font-family: 'Roboto';
+    border: 0.063rem solid var(--primary-white);
+    text-transform: capitalize;
+    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
+}
 .our-product-range p {
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    color: var(--white);
-    text-align: left;
-    margin-top: 10px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.438rem;
+    color: var(--secondary-grey);
 }
 .our-product-range img {
-    margin: 20px auto;
+    width: 100%;
     transition: transform 0.3s ease;
 }
 .our-product-range img:hover {
@@ -746,7 +774,7 @@ p.readmore{
     width: 100%;
     height: 100%;
     z-index: -1;
-    /* background-color: rgba(255, 255, 255, 0.8); */
+    background-color: rgba(255, 255, 255, 0.8);
     transition: opacity 0.3s ease;
 }
 .our-product-range-images img:hover:before {
@@ -764,24 +792,11 @@ p.readmore{
 .our-product-range-images img:hover:after {
     opacity: 0;
 }
-.our-services {
-    background: url('../images/about/our-services-section-main.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 40px 0;
-    height: 75vh;
+.our-services{
+    margin-top: 3.125rem;
 }
-
-
-.our-services-inner {
-    box-shadow: 0px 2px 15px 0px #00000033;
-    background: #FFFFFF;
-    flex: 1;
-    text-align: center;
-    margin: 20px;
-}
-
 .our-services-inner h5{
+    position: relative;
     color: var(--secondary-blue);
     text-align: center;
     font-weight: 700;
@@ -789,17 +804,38 @@ p.readmore{
     padding-top: 1.125rem;
     height: 60px;
     text-transform: capitalize;
+    background: var(--white);
     font-family: 'Roboto';
+    border: 0.063rem solid var(--primary-white);
+    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
 }
-
-
+.our-services-inner h6{
+    position: relative;
+    bottom: 10%;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+    color: var(--secondary-blue);
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding-top: 0.75rem;
+    height: 75px;
+    text-transform: capitalize;
+    background: var(--white);
+    font-family: 'Roboto';
+    border: 0.063rem solid var(--primary-white);
+    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
+}
+.our-services-inner {
+    flex: 1;
+    text-align: center;
+}
 .our-services-inner img{
     margin: 0 auto;
+    width: 100%;
 }
 .our-services-inner img {
     width: 100%;
-    margin: 20px auto;
-    border-radius: 14px;
     transition: transform 0.3s ease;
 }
 .our-services-inner img:hover {
@@ -899,83 +935,124 @@ section.customization-services p{
 .our-suppliers-inner img:hover:after {
     opacity: 0;
 }
-.our-vision{
+.newsletters{
+    padding: 1.875rem 1.875rem;
+    /* margin-top: 100px; */
+}
+.newsletter-bg{
+    background-color: var(--off-white);
+}
+.newsletters-left-sec{
+    position: relative;
+    height: 400px;
+}
+.mask-group-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 100%;
+}
+.subscribe-to-our-newsletters-parent {
+    position: absolute;
+    top: 57px;
+    left: 61.88px;
+    /* width: 400px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.563rem;
+}
+.and-because-your, .subscribe-to-our {
+    position: relative;
+    display: inline-block;
+}
+.subscribe-to-our{
+    font-weight: 600;
+    line-height: 3.375rem;
+    font-size: 2.813rem;
+    color: var(--white);
+    font-family: 'Roboto';
+}
+.and-because-your {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--white);
+    font-family: 'Roboto';
+}
+.newsletters-right-sec{
+    position: relative;
+    left: 5%;
+}
+.newsletters-right-sec h3{
+    font-size: 2.188rem;
+    font-weight: 600;
+    font-family: 'Roboto';
+    color: var(--secondary-blue);
+    margin-top: 25%;
+}
+.newsletters-right-sec-input{
+    display: flex;
+    margin: 1.25rem auto;
+    left: 0.625rem;
+}
+.newsletters-right-sec-input input{
+    font-family: 'Roboto';
+    color: var(--off-grey);
+    font-weight: 400;
+    font-size: 0.938rem;
+    line-height: 1.25rem;
+    width: 60%;
+    height: 3.125rem;
+}
+.newsletters-right-sec-input button{
+    font-family: 'Roboto';
+    color: var(--white);
+    background: var(--secondary-blue);
+    width: 97px;
+    height: 3.125rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-left: 0.625rem;
+}
+.btn-primary:hover {
+    color: var(--white);
+    background-color: var(--secondary-blue) !important;
+    border-color: var(--secondary-blue) !important;
+}
+.newsletters-right-sec p{
+    position: relative;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Roboto';
+    line-height: 1.375rem;
+    color: var(--off-grey);
+}
+.vision{
     margin-top: 3.125rem;
     padding: 0.625rem;
 }
-.our-vision-center{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-}
-.our-vision-content h1{
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 2.813rem;
-    line-height: 3.625rem;
-    color: var(--secondary-blue);
-}
-.our-vision-content p{
+section.vision p{
     font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    color: var(--primary-grey);
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 2.625rem;
+    font-style: italic;
+    text-align: center;
+    color: var(--secondary-orange);
 }
-.our-vision-images img{
-    width: 100%;
-}
-.row-containerr {
-    display: flex;
-    margin: 10px;
-}
-.our-vision-images-content{
-    box-shadow: 0px 2px 15px 0px #00000033;
-    width: fit-content;
-    height: auto;
-    padding: 30px;
-    border-radius: 24px;
-    position: relative;
-    bottom: 194%;
-    left: 57%;
-    margin: 20px;
-    z-index: 1;
-
-}
-.our-vision-images-content-left{
-    box-shadow: 0px 2px 15px 0px #00000033;
-    width: fit-content;
-    padding: 30px;
-    border-radius: 24px;
-    position: relative;
-    bottom: 174%;
-    left: 7%;
-    margin: 20px;
-    z-index: 1;
-
-}
-.our-vision-content-images p{
+section.vision .vision-main h3{
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 1.75rem;
     text-align: center;
-    margin-top: 16px;
     color: var(--primary-grey);
+    margin-top: 0.625rem;
 }
-.our-vision-content-images{
-    text-align: center;
-}
-.our-vision-content-images img{
-    max-width: 100%;
-    height: auto;
-}
-
-
-
-
-
-
 .service_area-new{
     margin-top: 3.125rem;
 }
