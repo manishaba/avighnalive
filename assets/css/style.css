@@ -376,23 +376,23 @@ tbody, td, tfoot, th, thead, tr {
     border-color: inherit;
     border: none !important;
     border-width: 0;
-    padding: 8px 12px 8px 12px;
 }
 .custom-th {
     font-family: 'Poppins';
     border-bottom: 1px solid #DDDDDD !important;
     font-size: 12px !important;
-    line-height: 18px;
+    line-height: 24px;
     font-weight: 600 !important;
-    padding: 8px 12px 8px 12px;
     color: #5B5B5B !important;
+    border-left: 10px solid transparent !important;
+    border-right: 10px solid transparent !important;
 }
 tbody tr td:first-child {
     font-family: 'Poppins';
     font-size: 14px !important;
     line-height: 21px;
     font-weight: 400 !important;
-    padding: 8px 12px 8px 12px;
+    padding: 4px 12px 4px 12px;
     color: #5B5B5B !important;
 
 }
@@ -401,7 +401,7 @@ tbody tr td:nth-child(2) {
     font-size: 14px !important;
     line-height: 21px;
     font-weight: 500 !important;
-    padding: 8px 12px 8px 12px;
+    padding: 4px 12px 4px 12px;
     color: #5B5B5B !important;
 }
 .custom-word{
@@ -860,7 +860,6 @@ h3.inner_heading-700-blue{
     text-align: left;
     text-transform: capitalize;
     color: var(--secondary-blue);
-    /* padding-top: 3rem; */
     margin-bottom: 1.25rem;
 }
 h3.inner_heading-600 span{
@@ -937,7 +936,6 @@ p.readmore{
 .our-product-range {
     background-color: #1D3679;
     padding: 40px 0;
-    /* height: 100vh; */
 }
 .our-product-range-images {
     height: 157px;
@@ -948,7 +946,6 @@ p.readmore{
     text-align: center;
     margin: 20px;
 }
-
 .our-product-range h5 {
     font-family: 'Montserrat';
     font-weight: 600;
@@ -957,9 +954,7 @@ p.readmore{
     color: var(--white);
     text-align: left;
     margin-top: 20px;
-
 }
-
 .our-product-range p {
     font-family: 'Roboto';
     font-weight: 500;
@@ -986,7 +981,6 @@ p.readmore{
     width: 100%;
     height: 100%;
     z-index: -1;
-    /* background-color: rgba(255, 255, 255, 0.8); */
     transition: opacity 0.3s ease;
 }
 .our-product-range-images img:hover:before {
@@ -1018,7 +1012,6 @@ p.readmore{
     text-align: center;
     margin: 20px;
 }
-
 .our-services-inner h5{
     color: var(--secondary-blue);
     text-align: center;
@@ -1029,8 +1022,6 @@ p.readmore{
     text-transform: capitalize;
     font-family: 'Roboto';
 }
-
-
 .our-services-inner img{
     margin: 0 auto;
 }
@@ -1138,13 +1129,15 @@ section.customization-services p{
     opacity: 0;
 }
 .our-vision{
-    margin-top: 3.125rem;
+    margin-top: 1.125rem;
     padding: 0.625rem;
 }
-.our-vision-center{
+.our-vision-center {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 .our-vision-content h1{
     font-family: 'Montserrat';
@@ -1167,6 +1160,10 @@ section.customization-services p{
     display: flex;
     margin: 10px;
 }
+.our-vision-images-content-main{
+    position: relative;
+    display: flex;
+}
 .our-vision-images-content{
     box-shadow: 0px 2px 15px 0px #00000033;
     width: fit-content;
@@ -1175,9 +1172,8 @@ section.customization-services p{
     border-radius: 24px;
     position: relative;
     bottom: 194%;
-    left: 57%;
+    left: 24%;
     margin: 10px;
-    z-index: 1;
     background: #FFFFFF;
 
 }
@@ -1189,8 +1185,8 @@ section.customization-services p{
     position: relative;
     bottom: 174%;
     left: 7%;
-    margin: 20px;
-    z-index: 1;
+    margin: 10px;
+    background: #FFFFFF;
 
 }
 .our-vision-content-images p{
