@@ -623,6 +623,50 @@ tbody tr td:nth-child(2) {
     color: var(--secondary-orange) !important;
 }
 
+
+/*additionla old css*/
+.ecommerce-transformationn h1 {
+    font-family: 'Roboto';
+    color: var(--white);
+    margin-top: 200px;
+    font-weight: 700;
+    font-size: 3.438rem;
+    line-height: 4.063rem;
+}
+.transmission-centerr {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.banner-content {
+    padding-left: 10%;
+}
+.banner-home{
+    position: relative;
+    /* top: 110px;     */
+}
+.Breadcrum ul {
+    display: flex;
+    gap: 0.313rem;
+    padding-left: 0rem;
+}
+.Breadcrum ul li {
+    list-style: none;
+}
+.Breadcrum ul li a{
+   text-decoration: none;
+   color:var(--white);
+   font-weight: 400;
+   font-size: 0.938rem;
+}
+.Breadcrum ul li a:active {
+    color: var(--primary-color);
+}
+/*additionla old css*/
+
+
+
+
 .service_area{
     margin-top: 7.813rem;
     overflow-x: none;
@@ -669,7 +713,6 @@ tbody tr td:nth-child(2) {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 2.563rem;
-    /* text-transform: capitalize; */
 }
 .ecommerce-transformation{
     height: 434px;     
@@ -807,7 +850,6 @@ h3.inner_heading-700{
     text-align: left;
     text-transform: capitalize;
     color: var(--white);
-    /* padding-top: 3rem; */
     margin-bottom: 1.25rem;
 }
 h3.inner_heading-700-blue{
