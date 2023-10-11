@@ -348,8 +348,44 @@ button.custom-link {
     border-radius: 8px;
     margin-top: 10%;
 }
-.recently-added-image img{
-    width: 100%;
+.recently-added-image-content-brand {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 0px 10px;
+    border-bottom: 1px solid #DDDDDD;
+    margin-top: 0; /* Add this line to remove top margin */
+}
+.recently-added-image-content-brand h1{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #5B5B5B;
+    margin: 0;
+}
+.recently-added-image-content-brand h2{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #5B5B5B;
+    margin: 0;
+    padding-right: 10px;
+
+}
+.recently-added-image-content-brand-main {
+    padding-bottom: 10px;
+}
+
+.recently-added-image-content-brand-content p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #5B5B5B;
+    margin: 0;
+    text-align: left;
+    padding: 11px 0px 2px 8px;
 }
 .recently-added-image h3{
     font-family: 'Poppins';
@@ -362,7 +398,7 @@ button.custom-link {
 }
 
 .custom-word{
-    font-weight: 400 !important;
+    font-weight: 500 !important;
 }
 .btn-group-lg>.btn, .btn-lg {
     width: 100%;
@@ -2614,53 +2650,6 @@ section.customization-services p{
 /*====================================================
 Avighna section table css
 ======================================================*/
-.custom-table-home-page table {
-    border: none !important;
-    margin-top: 5px;
-}
-.custom-table-home-page th img, td img {
-    width: auto !important;
-}
-.custom-table-home-page tbody, td, tfoot, th, thead, tr:nth-child(even) {
-    background-color: #FFFFFF !important;
-}
-.custom-table-home-page tbody, td, tfoot, th, thead, tr {
-    border-color: inherit;
-    border: none !important;
-    border-width: 0;
-}
-.custom-tr-home {
-    background-color: #FFFFFF !important;
-}
-
-.custom-table-home-page .custom-th {
-    font-family: 'Poppins';
-    border-bottom: 1px solid #DDDDDD !important;
-    font-size: 12px !important;
-    line-height: 24px;
-    font-weight: 600 !important;
-    color: #5B5B5B !important;
-    padding: 5px 0px 4px 13px;
-}
-.custom-table-home-page tbody tr td:first-child {
-    font-family: 'Poppins';
-    font-size: 14px !important;
-    line-height: 21px;
-    font-weight: 400 !important;
-    padding: 4px 12px 4px 12px;
-    color: #5B5B5B !important;
-    text-align: left;
-
-}
-.custom-table-home-page tbody tr td:nth-child(2) {
-    font-family: 'Poppins';
-    font-size: 14px !important;
-    line-height: 21px;
-    font-weight: 500 !important;
-    padding: 4px 12px 4px 12px;
-    color: #5B5B5B !important;
-    text-align: left;
-}
 
 
 
