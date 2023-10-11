@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     $("#header").load("header.html");
     $("#footer").load("footer.html");
+    $("#footer1").load("footer1.html");
     $("#query").load("query.html");
+    $("#query1").load("query1.html");
+
 
     
     var scrollPositionToShow = 200;

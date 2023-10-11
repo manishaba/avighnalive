@@ -32,9 +32,8 @@ Template Name: Avighna
 /*============================
  Avighna Main Menu Area Css
 ==============================*/
-body{
-    font-family: 'Roboto';
-}
+
+
 
 * {
     --white: #fff;
@@ -48,7 +47,7 @@ body{
     --secondary-blue: #1D3679;
     --dark-blue: #023047;
     --primary-grey: #5B5B5B;
-    --secondary-grey: #747474;
+    --secondary-grey: #4D4D4D;
     --off-grey: #637381;
     --dark-grey: #525252;
     --shadow-color: #00000014;
@@ -58,19 +57,7 @@ body{
     --mobile-font: 12px;
 }
 
-html{
-	font-size: var(--desktop-font);
-}
-@media(max-width:1199px){
-    html{
-        font-size: var(--tablet-font);
-    }
-}
-@media(max-width:767px){
-    html{
-        font-size: var(--mobile-font);
-    }
-}
+
 /*====================================================
 Avighna scrool css
 ======================================================*/
@@ -97,10 +84,13 @@ Avighna scrool css
 /*====================================================
 Avighna header css
 ======================================================*/
+
+
 .dropdown-toggle:hover::after,
 .dropdown-toggle:active::after {
     transform: rotate(180deg);
 }
+
 .logo-main{
     position: relative;
     width: 100%;
@@ -109,6 +99,10 @@ Avighna header css
     left: 6%;
     margin-bottom: 0.625rem;
     max-width: 150px;
+}
+
+.hidden-menu {
+    display: none;
 }
 .bg-light {
     background-color: var(--white)!important;
@@ -135,7 +129,7 @@ Avighna header css
     justify-content: space-between;
 }
 .navbar-collapse-border{
-    margin-left: -0.75rem;
+    margin-left: -1.35rem;
     color: var(--white);
     width: 106%;
     padding: 0.625rem 0.625rem;
@@ -157,7 +151,7 @@ Avighna header css
     text-align: center;
 }
 .navbar-light .navbar-nav .nav-link {
-    color: #4D4D4D !important;
+    color: var(--secondary-grey) !important;
     font-size: 0.938rem;
     font-weight: 400;
     line-height: 1.125rem;
@@ -226,6 +220,7 @@ Avighna header css
     padding: 0.75rem;
 }
 .shoping_cart{
+    /* margin: 1rem; */
     position: relative;
 }
 .shoping_cart a{
@@ -237,10 +232,14 @@ Avighna header css
     font-size: 14px;
     line-height: 17px;
 }
+
 .process-to-follow{
     margin-top: 20px;
 }
-.process-to-follow-inner {
+
+
+
+.building_innovative_intelligent_inner {
     flex: 1;
     text-align: center;
     display: flex;
@@ -251,8 +250,9 @@ Avighna header css
     border-radius: 6px;
     margin-left: 20px;
     height: 100%;
+
 }
-.process-to-follow-inner a{
+.building_innovative_intelligent_inner a{
     font-weight: 600;
     font-family: 'Roboto';
     font-size: 18px;
@@ -264,7 +264,7 @@ Avighna header css
     display: inline-block;
     text-decoration: none;
 }
-.process-to-follow-inner img{
+.building_innovative_intelligent_inner img{
     margin: 10px auto;
     width: fit-content;
 }
@@ -320,6 +320,14 @@ button.custom-link {
     text-align: center;
 }
 
+/* .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--secondary-orange);
+    background-color: #fff;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+} */
 .nav-tabs {
     border-bottom: 1px solid #DDDDDD;
 }
@@ -327,7 +335,7 @@ button.custom-link {
     position: absolute;
     margin-top: -10px
 }
-.inner_heading-h3{
+.inner_heading{
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 32px;
@@ -354,7 +362,41 @@ button.custom-link {
     padding: 8px 0px 0px 12px;
     margin: 0;
 }
+th img, td img {
+    width: auto !important;
+}
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border: none !important;
+    border-width: 0;
+}
+.custom-th {
+    font-family: 'Poppins';
+    border-bottom: 1px solid #DDDDDD !important;
+    font-size: 12px !important;
+    line-height: 24px;
+    font-weight: 600 !important;
+    color: #5B5B5B !important;
+    border-left: 10px solid transparent !important;
+    border-right: 10px solid transparent !important;
+}
+tbody tr td:first-child {
+    font-family: 'Poppins';
+    font-size: 14px !important;
+    line-height: 21px;
+    font-weight: 400 !important;
+    padding: 4px 12px 4px 12px;
+    color: #5B5B5B !important;
 
+}
+tbody tr td:nth-child(2) {
+    font-family: 'Poppins';
+    font-size: 14px !important;
+    line-height: 21px;
+    font-weight: 500 !important;
+    padding: 4px 12px 4px 12px;
+    color: #5B5B5B !important;
+}
 .custom-word{
     font-weight: 400 !important;
 }
@@ -571,6 +613,7 @@ button.custom-link {
     height: 27px;
     font-weight: bold;
 }
+
 .slick-dots {
     width: fit-content !important;
     bottom: 15px !important;
@@ -588,7 +631,13 @@ button.custom-link {
     color: var(--secondary-orange) !important;
 }
 
-.service_area-about{
+
+
+
+
+
+
+.service_area{
     margin-top: 7.813rem;
     overflow-x: none;
     background: url('../images/about/banner.png') no-repeat;
@@ -600,6 +649,11 @@ button.custom-link {
     background: url('../images/about/banner1.png') no-repeat;
     background-size: cover;
     background-position: center;
+}
+.transmission-center{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
 }
 .ecommerce-transformation-main{
     height: 450px;     
@@ -630,33 +684,28 @@ button.custom-link {
     font-size: 1.5rem;
     line-height: 2.563rem;
 }
-.about-center{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-}
-.about-image-left{
+.ecommerce-transformation{
     height: 434px;     
     border: 20px solid #fff;
     border-radius: 40px;
     margin: 40px;
 }
-.about-image-left img{
+.ecommerce-transformation img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.about-transformation-non{
+.ecommerce-transformation-non{
     height: 434px;     
     margin: 40px;
 }
-.about-transformation-non img{
+.ecommerce-transformation-non img{
     width: 100%;
 }
-.about-digital-what-we{
+.about-digital{
     padding: 1.75rem 0;
 }
-.about-us-what-we h1{
+.about-us h1{
     font-family: 'Montserrat', sans-serif;
     color: var(--secondary-blue);
     margin-bottom: 10px;
@@ -666,14 +715,14 @@ button.custom-link {
     letter-spacing: -1;
     text-transform: capitalize;
 }
-.about-us-what-we p{
+.about-us p{
     font-family: 'Roboto';
     color: var(--primary-grey);
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 1.75rem;
 }
-.about-us-what-we h2{
+.about-us h2{
     font-family: 'Roboto';
     color: var(--secondary-blue);
     margin-top:0;
@@ -683,7 +732,7 @@ button.custom-link {
     text-align: center;
     text-transform: capitalize;
 }
-.about-us-what-we h6{
+.about-us h6{
     font-family: 'Roboto';
     color: var(--primary-grey);
     font-weight: 400;
@@ -691,14 +740,14 @@ button.custom-link {
     line-height: 1.438rem;
     text-align: center;
 }
-.about-us-what-we p span{
+.about-us p span{
     font-family: 'Roboto';
     color: var(--primary-grey);
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.688rem;
 }
-.colled-rolled-about-banner{
+.about-banner{
     padding: 1.75rem 0;
     background-color: #F0F0F0;
 }
@@ -750,81 +799,16 @@ button.custom-link {
     
 }
 
-.about-transformation-left img{
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-.about-transformation-left h1{
-    font-family: 'Montserrat';
-    color: var(--primary-blue);
-    margin-top:0;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 2.375rem;
-    text-transform: capitalize;
-}
-.about-transformation-left p{
-    font-family: 'Roboto';
-    color: var(--primaary-grey);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.438rem;
-}
-h3.inner_heading-all{
-    font-family: 'Montserrat';
-    font-size: 2.813rem;
-    font-weight: 700;
-    line-height: 3.625rem;
-    text-align: left;
-    letter-spacing: -1px;
-    text-transform: capitalize;
-    color: var(--secondary-blue);
-    margin-bottom: 1.25rem;
-}
-h3.inner_heading-700{
-    font-family: 'Montserrat';
-    font-size: 2.813rem;
-    font-weight: 700;
-    line-height: 3.438rem;
-    text-align: left;
-    text-transform: capitalize;
-    color: var(--white);
-    margin-bottom: 1.25rem;
-}
-h3.inner_heading-700-blue{
-    font-family: 'Montserrat';
-    font-size: 2.813rem;
-    font-weight: 700;
-    line-height: 3.438rem;
-    text-align: left;
-    text-transform: capitalize;
-    color: var(--secondary-blue);
-    margin-bottom: 1.25rem;
-}
-/*====================================================
-Avighna about css
-======================================================*/
-.banner-home{
-    position: relative;
-    top: 8rem;    
-}
-.about-digital{
-    padding: 3.75rem 0;
-}
-.about-banner{
-    padding: 3.75rem 0;
-}
-.about-transformation{
+/* .about-transformation{
     height: 521px;
-}
+} */
 .about-transformation img{
     width: 100%;
     height: 100%;
     object-fit: fill;
 }
 .about-transformation h1{
-    font-family: 'Roboto';
+    font-family: 'Montserrat';
     color: var(--primary-blue);
     margin-top:0;
     font-weight: 700;
@@ -858,434 +842,19 @@ Avighna about css
     margin-left: 0.625rem;
     line-height: 1.813rem;
 }
-.service_area{
-    margin-top: 7.813rem;
-}
-.transmission-center{
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-.ecommerce-transformation{
-    background-color: var(--secondary-blue);
-    height: 450px;     
-}
-.ecommerce-transformation img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.ecommerce-transformation h1{
-    font-family: 'Roboto';
-    color: var(--white);
-    margin-top:0;
-    font-weight: 700;
-    font-size: 3.438rem;
-    line-height: 4.063rem;
-}
-.ecommerce-transformation h2{
-    font-family: 'Roboto';
-    color:var(--white);
-    margin-top:0;
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-    text-transform: capitalize;
-}
 .break-word{
     display: block;
-}
-.ecommerce-transformation p{
-    font-family: 'Roboto';
-    color:var(--white);
-    margin-top:0;
-    bottom: 0;
-    font-weight: 400;
-    font-size: 0.938rem;
-    line-height: 1.125rem;
-}
-.Breadcrum ul {
-    display: flex;
-    gap: 0.313rem;
-    padding-left: 0rem;
-}
-.Breadcrum ul li {
-    list-style: none;
-}
-.Breadcrum ul li a{
-   text-decoration: none;
-   color:var(--white);
-   font-weight: 400;
-   font-size: 0.938rem;
-}
-.Breadcrum ul li a:active {
-    color: var(--primary-color);
 }
 .selected-page{
     color: var(--primary-color) !important;
 }
-.about-us h1{
-    font-family: 'Roboto';
-    color: var(--secondary-blue);
-    margin-top:0;
-    font-weight: 800;
+h3.inner_heading-all{
+    font-family: 'Montserrat';
     font-size: 2.813rem;
-    line-height: 3.313rem;
-    text-transform: capitalize;
-}
-.about-us p{
-    font-family: 'Roboto';
-    color: var(--primaary-grey);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.688rem;
-}
-.about-us h2{
-    font-family: 'Roboto';
-    color: var(--secondary-blue);
-    margin-top:0;
     font-weight: 700;
-    font-size: 3.125rem;
-    line-height: 4.063rem;
-    text-align: center;
-    text-transform: capitalize;
-}
-.about-us h6{
-    font-family: 'Roboto';
-    color: var(--primary-grey);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.438rem;
-    text-align: center;
-}
-.about-us p span{
-    font-family: 'Roboto';
-    color: var(--primary-grey);
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.688rem;
-}
-/*====================================================
-Avighna footer css
-======================================================*/
-.footer-updated-new-design {
-    padding: 0.625rem 0rem 0rem;
-    background: url('../images/footer/footer-main-section.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 494px;
-}
-.newsletters-new-design{
-    padding: 1.875rem 1.875rem;
-}
-.middle-area-new-design {
-    background: linear-gradient(180deg, #1D3679 0%, #162D6C 100%);
-    padding: 20px;
-    top: -20px;
-}
-.bottom-footer-area-new-design {
-    background: var(--secondary-blue);
-    padding: 10px;
-}
-.newsletters-left-sec-new-design{
-    position: relative;
-    height: 400px;
-}
-.newsletters-left-sec-new-design img{
-    width: 100%;
-}
-.logo_area-new-design p{
-    font-family: Poppins;
-    color: var(--white);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    margin-top: 20px;
-}
-.newsletters-right-sec-new-design{
-    position: relative;
-    left: 5%;
-}
-.newsletters-right-sec-new-design h3{
-    font-size: 2.188rem;
-    font-weight: 600;
-    font-family: 'Roboto';
-    color: var(--white);
-    margin-top: 25%;
-}
-.newsletters-right-sec-new-design p{
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 400;
-    font-family: 'Roboto';
-    color: var(--white);
-}
-.newsletters-right-sec-input-new-design{
-    display: flex;
-    margin: 1.25rem auto;
-    left: 0.625rem;
-}
-.newsletters-right-sec-input-new-design input{
-    font-family: 'Roboto';
-    color: var(--off-grey);
-    font-weight: 400;
-    font-size: 0.938rem;
-    line-height: 1.25rem;
-    width: 100%;
-    height: 3.125rem;
-}
-.newsletters-right-sec-input-new-design button{
-    font-family: 'Roboto';
-    color: var(--white);
-    background: var(--secondary-orange);
-    width: 97px;
-    height: 3.125rem;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    margin-left: 0.625rem;
-}
-.btn-primary:hover {
-    color: var(--white);
-    /* border: none; */
-}
-.logo-footer-new-design {
-    max-width: 150px;
-}
-.social-media-icons-new-design {
-    color: var(--white);
-    margin-right: 0.313rem;
-    font-size: 1.375rem;
-    cursor: pointer;
-}
-.social-media-icons-new-design:hover {
-    color: var(--secondary-orange);
-}
-
-.social-address-new-design img{
-    margin: 0.625rem auto;
-    margin-right: -10px;
-}
-.social-address-new-design a img:hover {
-    filter: brightness(0.5);
-    transition: filter 0.3s ease-in-out;
-}
-.footer-head-new-design h4{
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.688rem;
-    color: var(--white);
-    margin-bottom: 1rem;
-    margin-left: 1.85rem;
-    font-family: 'Poppins';
-}
-.footer-head-new-design ul li{
-    font-size: 1rem;
-    list-style: none;
-    font-weight: 400;
-    line-height: 1.875rem;
-    color: var(--white);
-    font-family: 'Poppins';
-}
-.footer-head-contact-new-design h4{
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.688rem;
-    color: var(--white);
-    margin-bottom: 1rem;
-    font-family: 'Poppins';
-}
-.content-new-design h5{
-    color: var(--white);
-    font-size: 1rem;
-    font-weight: 600;
-    margin-top: 0rem;
-    font-family: 'Poppins';
-
-}
-.content-new-design p{
-    color: var(--white);
-    font-size: 1rem;
-    font-weight: 400;
-    font-family: 'Poppins';
-}
-.bottom_area_footer-new-design {
-    display: flex;
-}
-.bottom_area_footer-new-design .bottom_left_area-new-design {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.bottom_left_area-new-design ul {
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-}
-.bottom_left_area-new-design ul li {
-    font-style: normal;
-    font-weight: 400;
-    font-family: 'Roboto';
-    font-size: 0.813rem;
-    line-height: 1.5rem;
-    margin-top: 0.5rem;
-    text-transform: capitalize;
-    color: var(--white);
-    cursor: pointer;
-    margin-right: 1.875rem;
-}
-
-
-
-
-
-
-.footer-updated {
-    padding: 0.625rem 0rem 0rem;
-    background: #FBF6F2;    
-}
-.logo-footer {
-    max-width: 150px;
-}
-.social-contact h5{
-    font-size: 1.125rem;
-    font-weight: 500;
-    line-height: 1.375rem;
-    color: var(--secondary-blue);
-    margin-top: 20%;
-    font-family: 'Roboto';
-}
-/* .social-address img:hover{
-    cursor: pointer;
-    opacity: 0.5;
-    color: #FE7A19;
- } */
- .social-media-icons {
-    color: var(--secondary-blue);
-    margin-right: 0.313rem;
-    font-size: 1.375rem;
-    cursor: pointer;
- }
- .social-media-icons:hover {
-    color: var(--primary-color);
- }
-.social-address img{
-    margin: 0.625rem auto;
-}
-.footer-head h4{
-    font-size: 1.25rem;
-    font-weight: 600;
-    line-height: 1.625rem;
-    color: var(--primary-grey);
-    margin-bottom: 1.5rem;
-    font-family: 'Roboto';
-}
-.footer-head-address h4{
-    font-size: 1.25rem;
-    font-weight: 600;
-    line-height: 1.625rem;
-    color: var(--primary-grey);
-    margin-bottom: 5%;
-    font-family: 'Roboto';
-}
-.our_services_ul_icons a p{
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 500;
-    color: var(--primary-grey);
-    margin-top: 1.25rem;
-    font-family: 'Roboto';
-}
-.our_services_ul_icons a p:hover{
-    color: var(--primary-color);
-}
-.our_services_ul_icons a{
-    text-decoration: none!important;
-    color: var(--primary-grey)!important;
-}
-.footer-address{
-    display: flex;
-    padding: 0rem;
-}
-.content h5{
-    margin-left: 0.625rem;
-    color: var(--primary-grey);
-    font-size: 1rem;
-    font-weight: 500;
-    margin-top: 0rem;
-    font-family: 'Roboto';
-
-}
-.content p{
-    margin-left: 0.625rem;
-    color: var(--primary-grey);
-    font-size: 1rem;
-    font-weight: 400;
-    font-family: 'Roboto';
-}
-.addressicon img{
-    position: relative;
-    top: 0%;
-}
-.bottom_area_footer {
-    margin-top: 1rem;
-    display: flex;
-    padding-top: 1.875rem;
-}
-.bottom_area_footer .bottom_left_area {
-    width: 45%;
-}
-.bottom_left_area ul {
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-}
-.bottom_left_area ul li {
-    font-style: normal;
-    font-weight: 500;
-    font-family: 'Roboto';
-    font-size: 1rem;
-    line-height: 1.5rem;
-    text-transform: capitalize;
-    color: var(--off-grey);
-    cursor: pointer;
-    margin-right: 1.875rem;
-}
-.bottom_right_area p {
-    font-style: normal;
-    font-weight: 400;
-    font-family: 'Roboto';
-    font-size: 1rem;
-    line-height: 2rem;
-    text-transform: capitalize;
-    color: var(--off-grey);
-}
-.bottom_right_area {
-    margin: 0.5rem 1.875rem 0.875rem 0rem;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.bottom_right_area p span {
-    color: #F85149;
-    font-weight: 600;
-}
-.bottom_right_area img{
-    margin-left: 0.625rem;
-    display: flex;
-    justify-content: flex-end;
-    height: fit-content;
-}
-
-/*====================================================
-Avighna all section css
-======================================================*/
-h3.inner_heading{
-    font-family: 'Roboto';
-    font-size: 2.813rem;
-    font-weight: 800;
-    line-height: 3.313rem;
-    text-align: center;
+    line-height: 3.625rem;
+    text-align: left;
+    letter-spacing: -1px;
     text-transform: capitalize;
     color: var(--secondary-blue);
     margin-bottom: 1.25rem;
@@ -1293,12 +862,22 @@ h3.inner_heading{
 h3.inner_heading span{
     display: block;
 }
-h3.inner_heading-600{
-    font-family: 'Roboto';
+h3.inner_heading-700{
+    font-family: 'Montserrat';
     font-size: 2.813rem;
-    font-weight: 600;
-    line-height: 3.688rem;
-    text-align: center;
+    font-weight: 700;
+    line-height: 3.438rem;
+    text-align: left;
+    text-transform: capitalize;
+    color: var(--white);
+    margin-bottom: 1.25rem;
+}
+h3.inner_heading-700-blue{
+    font-family: 'Montserrat';
+    font-size: 2.813rem;
+    font-weight: 700;
+    line-height: 3.438rem;
+    text-align: left;
     text-transform: capitalize;
     color: var(--secondary-blue);
     margin-bottom: 1.25rem;
@@ -1320,40 +899,11 @@ h3.inner_heading-50{
 h3.inner_heading-50 span{
     display: block;
 }
-.developing_main_ausiness_activities_images-about {
-    position: relative;
-    margin-top: 1.25rem;
-}
-.developing_main_ausiness_activities_images-about img {
-    position: relative;
-    max-width: 100%;
-    height: auto;
-}
-.developing_main_ausiness_activities_content-about h5 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 2.813rem;
-    line-height: 3.813rem;
-    letter-spacing: -1;
-    color: var(--secondary-orange);
-}
-.developing_main_ausiness_activities_content-about h6 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 2.625rem;
-    color: var(--secondary-blue);
-}
-.developing_main_ausiness_activities_content-about p {
-    font-weight: 400;
-    font-family: 'Roboto';
-    font-size: 1.25rem;
-    line-height: 1.75;
-    margin-top: 0.625rem;
-    margin-bottom: 1.25rem;
-    letter-spacing: 0.5px;
-    color: var(--primary-grey);
-}
+
+
+
+
+
 
 
 
@@ -1367,28 +917,31 @@ h3.inner_heading-50 span{
     height: auto;
 }
 .developing_main_ausiness_activities_content h5 {
-    font-family: 'Roboto';
-    font-weight: 600;
-    font-size: 2.375rem;
-    line-height: 2.813rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.813rem;
+    line-height: 3.813rem;
+    letter-spacing: -1;
     color: var(--secondary-orange);
 }
 .developing_main_ausiness_activities_content h6 {
-    font-family: 'Roboto';
-    font-weight: 600;
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.625rem;
     color: var(--secondary-blue);
 }
 .developing_main_ausiness_activities_content p {
     font-weight: 400;
     font-family: 'Roboto';
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.25rem;
+    line-height: 1.75;
     margin-top: 0.625rem;
     margin-bottom: 1.25rem;
+    letter-spacing: 0.5px;
     color: var(--primary-grey);
 }
+
 p.readmore{
     font-family: 'Poppins';
     width: fit-content;
@@ -1400,28 +953,11 @@ p.readmore{
     border: 1px solid #1D3679;
     color: var(--secondary-blue);
 }
-span.green{
-    font-family: 'Roboto';
-    font-weight: 600;
-    font-size: 2.375rem;
-    line-height: 2.813rem;
-    color: var(--green);
-}
-span.green-b{
-    color: var(--green);
-}
-span.readmore{
-    font-family: 'Roboto';
-    font-weight: 600;
-    font-size: 1rem;
-    font-style: italic;
-    color: var(--secondary-orange);
-}
-.our-product-range-about {
+.our-product-range {
     background-color: #1D3679;
     padding: 40px 0;
 }
-.our-product-range-about-images {
+.our-product-range-images {
     height: 157px;
     width: 157px;
     border-radius: 16px;
@@ -1430,7 +966,7 @@ span.readmore{
     text-align: center;
     margin: 20px;
 }
-.our-product-range-about h5 {
+.our-product-range h5 {
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 1.25rem;
@@ -1439,7 +975,7 @@ span.readmore{
     text-align: left;
     margin-top: 20px;
 }
-.our-product-range-about p {
+.our-product-range p {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 0.875rem;
@@ -1448,211 +984,8 @@ span.readmore{
     text-align: left;
     margin-top: 10px;
 }
-.our-product-range-about img {
-    margin: 20px auto;
-    transition: transform 0.3s ease;
-}
-.our-product-range-about img:hover {
-    transform: scale(1.1);
-    border-radius: 0.625rem;
-}
-.our-product-range-about img:hover:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: opacity 0.3s ease;
-}
-.our-product-range-about img:hover:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: rgba(255, 255, 255, 0.8);
-    transition: opacity 0.3s ease;
-}  
-.our-product-range-about img:hover:after {
-    opacity: 0;
-}
-
-.our-services-about {
-    background: url('../images/about/our-services-section-main.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 40px 0;
-    height: 75vh;
-}
-.our-services-about-inner {
-    box-shadow: 0px 2px 15px 0px #00000033;
-    background: #FFFFFF;
-    flex: 1;
-    text-align: center;
-    margin: 20px;
-}
-.our-services-about-inner h5{
-    color: var(--secondary-blue);
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.25rem;
-    padding-top: 1.125rem;
-    height: 60px;
-    text-transform: capitalize;
-    font-family: 'Roboto';
-}
-.our-services-about-inner img{
-    margin: 0 auto;
-}
-.our-services-about-inner img {
-    width: 100%;
-    margin: 20px auto;
-    border-radius: 14px;
-    transition: transform 0.3s ease;
-}
-.our-services-about-inner img:hover {
-    transform: scale(1.1);
-    border-radius: 0.625rem;
-}
-.our-services-about-inner img:hover:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: rgba(255, 255, 255, 0.8);
-    transition: opacity 0.3s ease;
-}
-.our-services-about-inner img:hover:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: rgba(255, 255, 255, 0.8);
-    transition: opacity 0.3s ease;
-}  
-.our-services-about-inner img:hover:after {
-    opacity: 0;
-}
-
-.our-product-range-images {
-    margin-bottom: 3.75rem;
-    margin-top: 2.5rem;
-    position: relative;    
-}
-.our-product-range h1 {
-    position: absolute;
-    top: 60%;
-    left: 0.625rem;
-    right: 0.625rem;
-    height: 11.25rem;
-    color: var(--secondary-blue);
-    text-align: center;
-    transform: translateY(59px);
-    font-weight: 700;
-    font-size: 1.25rem;
-    padding: 0.625rem;
-    background: var(--white);
-    font-family: 'Roboto';
-    border: 0.063rem solid var(--primary-white);
-    text-transform: capitalize;
-    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
-}
-.our-product-range h2 {
-    position: absolute;
-    top: 65%;
-    left: 0.625rem;
-    right: 0.625rem;
-    height: 93px;
-    color: var(--secondary-blue);
-    text-align: center;
-    transform: translateY(59px);
-    font-weight: 700;
-    font-size: 1.25rem;
-    padding: 0.875rem;
-    background: var(--white);
-    font-family: 'Roboto';
-    border: 0.063rem solid var(--primary-white);
-    text-transform: capitalize;
-    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
-}
-.our-product-range h5 {
-    position: absolute;
-    top: 70%;
-    left: 0.625rem;
-    right: 0.625rem;
-    height: 4.25rem;
-    color: var(--secondary-blue);
-    text-align: center;
-    transform: translateY(59px);
-    font-weight: 700;
-    font-size: 1.25rem;
-    padding: 1.25rem;
-    background: var(--white);
-    font-family: 'Roboto';
-    border: 0.063rem solid var(--primary-white);
-    text-transform: capitalize;
-    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
-}
-.our-product-range h4 {
-    position: absolute;
-    top: 65%;
-    left: 0.625rem;
-    right: 0.625rem;
-    height: 68px;
-    color: var(--secondary-blue);
-    text-align: center;
-    transform: translateY(59px);
-    font-weight: 700;
-    font-size: 1.25rem;
-    padding: 0.875rem;
-    background: var(--white);
-    font-family: 'Roboto';
-    border: 0.063rem solid var(--primary-white);
-    text-transform: capitalize;
-    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
-}
-.our-product-range h6 {
-    position: absolute;
-    top: 78%;
-    width: 100%;
-    height: 11.063rem;
-    color: var(--secondary-blue);
-    text-align: center;
-    transform: translateY(59px);
-    font-weight: 500;
-    font-size: 1.125rem;
-    line-height: 1.625rem;
-    padding: 0.875rem;
-    background: var(--white);
-    font-family: 'Roboto';
-    border: 0.063rem solid var(--primary-white);
-    text-transform: capitalize;
-    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
-}
-.our-product-range p {
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 1rem;
-    text-align: center;
-    line-height: 1.438rem;
-    color: var(--secondary-grey);
-}
 .our-product-range img {
-    width: 100%;
+    margin: 20px auto;
     transition: transform 0.3s ease;
 }
 .our-product-range img:hover {
@@ -1668,7 +1001,6 @@ span.readmore{
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-color: rgba(255, 255, 255, 0.8);
     transition: opacity 0.3s ease;
 }
 .our-product-range-images img:hover:before {
@@ -1686,11 +1018,21 @@ span.readmore{
 .our-product-range-images img:hover:after {
     opacity: 0;
 }
-.our-services{
-    margin-top: 3.125rem;
+.our-services {
+    background: url('../images/about/our-services-section-main.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    height: 75vh;
+}
+.our-services-inner {
+    box-shadow: 0px 2px 15px 0px #00000033;
+    background: #FFFFFF;
+    flex: 1;
+    text-align: center;
+    margin: 20px;
 }
 .our-services-inner h5{
-    position: relative;
     color: var(--secondary-blue);
     text-align: center;
     font-weight: 700;
@@ -1698,38 +1040,15 @@ span.readmore{
     padding-top: 1.125rem;
     height: 60px;
     text-transform: capitalize;
-    background: var(--white);
     font-family: 'Roboto';
-    border: 0.063rem solid var(--primary-white);
-    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
-}
-.our-services-inner h6{
-    position: relative;
-    bottom: 10%;
-    margin-left: 0.625rem;
-    margin-right: 0.625rem;
-    color: var(--secondary-blue);
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.25rem;
-    padding-top: 0.75rem;
-    height: 75px;
-    text-transform: capitalize;
-    background: var(--white);
-    font-family: 'Roboto';
-    border: 0.063rem solid var(--primary-white);
-    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
-}
-.our-services-inner {
-    flex: 1;
-    text-align: center;
 }
 .our-services-inner img{
     margin: 0 auto;
-    width: 100%;
 }
 .our-services-inner img {
     width: 100%;
+    margin: 20px auto;
+    border-radius: 14px;
     transition: transform 0.3s ease;
 }
 .our-services-inner img:hover {
@@ -1763,55 +1082,6 @@ span.readmore{
 .our-services-inner img:hover:after {
     opacity: 0;
 }
-.our-suppliers-about{
-    padding: 3.125rem;
-}
-.our-suppliers-about-inner {
-    flex: 1;
-    text-align: center;
-    width: 100%;
-    margin: 0.313rem;
-    height: auto;
-    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
-    border: 0.063rem solid var(--primary-white);
-}
-.our-suppliers-about-inner img{
-    margin: 0 auto;
-    width: 100%;
-    transition: transform 0.3s ease;
-}    
-.our-suppliers-about-inner img:hover {
-    transform: scale(1.2);
-    border-radius: 0.625rem;
-}
-.our-suppliers-about-inner img:hover:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: rgba(255, 255, 255, 0.8);
-    transition: opacity 0.3s ease;
-}
-.our-suppliers-about-inner img:hover:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: rgba(255, 255, 255, 0.8);
-    transition: opacity 0.3s ease;
-}  
-.our-suppliers-about-inner img:hover:after {
-    opacity: 0;
-}
-
 section.customization-services p{
     font-family: 'Roboto';
     padding: 1.25rem;
@@ -1877,102 +1147,6 @@ section.customization-services p{
 }  
 .our-suppliers-inner img:hover:after {
     opacity: 0;
-}
-.newsletters{
-    padding: 1.875rem 1.875rem;
-    /* margin-top: 100px; */
-}
-.newsletter-bg{
-    background-color: var(--off-white);
-}
-.newsletters-left-sec{
-    position: relative;
-    height: 400px;
-}
-.mask-group-icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 400px;
-    width: 100%;
-}
-.subscribe-to-our-newsletters-parent {
-    position: absolute;
-    top: 57px;
-    left: 61.88px;
-    /* width: 400px; */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 1.563rem;
-}
-.and-because-your, .subscribe-to-our {
-    position: relative;
-    display: inline-block;
-}
-.subscribe-to-our{
-    font-weight: 600;
-    line-height: 3.375rem;
-    font-size: 2.813rem;
-    color: var(--white);
-    font-family: 'Roboto';
-}
-.and-because-your {
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: var(--white);
-    font-family: 'Roboto';
-}
-.newsletters-right-sec{
-    position: relative;
-    left: 5%;
-}
-.newsletters-right-sec h3{
-    font-size: 2.188rem;
-    font-weight: 600;
-    font-family: 'Roboto';
-    color: var(--secondary-blue);
-    margin-top: 25%;
-}
-.newsletters-right-sec-input{
-    display: flex;
-    margin: 1.25rem auto;
-    left: 0.625rem;
-}
-.newsletters-right-sec-input input{
-    font-family: 'Roboto';
-    color: var(--off-grey);
-    font-weight: 400;
-    font-size: 0.938rem;
-    line-height: 1.25rem;
-    width: 60%;
-    height: 3.125rem;
-}
-.newsletters-right-sec-input button{
-    font-family: 'Roboto';
-    color: var(--white);
-    background: var(--secondary-blue);
-    width: 97px;
-    height: 3.125rem;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    margin-left: 0.625rem;
-}
-.btn-primary:hover {
-    color: var(--white);
-    background-color: var(--secondary-blue) !important;
-    border-color: var(--secondary-blue) !important;
-}
-.newsletters-right-sec p{
-    position: relative;
-    font-size: 1rem;
-    font-weight: 400;
-    font-family: 'Roboto';
-    line-height: 1.375rem;
-    color: var(--off-grey);
 }
 .our-vision{
     margin-top: 1.125rem;
@@ -2063,6 +1237,7 @@ section.customization-services p{
 }
 .about-digital-new{
     position: relative;
+    overflow-x: none;
 }
 .transmission-center-new{
     display: flex;
@@ -2081,11 +1256,12 @@ section.customization-services p{
     object-fit: cover;
 }
 .ecommerce-transformation-new h1{
-    font-family: 'Roboto';
+    font-family: 'Montserrat';
     color: var(--secondary-blue);
     font-weight: 700;
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 2.813rem;
+    line-height: 3.656rem;
+    text-transform: capitalize;
 }
 .ecommerce-transformation-new span{
     display: block;
@@ -2094,8 +1270,8 @@ section.customization-services p{
     font-family: 'Roboto';
     color: var(--primary-grey);
     font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.438rem;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
 }
 .galvanized-products{
     margin-top: 1.25rem;
@@ -2141,14 +1317,19 @@ section.customization-services p{
     margin-right: 0.625rem;
 }
 
-.contact-us-new-design{
+
+
+
+
+
+.contact-us{
     margin-top: 0.813rem;
     background: url('../images/about/banner1.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.contact-us-new-design h3{
+.contact-us h3{
     font-family: 'Montserrat';
     color: var(--white);
     font-weight: 700;
@@ -2156,14 +1337,14 @@ section.customization-services p{
     line-height: 4.1rem;
     text-transform: capitalize;
 }
-.contact-us-new-design h4{
+.contact-us h4{
     font-family: 'Roboto';
     color: var(--white);
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.25rem;
 }
-.contact-us-new-design-content{
+.contact-us-content{
     height: 487px;
     position: relative;
     /* top: 20%; */
@@ -2173,130 +1354,13 @@ section.customization-services p{
     align-items: baseline;
     align-content: center;
 }
-.contact-us-new-design-form{
+.contact-us-form{
     position: relative;
     margin-bottom: -5%;
     padding-bottom: 0;
     background-size: cover;
     padding: 100px 0;
     
-}
-.contact-us-new-design-form-content{
-    display: flex;
-}
-.contact-us-new-design-form h4{
-    font-family: 'Roboto';
-    color: var(--dark-blue);
-    font-weight: 600;
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-}
-.contact-us-new-design-form p{
-    font-family: 'Roboto';
-    color: var(--dark-blue);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.75rem;
-}
-.contact-us-new-design-form img{
-    padding-right: 1.25rem;
-}
-.contact-us-new-design-main-form h4{
-    font-family: 'Roboto';
-    color: #1D3679;
-    font-weight: 600;
-    font-size: 1.75rem;
-    line-height: 2.188rem;
-}
-.contact-us-new-design-main-form label{
-    font-family: 'Roboto';
-    color: var(--primary-grey);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.438rem;
-}
-.contact-us-new-design-main-form input{
-    font-family: 'Roboto';
-    color: #5B5B5B !important;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.438rem;
-}
-#name::placeholder {
-    color: #5B5B5B !important;
-}
-#email::placeholder {
-    color: #5B5B5B !important;
-}
-#phone::placeholder {
-    color: #5B5B5B !important;
-}
-#textarea::placeholder {
-    color: #5B5B5B !important;
-}
-.contact-us-new-design-main-form input, .contact-us-main-form textarea{
-    padding: 9px 14px 9px 14px;
-    margin: 0.625rem auto;
-    box-sizing: border-box;
-    border: 1px solid #DDDDDD;
-}
-.contact-us-new-design-main-form button{
-    font-family: 'Roboto';
-    color: var(--white);
-    background: var(--secondary-blue);
-    width: 125px;
-    height: 2.813rem;
-    font-weight: 400;
-    font-size: 0.938rem;
-    line-height: 1.25rem;
-}
-.contact-us-new-design-main-form{
-    box-shadow: 0rem 0.25rem 1.75rem 0rem #0000000D;
-    background: var(--white);
-    padding: 2.5rem;
-    border: 0.063rem solid var(--primary-white);
-    border-radius: 0.313rem;
-    position: absolute;
-    bottom: 60%;
-    height: 30.688rem;
-    left: 69%;
-}
-
-.contact-us{
-    margin-top: 3.125rem;
-    margin-bottom: 3.125rem;
-    background: var(--off-white);
-    position: relative;
-}
-.contact-us h3{
-    font-family: 'Roboto';
-    color: var(--dark-blue);
-    font-weight: 600;
-    font-size: 2.188rem;
-    line-height: 2.5rem;
-}
-.contact-us h4{
-    font-family: 'Roboto';
-    color: var(--dark-blue);
-    font-weight: 600;
-    font-size: 0.938rem;
-    line-height: 1.25rem;
-}
-.contact-us-content{
-    height: 436px;
-    position: relative;
-    top: 20%;
-    left: 14%;
-    bottom: 0;
-    display: inline-grid;
-    align-items: baseline;
-    align-content: center;
-}
-.contact-us-form{
-    position: relative;
-    /* margin-bottom: -15%; */
-    height: auto;
-    padding-bottom: 0;
 }
 .contact-us-form-content{
     display: flex;
@@ -2320,31 +1384,42 @@ section.customization-services p{
 }
 .contact-us-main-form h4{
     font-family: 'Roboto';
-    color: var(--dark-blue);
+    color: #1D3679;
     font-weight: 600;
     font-size: 1.75rem;
     line-height: 2.188rem;
 }
 .contact-us-main-form label{
     font-family: 'Roboto';
-    color: var(--off-grey);
+    color: var(--primary-grey);
     font-weight: 400;
-    font-size: 0.813rem;
-    line-height: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.438rem;
 }
 .contact-us-main-form input{
     font-family: 'Roboto';
-    color: var(--off-grey);
+    color: #5B5B5B !important;
     font-weight: 400;
-    font-size: 0.938rem;
-    line-height: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.438rem;
+}
+#name::placeholder {
+    color: #5B5B5B !important;
+}
+#email::placeholder {
+    color: #5B5B5B !important;
+}
+#phone::placeholder {
+    color: #5B5B5B !important;
+}
+#textarea::placeholder {
+    color: #5B5B5B !important;
 }
 .contact-us-main-form input, .contact-us-main-form textarea{
-    padding: 0.5rem 0rem 0.5rem 0rem;
+    padding: 9px 14px 9px 14px;
     margin: 0.625rem auto;
     box-sizing: border-box;
-    border: none;  
-    border-bottom: 0.063rem solid var(--primary-white);
+    border: 1px solid #DDDDDD;
 }
 .contact-us-main-form button{
     font-family: 'Roboto';
@@ -2362,20 +1437,21 @@ section.customization-services p{
     padding: 2.5rem;
     border: 0.063rem solid var(--primary-white);
     border-radius: 0.313rem;
-    position: relative;
-    bottom: 50%;
-    height: 38.25rem;
+    position: absolute;
+    bottom: 60%;
+    height: 30.688rem;
+    left: 69%;
 }
 .specifications-range{
-    background: #F5F7FD;
+    background: #FE7A191A;
     padding: 1.25rem;
 }
 .specifications-range-main{
     background: var(--white);
-    box-shadow: 0rem 0rem 1.875rem rgba(31, 45, 61, 0.15);
+    box-shadow: 0px 4px 28px 0px #0000000D;
     border-radius: 0.625rem;
     padding: 1.25rem;
-    height: 90%;
+    height: 85%;
     margin-bottom: 1.25rem;
     position: relative;
     -moz-transition: ease all 0.35s;
@@ -2386,17 +1462,17 @@ section.customization-services p{
 .specifications-range-main h3{
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 2.188rem;
+    font-size: 1.25rem;
+    line-height: 1.438rem;
     text-align: center;
     color: var(--primary-color);
     margin-top: 0.625rem;
 }
 .specifications-range-main p{
     font-family: 'Roboto';
-    font-weight: 600;
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.188rem;
     text-align: center;
     color: var(--secondary-blue);
     margin-top: 0.625rem;
@@ -2471,7 +1547,6 @@ section.customization-services p{
     line-height: 23px !important;
     color: #5B5B5B !important;
 }
-
 .bis-standards{
     padding: 1.875rem;
 }
@@ -2599,160 +1674,6 @@ section.customization-services p{
     width: auto;
     padding: 1.5rem;
 }
-/*====================================================
-Avighna section table css
-======================================================*/
-.custom-table-home-page table {
-    border: none !important;
-    margin-top: 5px;
-}
-.custom-table-home-page th img, td img {
-    width: auto !important;
-}
-.custom-table-home-page tbody, td, tfoot, th, thead, tr:nth-child(even) {
-    background-color: #FFFFFF !important;
-}
-.custom-table-home-page tbody, td, tfoot, th, thead, tr {
-    border-color: inherit;
-    border: none !important;
-    border-width: 0;
-}
-.custom-tr-home {
-    background-color: #FFFFFF !important;
-}
-
-.custom-table-home-page .custom-th {
-    font-family: 'Poppins';
-    border-bottom: 1px solid #DDDDDD !important;
-    font-size: 12px !important;
-    line-height: 24px;
-    font-weight: 600 !important;
-    color: #5B5B5B !important;
-    padding: 5px 0px 4px 13px;
-}
-.custom-table-home-page tbody tr td:first-child {
-    font-family: 'Poppins';
-    font-size: 14px !important;
-    line-height: 21px;
-    font-weight: 400 !important;
-    padding: 4px 12px 4px 12px;
-    color: #5B5B5B !important;
-    text-align: left;
-
-}
-.custom-table-home-page tbody tr td:nth-child(2) {
-    font-family: 'Poppins';
-    font-size: 14px !important;
-    line-height: 21px;
-    font-weight: 500 !important;
-    padding: 4px 12px 4px 12px;
-    color: #5B5B5B !important;
-    text-align: left;
-}
-
-
-
-
-.table {
-    margin-top: 1.25rem;
-    border: 0.063rem solid var(--primary-grey) !important;
-    
-}
-.table thead tr {
-    background-color: var(--secondary-blue);
-    color: var(--white);
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.625rem;
-    text-align: center;
-    font-family: 'Roboto';
-}
-.table td {
-    color: var(--primary-grey);
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.375rem;
-    text-align: center;
-    font-family: 'Roboto';
-}
-th[scope="row"] {
-    background: var(--clear-white);
-    border: 0.063rem solid var(--primary-grey);
-    text-align: center;
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.625rem;
-    color: var(--primary-grey);
-    font-family: 'Roboto';
-}
-.cold-rolled-grades table td,
-.cold-rolled-grades table th {
-    padding: 1.5rem 1.5rem !important;
-}
-tr:nth-child(even) {
-    background-color: var(--primary-white);
-}
-tr:nth-child(odd) {
-    background-color: white;
-}
-.table-striped>tbody>tr:nth-of-type(odd) {
-    --bs-table-accent-bg: none;
-}
-.table-hover>tbody>tr:hover {
-    color: var(--secondary-grey);
-}
-.table-shadow{
-    box-shadow: 0rem 0.063rem 0.25rem 0rem #00000029;
-}
-
-
-
-.specifications-tin-free-sheet{
-    background-color: #F5F7FD;
-}
-.specifications-tin-free-sheet table td,
-.specifications-tin-free-sheet table th {
-    padding: 0.5rem 0.5rem !important;
-    border: 0.063rem solid var(--primary-grey);
-}
-.galvanized-table-section table th {
-    padding: 0.5rem 0.5rem !important;
-}
-.specifications-tin-free-sheet table th{
-    font-size: 1.125rem;
-    font-weight: 700;
-    font-family: 'Roboto';
-}
-.specifications-tin-free-sheet table td{
-    font-size: 1rem;
-    font-weight: 400;
-    font-family: 'Roboto';
-}
-.specifications-tin-free-sheet th.centered-header {
-    text-align: center;
-    font-size: 1.25rem;
-    font-weight: 500;
-    font-family: 'Roboto';
-}
-.specifications-tin-free-sheet td {
-    background-color: white;
-}
-.table-responsive td[rowspan="2"] {
-    text-align: center;
-    vertical-align: middle;
-    margin: 0.625rem;
-    max-width: 150rem;
-}
-.specifications-tin-free-sheet td.bg {
-    background-color: var(--primary-white);
-}
-/*====================================================
-Avighna end table section css
-======================================================*/
-
-/*====================================================
-Avighna all section css
-======================================================*/
 .developing_end_to_end_digital_sec{
     padding: 1.875rem 1.875rem;
 }
@@ -3050,7 +1971,6 @@ Avighna all section css
     white-space: normal;
     text-transform: capitalize;
 }
-
 .bg-blue{
     background: var(--secondary-blue);
     display: flex;
@@ -3067,14 +1987,365 @@ Avighna all section css
     margin-bottom: 4.375rem;
     padding: 1.875rem 1.875rem;
 }
+
 /*====================================================
-Avighna end all section css
+Avighna footer css
 ======================================================*/
+.footer-updated {
+    padding: 0.625rem 0rem 0rem;
+    background: url('../images/footer/footer-main-section.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 494px;
+}
+.newsletters{
+    padding: 1.875rem 1.875rem;
+}
+.middle-area {
+    background: linear-gradient(180deg, #1D3679 0%, #162D6C 100%);
+    padding: 20px;
+    top: -20px;
+}
+.bottom-footer-area {
+    background: var(--secondary-blue);
+    padding: 10px;
+}
+.newsletters-left-sec{
+    position: relative;
+    height: 400px;
+}
+.newsletters-left-sec img{
+    width: 100%;
+}
+.logo_area p{
+    font-family: Poppins;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 20px;
+}
+.newsletters-right-sec{
+    position: relative;
+    left: 5%;
+}
+.newsletters-right-sec h3{
+    font-size: 2.188rem;
+    font-weight: 600;
+    font-family: 'Roboto';
+    color: var(--white);
+    margin-top: 25%;
+}
+.newsletters-right-sec p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-family: 'Roboto';
+    color: var(--white);
+}
+.newsletters-right-sec-input{
+    display: flex;
+    margin: 1.25rem auto;
+    left: 0.625rem;
+}
+.newsletters-right-sec-input input{
+    font-family: 'Roboto';
+    color: var(--off-grey);
+    font-weight: 400;
+    font-size: 0.938rem;
+    line-height: 1.25rem;
+    width: 100%;
+    height: 3.125rem;
+}
+.newsletters-right-sec-input button{
+    font-family: 'Roboto';
+    color: var(--white);
+    background: var(--secondary-orange);
+    width: 97px;
+    height: 3.125rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-left: 0.625rem;
+}
+.btn-primary:hover {
+    color: var(--white);
+    /* border: none; */
+}
+.logo-footer {
+    max-width: 150px;
+}
+.social-media-icons {
+    color: var(--white);
+    margin-right: 0.313rem;
+    font-size: 1.375rem;
+    cursor: pointer;
+}
+.social-media-icons:hover {
+    color: var(--secondary-orange);
+}
+
+.social-address img{
+    margin: 0.625rem auto;
+    margin-right: -10px;
+}
+.social-address a img:hover {
+    filter: brightness(0.5);
+    transition: filter 0.3s ease-in-out;
+}
+.footer-head h4{
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.688rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+    margin-left: 1.85rem;
+    font-family: 'Poppins';
+}
+.footer-head ul li{
+    font-size: 1rem;
+    list-style: none;
+    font-weight: 400;
+    line-height: 1.875rem;
+    color: var(--white);
+    font-family: 'Poppins';
+}
+.footer-head-contact h4{
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.688rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-family: 'Poppins';
+}
+.content h5{
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0rem;
+    font-family: 'Poppins';
+
+}
+.content p{
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Poppins';
+}
+.bottom_area_footer {
+    display: flex;
+}
+.bottom_area_footer .bottom_left_area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom_left_area ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.bottom_left_area ul li {
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Roboto';
+    font-size: 0.813rem;
+    line-height: 1.5rem;
+    margin-top: 0.5rem;
+    text-transform: capitalize;
+    color: var(--white);
+    cursor: pointer;
+    margin-right: 1.875rem;
+}
+
+
+
+/*====================================================
+Avighna section table css
+======================================================*/
+/* .table {
+    margin-top: 1.25rem;
+    border: 0.063rem solid var(--primary-grey) !important;
+    
+}
+.table thead tr {
+    background-color: var(--secondary-blue);
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.625rem;
+    text-align: center;
+    font-family: 'Roboto';
+}
+.table td {
+    color: var(--primary-grey);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    text-align: center;
+    font-family: 'Roboto';
+}
+th[scope="row"] {
+    background: var(--clear-white);
+    border: 0.063rem solid var(--primary-grey);
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.625rem;
+    color: var(--primary-grey);
+    font-family: 'Roboto';
+}
+.cold-rolled-grades table td,
+.cold-rolled-grades table th {
+    padding: 1.5rem 1.5rem !important;
+}
+tr:nth-child(even) {
+    background-color: var(--primary-white);
+}
+tr:nth-child(odd) {
+    background-color: white;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    --bs-table-accent-bg: none;
+}
+.table-hover>tbody>tr:hover {
+    color: var(--secondary-grey);
+}
+.table-shadow{
+    box-shadow: 0rem 0.063rem 0.25rem 0rem #00000029;
+}
+.specifications-tin-free-sheet{
+    background-color: #F5F7FD;
+}
+.specifications-tin-free-sheet table td,
+.specifications-tin-free-sheet table th {
+    padding: 0.5rem 0.5rem !important;
+    border: 0.063rem solid var(--primary-grey);
+}
+.galvanized-table-section table th {
+    padding: 0.5rem 0.5rem !important;
+}
+.specifications-tin-free-sheet table th{
+    font-size: 1.125rem;
+    font-weight: 700;
+    font-family: 'Roboto';
+}
+.specifications-tin-free-sheet table td{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Roboto';
+}
+.specifications-tin-free-sheet th.centered-header {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: 'Roboto';
+}
+.specifications-tin-free-sheet td {
+    background-color: white;
+}
+.table-responsive td[rowspan="2"] {
+    text-align: center;
+    vertical-align: middle;
+    margin: 0.625rem;
+    max-width: 150rem;
+}
+.specifications-tin-free-sheet td.bg {
+    background-color: var(--primary-white);
+} */
 
 /*====================================================
 Avighna responsive Adjust styles for all screens css
 ======================================================*/
- @media (max-width: 768) {    
+
+@media (max-width: 767px) {
+    .w-100 {
+        text-align: right;
+        top: 1.25rem;
+        right: 0.625rem;
+    }
+    .quote-image img{
+        width: auto;
+    }
+    .navbar-toggler {
+        margin-bottom: 1.063rem;
+    }
+    .navbar-nav-custom {
+        left: 0;
+    }
+    .dropdown, .dropend, .dropstart, .dropup, .nav-item {
+        text-align: center;
+    }
+    .building_innovative_intelligent_inner {
+        flex: 0 0 50%;
+        margin-bottom: 25px;
+        margin-left: 0;
+    }
+    .nav-tabs {
+        flex-direction: column;
+    }
+    .service_area {
+        margin-top: 85px;
+    }
+    .newsletters-right-sec {
+        left: 0%;
+        position: relative;
+        bottom: 79%;
+    }
+    .footer-head h4 {
+        margin-left: 0rem;
+    }
+    .footer-head ul li {
+        margin-left: -2rem;
+    }
+    .newsletters-right-sec-input input, .newsletters-right-sec-input button {
+        height: 2.375rem;
+        padding: 0.313rem;
+    }
+    .newsletters-right-sec-input {
+        margin: 0.313rem auto 0.625rem;
+    }
+    .newsletters-right-sec h3 {
+        font-size: 1.375rem;
+        margin-top: 0;
+    }
+    .shoping_cart {
+        display: none;
+    }
+    .d-flex {
+        display: none !important;
+    }
+    .logo-main {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0.625rem;
+        left: 0;
+    }
+    .search-input {
+        width: 100%;
+    }
+    .inner_heading{
+        font-size: 1.5rem;
+        bottom: 41px;
+    }
+    .bottom_area_footer {
+        margin-top: 1rem;
+        display: flex;
+        padding-top: 1.875rem;
+        flex-direction: column;
+    }    
+    .bottom_left_area ul {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .logo-footer {
+        margin-bottom: 0.938rem;
+    }
+    .social-address {
+        margin-bottom: 1.25rem;
+    }
     .progress {
         flex-direction: column;
         align-items: center;
@@ -3100,224 +2371,14 @@ Avighna responsive Adjust styles for all screens css
         font-size: 0.875rem;
         width: auto;
         text-align: center;
-    }    
+    }
 }
-@media (min-width: 280) and (max-width: 767) {
-    .w-100 {
-        text-align: right;
-        position: absolute;
-        top: 1.25rem;
-        right: 0.625rem;
-    }
-    .navbar-toggler {
-        margin-bottom: 1.063rem;
-    }
-    div#navbarSupportedContent {
-        background-color: var(--white);
-    }
-    .service_area {
-        margin-top: 85px;
-    }
-    .ecommerce-transformation img {
-        display: none;
-    }
-    .our-product-range h5 {
-        top: 80%;
-    }
-    .about-digital {
-        padding: 1.875rem 0;
-    }
-    .cold-rolled-application {
-        margin-bottom: 0;
-    }
-    .subscribe-to-our-newsletters-parent {
-        top: 3%;
-        left: 3%;
-        gap: 1.125rem;
-    }
-    .container-justify {
-        position: relative;
-    }
-    .subscribe-to-our {
-        font-size: 1.375rem;
-        line-height: 1.563rem;
-    }
-    .and-because-your {
-        font-size: 0.75rem;
-    } 
-    .newsletters-right-sec{
-        left: 0%;
-    }
-    .newsletters-right-sec-input input, .newsletters-right-sec-input button {
-        height: 2.375rem;
-        padding: 0.313rem;
-    }
-    .newsletters-right-sec-input {
-        margin: 0.313rem auto 0.625rem;
-    }
-    .newsletters-right-sec h3 {
-        font-size: 1.375rem;
-        margin-top: 0;
-    }
-    .contact-us-content {
-        left: auto;
-        height: auto;
-        padding: 80 0rem;
-    }
-    .galvanized-products-cat{
-        height: auto;
-    }
-    .shoping_cart {
-        display: none;
-    }
-    .d-flex {
-        display: none !important;
-    }
-    .ecommerce-transformation {
-        background-color: var(--secondary-blue);
-        height: auto;
-    }
-    .banner-home {
-        position: relative;
-        top: 0;
-    }
-    .ecommerce-transformation h1 {
-        font-size: 2rem !important;
-    }
-    .about-transformation {
-        height: auto;
-    }
-    .transmission-center {
-        padding: 1.25rem;
-    }
-    .transmission-center h1 {
-        margin-top: 2.813rem;
-        line-height: 2.5rem;
-    }
-    .ecommerce-transformation h2 {
-        font-size: 1rem;
-        line-height: 1.375rem;
-    }
-    .ecommerce-transformation p {
-        font-size: 0.75rem;
-        line-height: 1.125rem;
-    }
-    .about-us h1 {
-        font-size: 1.5rem;
-    }
-    .about-us p, .about-us p span {
-        font-size: 1rem;
-    }
+@media (max-width:991) {
     .logo-main {
         width: 100%;
         height: 100%;
         margin-bottom: 0.625rem;
         left: 0;
-    }
-    .search-input {
-        width: 100%;
-    }
-    .about-transformation h1 {
-        font-size: 1.5rem;
-    }
-    .inner_heading{
-        font-size: 1.5rem;
-        top: 0;
-        line-height: 0;
-    }
-    h3.inner_heading-50 {
-        font-size: 1.5rem;
-    }
-    h3.inner_heading-600 {
-        font-size: 1.5rem;
-        line-height: 0;
-    }
-    .developing_main_ausiness_activities_images {
-        position: relative;
-        margin-bottom: 1.25rem;
-    }
-
-    .developing_main_ausiness_activities_content {
-        position: relative;
-        bottom: 0;
-        width: 100%;
-    }
-    .mask-group-icon {
-        height: auto;
-        width: 100%;
-    }
-    .contact-us-main-form {
-        box-shadow: 0rem 0.25rem 1.75rem 0rem #0000000D;
-        background: var(--white);
-        padding: 2.5rem;
-        border: 0.063rem solid var(--primary-white);
-        border-radius: 0.313rem;
-        position: relative;
-        bottom: 0% !important;
-    }
-    .galvanized-steel_inner {
-        flex: 0 0 100%;
-    }
-    .etp_steel_inner {
-        flex: 0 0 100%;
-    }
-    .our-services-inner {
-        flex: 0 0 100%;
-        margin: 0.625rem auto;
-    }
-    .our-suppliers-inner {
-        flex: 0 0 100%;
-        margin: 0.625rem auto;
-    }
-    .bottom_area_footer {
-        margin-top: 1rem;
-        display: flex;
-        padding-top: 1.875rem;
-        flex-direction: column;
-    }    
-    .bottom_left_area ul {
-        display: flex;
-        list-style: none;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .about-transformation img {
-        height: auto;
-        object-fit: cover;
-    }
-    .social-contact h5 {
-        margin-top: 5%;
-    }
-    .logo-footer {
-        margin-bottom: 0.938rem;
-    }
-    .social-address {
-        margin-bottom: 1.25rem;
-    }
-}
-@media(min-width:767) and (max-width: 991) {
-    .galvanized-products-cat{
-        height: auto;
-    }
-    .etp_steel_inner {
-        flex: 0 0 48%;
-        margin-left: 0;
-        margin-bottom: 1.563rem;
-    }
-    .our-services-inner {
-        flex: 0 0 48%;
-        margin-bottom: 1.563rem;
-    }
-    .our-suppliers-inner {
-        flex: 0 0 48%;
-        margin-left: 0;
-        margin-bottom: 1.563rem;
-    }
-    .galvanized-steel_inner {
-        flex: 0 0 100%;
-    }
-    .about-transformation {
-        height: auto;
     }
     .search-input {
         width: 100%;
@@ -3331,22 +2392,12 @@ Avighna responsive Adjust styles for all screens css
         padding-left: 0rem;
         left: 0rem;
     }
-    .contact-us-main-form {
-        box-shadow: 0rem 0.25rem 1.75rem 0rem #0000000D;
-        background: var(--white);
-        padding: 2.5rem;
-        border: 0.063rem solid var(--primary-white);
-        border-radius: 0.313rem;
-        position: relative;
-        bottom: 50%;
-        left: 10%;
-    }
     .search-input{
         border: 0.063rem solid var(--secondary-white);
         width: 158;
     }
 }
-@media (min-width: 992) and (max-width: 1200) {
+@media (max-width: 1200) {
     .shoping_cart {
         margin: 1.563rem 0rem 0.625rem 0rem;
         position: relative;
@@ -3354,17 +2405,5 @@ Avighna responsive Adjust styles for all screens css
     .search-input{
         border: 0.063rem solid var(--secondary-white);
         width: 300;
-    }
-    .contact-us-main-form {
-        box-shadow: 0rem 0.25rem 1.75rem 0rem #0000000D;
-        background: var(--white);
-        padding: 2.5rem;
-        border: 0.063rem solid var(--primary-white);
-        border-radius: 0.313rem;
-        position: relative;
-        bottom: 50%;
-    }
-    .about-transformation {
-        height: auto;
     }
 }
