@@ -2681,8 +2681,35 @@ section.customization-services p{
 .cold-rolled-applications{
     margin-bottom: 6.25rem;
     background: url('../images/coldrolled/cold-rolled-application.png') no-repeat;
-
+    height: 423px;
 }
+.cold-rolled-applications-images {
+    position: relative;
+    box-shadow: 0px 2px 15px 0px #00000033;
+    background: #FFFFFF;
+    border-radius: 16px;
+    height: 211px;
+    margin: 16px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.cold-rolled-applications-images h4 {
+    color: var(--secondary-blue);
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    padding: 0.875rem;
+    font-family: 'Roboto';
+    text-transform: capitalize;
+}
+
+
+
 /*====================================================
 Avighna section table css
 ======================================================*/

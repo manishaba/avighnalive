@@ -3,10 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     $("#footer").load("footer.html");
     $("#footer1").load("footer1.html");
     $("#query").load("query.html");
-    $("#query1").load("query1.html");
-
-
-    
+    $("#query1").load("query1.html");    
     var scrollPositionToShow = 200;
     var scrollUpButton = document.createElement("div");
     scrollUpButton.id = "scrollUp";
@@ -39,4 +36,34 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     }
+});
+$(document).ready(function() {
+    function initializeSlider(selector) {
+        var slider = $(selector);
+        slider.on('init', function(event, slick){
+            AOS.init({
+                easing: 'ease-out-back',
+                offset: 100,
+                duration: 1000
+            });
+        });
+        slider.slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }],
+            prevArrow: false,
+            nextArrow: false,
+            autoplay: true,
+            autoplaySpeed: 2000
+        });
+    }
+    initializeSlider('.slider-wrapper-steel-category');
 });
