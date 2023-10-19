@@ -170,7 +170,10 @@ Avighna header css
     color: var(--secondary-orange) !important;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-    color: var(--primary-color) !important;
+    color: var(--secondary-orange) !important;
+}
+.navbar-light .navbar-nav .nav-link:focus {
+    color: var(--secondary-orange) !important;
 }
 .dropdown-item:focus, .dropdown-item:hover {
     color: var(--white) !important;
@@ -246,6 +249,9 @@ Avighna End header css
 /*====================================================
 Avighna about css
 ======================================================*/
+.banner-content {
+    padding-left: 10%;
+}
 .banner-home{
     position: relative;
     top: 8rem;    
