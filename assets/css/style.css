@@ -99,8 +99,12 @@ Avighna scrool css
 /*====================================================
 Avighna header css
 ======================================================*/
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../images/toggler.png) !important;
+}
 .dropdown-toggle:hover::after,
-.dropdown-toggle:active::after {
+.dropdown-toggle:active::after,
+.dropdown-toggle:focus::after {
     transform: rotate(180deg);
 }
 .logo-main{
@@ -118,6 +122,11 @@ Avighna header css
     width: 100%;
     top: 0;
     z-index: 1000;
+}
+.navbar-light .navbar-toggler {
+    border-color: var(--secondary-orange);
+    background-color: var(--secondary-orange);
+    color: var(--white) !important;
 }
 .container-justify{
     flex-direction: column;
@@ -1811,11 +1820,16 @@ Avighna responsive Adjust styles for all screens css
 ======================================================*/
 
 @media (min-width: 280px) and (max-width: 767px) {
+    .home-page{
+        margin-top: 77px;
+    }
+    .slick-dotted.slick-slider {
+        margin-bottom: 0px !important;
+    }
     .w-100 {
         text-align: right;
-        position: absolute;
-        top: 1.25rem;
-        right: 0.625rem;
+        /* position: absolute; */
+        margin-top: -3.375rem;
     }
     .navbar-toggler {
         margin-bottom: 1.063rem;
@@ -1829,16 +1843,23 @@ Avighna responsive Adjust styles for all screens css
     .service_area {
         margin-top: 85px;
     }
+    .service_area-about {
+        background-position: left !important;
+    }
     .about-image-left {
-        height: auto;
-        border: none;
-        margin: 0px;
+        display: none;
     }
     .about-image-left img {
         display: none;
     }
     .ecommerce-transformation img {
         display: none;
+    }
+    .about-transformation-non {
+        display: none;
+    }
+    .ecommerce-transformation-new {
+        height: auto;
     }
     .our-product-range h5 {
         top: 80%;
@@ -1983,6 +2004,29 @@ Avighna responsive Adjust styles for all screens css
         width: 100%;
     }
     /* new design footer responsive */
+    .heading-section {
+        position: relative !important;
+    }
+    .nav-tabs {
+        display: block !important;
+    }
+    .custom-orange {
+        margin-left: 0px !important;
+    }
+    .quote-image img {
+        width: 374px;
+        height: 382px;
+    }
+    .cold-rolled-main-image img {
+        width: 100% !important;
+    }
+    .process-to-follow-inner {
+        margin-left: 0px !important;
+    }
+    .centered-content h1 {
+        font-size: 32px !important;
+        line-height: normal !important;
+    }
     .contact-us-new-design-form {
         position: relative;
         margin-bottom: -5%;
@@ -2004,13 +2048,13 @@ Avighna responsive Adjust styles for all screens css
         left: 0;
     }
     .newsletters-left-sec-new-design {
-        height: auto;
+        height: auto !important;
     }
     .newsletters-right-sec-new-design {
-        left: 0;
+        left: 0 !important;
     }
     .newsletters-new-design {
-        padding: 0.5rem 0.5rem;
+        padding: 0.5rem 0.5rem !important;
     }
     .footer-updated-new-design {
         background-position: inherit;
@@ -2020,7 +2064,7 @@ Avighna responsive Adjust styles for all screens css
         margin-top: -26px;
     }
     .footer-head-new-design h4 {
-        margin-left: 0rem;
+        margin-left: 0rem !important;
     }
     .footer-head-new-design ul li {
         margin-left: -25px;
@@ -2029,12 +2073,15 @@ Avighna responsive Adjust styles for all screens css
         height: 231px;
         width: 100%;
     }
-    .cold-rolled-applications-images img{
-        width: 100%;
+    .steel-news-image{
+        padding: 10px;
+        margin: 0;
+        padding-right: 20px;
+        padding-right: 20px;
     }
     .contact-us-main-form {
         bottom: 0% !important;
-    }    
+    }   
     .galvanized-steel_inner {
         flex: 0 0 100%;
     }
@@ -2073,6 +2120,12 @@ Avighna responsive Adjust styles for all screens css
     }
     .social-address {
         margin-bottom: 1.25rem;
+    }
+    .navbar-nav-custom {
+        text-align: center;
+    }
+    .navbar-nav .dropdown-menu {
+        text-align: center;
     }
 }
 @media(min-width:767px) and (max-width: 991px) {
@@ -2159,9 +2212,6 @@ Avighna responsive Adjust styles for all screens css
     .cold-rolled-applications-images img{
         width: 100%;
     }
-
-
-
     .galvanized-products-cat{
         height: auto;
     }
@@ -2209,7 +2259,7 @@ Avighna responsive Adjust styles for all screens css
     }
     .search-input{
         border: 0.063rem solid var(--secondary-white);
-        width: 158;
+        width: 265px;
     }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
