@@ -58,16 +58,18 @@ body{
     --mobile-font: 12px;
 }
 
-html{
-	font-size: var(--desktop-font);
+html {
+    font-size: var(--desktop-font);
 }
-@media(max-width:1199px){
-    html{
+
+@media (max-width: 1199px) {
+    html {
         font-size: var(--tablet-font);
     }
 }
-@media(max-width:767px){
-    html{
+
+@media (max-width: 767px) {
+    html {
         font-size: var(--mobile-font);
     }
 }
@@ -97,8 +99,12 @@ Avighna scrool css
 /*====================================================
 Avighna header css
 ======================================================*/
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../images/toggler.png) !important;
+}
 .dropdown-toggle:hover::after,
-.dropdown-toggle:active::after {
+.dropdown-toggle:active::after,
+.dropdown-toggle:focus::after {
     transform: rotate(180deg);
 }
 .logo-main{
@@ -116,6 +122,11 @@ Avighna header css
     width: 100%;
     top: 0;
     z-index: 1000;
+}
+.navbar-light .navbar-toggler {
+    border-color: var(--secondary-orange);
+    background-color: var(--secondary-orange);
+    color: var(--white) !important;
 }
 .container-justify{
     flex-direction: column;
@@ -168,7 +179,10 @@ Avighna header css
     color: var(--secondary-orange) !important;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-    color: var(--primary-color) !important;
+    color: var(--secondary-orange) !important;
+}
+.navbar-light .navbar-nav .nav-link:focus {
+    color: var(--secondary-orange) !important;
 }
 .dropdown-item:focus, .dropdown-item:hover {
     color: var(--white) !important;
@@ -237,621 +251,16 @@ Avighna header css
     font-size: 14px;
     line-height: 17px;
 }
-.process-to-follow{
-    margin-top: 20px;
-}
-.process-to-follow-inner {
-    flex: 1;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(241.67deg, #00AA8B -20.81%, #007D84 31.6%, #0086B0 72.37%);
-    box-shadow: 0px 7px 12px 0px #00B3E830;
-    border-radius: 6px;
-    margin-left: 20px;
-    height: 100%;
-}
-.process-to-follow-inner a{
-    font-weight: 600;
-    font-family: 'Roboto';
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: capitalize;
-    color: #FFFFFF;
-    /* margin-top: 12px; */
-    padding: 8px;
-    display: inline-block;
-    text-decoration: none;
-}
-.process-to-follow-inner img{
-    margin: 10px auto;
-    width: fit-content;
-}
-.recently-added{
-    margin-top: 50px;
-}
-.hot-offer{
-    margin-top: 50px;
-}
-.get-quote{
-    margin-top: 50px;
-}
-.cold-rolled{
-    margin-top: 50px;
-    background: url('../images/index/cold-rolled.png') no-repeat;
-    width: 100%;
-    padding: 0px 50px 50px 50px;
-    background-size: cover;
+/*====================================================
+Avighna End header css
+======================================================*/
 
-
-}
-/* .side-banner {
-    background-image: url(../images//index/cold-rolled-col.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-.steel-news{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.nav-tabs {
-    display: flex;
-    justify-content: end;
-}
-.custom-align {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    border: none !important;
-    color: #FFFFFF;
-    
-}
-button.custom-link {
-    color: #FFFFFF !important;
-    background-color: transparent !important;
-    font-family: 'Poppins';
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 17px;
-    border-bottom: 2px solid #FD6202;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    outline: 0 !important;
-    box-shadow: none;
-    border: 0;
-}
-.custom-align .nav-item {
-    text-align: center;
-}
-
-.nav-tabs {
-    border-bottom: 1px solid #DDDDDD;
-}
-.heading-section{
-    position: absolute;
-    margin-top: -10px
-}
-.inner_heading-h3{
-    font-family: 'Poppins';
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 48px;
-    color: #1C3F9F;
-    border-bottom: 2px solid #1D3679;
-    width: fit-content;
-    position: relative;
-}
-.recently-added-image{
-    border: 1px solid #DDDDDD;
-    border-radius: 8px;
-    margin-top: 10%;
-}
-.recently-added-image-content-brand {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0px 0px 10px;
-    border-bottom: 1px solid #DDDDDD;
-    margin-top: 0; /* Add this line to remove top margin */
-}
-.recently-added-image-content-brand h1{
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #5B5B5B;
-    margin: 0;
-}
-.recently-added-image-content-brand h2{
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    color: #5B5B5B;
-    margin: 0;
-    padding-right: 10px;
-
-}
-.recently-added-image-content-brand-main {
-    padding-bottom: 10px;
-}
-
-.recently-added-image-content-brand-content p {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #5B5B5B;
-    margin: 0;
-    text-align: left;
-    padding: 11px 0px 2px 8px;
-}
-.recently-added-image h3{
-    font-family: 'Poppins';
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 21px;
-    color: #1D3679;
-    padding: 8px 0px 0px 12px;
-    margin: 0;
-}
-
-.custom-word{
-    font-weight: 500 !important;
-}
-.btn-group-lg>.btn, .btn-lg {
-    width: 100%;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: 'Poppins';
-    line-height: 27px;
-    color: #FFFFFF;
-    background: #1D3679;
-}
-.btn-primary {
-    color: #fff;
-    background-color: #1D3679 !important;
-    border-color: #1D3679 !important;
-}
-.btn-check:focus+.btn-primary, .btn-primary:focus {
-    box-shadow: none !important;
-}
-.quote-image {
-    position: relative;
-}
-.quote-image img{
-    width: 100%;
-}
-.centered-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-}
-.centered-content h1 {
-    font-family: 'Poppins';
-    font-weight: 700;
-    font-size: 55px;
-    line-height: 60px;
-    margin-bottom: 20px;
-    color: var(--white);
-}
-.centered-content button {
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'Poppins';
-    background-color: var(--secondary-orange) !important;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px; 
-}
-.cold-rolled-image{
-    border: 1px solid #EDEDED;
-    background: white;
-}
-.cold-rolled-main-image{
-    height: 100% !important;
-}
-.cold-rolled-image h3{
-    font-family: 'Poppins';
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 21px;
-    color: #4D4D4D;
-    padding: 8px 0px 0px 12px;
-    margin: 0;
-}
-.custom-button{
-    margin: 10px;
-}
-.steel-news-image img{
-    width: 100%;
-}
-.steel-news-content{
-    background: #EDEDED80;
-    height: 100%;
-    padding: 12px 18px 12px 18px;
-}
-.steel-news-content h3{
-    font-family: 'Poppins';
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 28px;
-    color: #4D4D4D;
-}
-.steel-news-content h4{
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
-    color: #FD6202;
-}
-.steel-news-content p{
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #5B5B5B;
-}
-.footer-button-new-design {
-    background-color:var(--secondary-orange) !important;
-}
-.footer-button {
-    color: var(--white);
-    background-color: #FD6202 !important;
-    border: 1px solid red;
-}
-.footer-button:hover {
-    color: var(--white);
-    background-color: var(--secondary-orange) !important;
-    border-color: var(--secondary-orange) !important;
-    border: none !important;
-}
-.nav-link{
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 17px;
-    font-family: 'Poppins';
-    color: var(--secondary-grey) !important
-}
-.custom-orange {
-    border: 0 !important;
-    outline: 0 !important;
-    box-shadow: none;
-    margin-left: 18px !important;
-    padding: 10px 0px 10px 0px !important;
-}
-.custom-orange.active {
-    border: 0 !important;
-    color: var(--secondary-orange) !important;
-    border-bottom: 2px solid #FD6202 !important;
-    /* padding: 7px 0px 10px 0px; */
-}
-.custom-link {
-    border: 0 !important;
-    outline: 0 !important;
-    box-shadow: none;
-    margin-left: 18px;
-    padding: 10px 0px 10px 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-
-    
-}
-.custom-link.active {
-    border: 0 !important;
-    color: #FFFFFF !important;
-    border-bottom: 2px solid #FD6202 !important;
-}
-.custom-link.active:hover {
-    color: #FFFFFF !important;
-    border: 0 !important;
-    border-bottom: 2px solid #FD6202 !important;    
-}
-.custom-link:active {
-    color: #FFFFFF !important;
-    border: 0 !important;
-    border-bottom: 2px solid #FD6202 !important;
-    
-}
-.custom-orange.active:hover {
-    color: var(--secondary-orange) !important;
-    border: 0 !important;
-    border-bottom: 2px solid #FD6202 !important;
-}
-.custom-orange.active:active {
-    color: var(--secondary-orange) !important;
-    border: 0 !important;
-    border-bottom: 2px solid #FD6202 !important;
-}
-
-.custom-link.focus {
-    outline: 0 !important;
-    box-shadow: none;
-    border: 0;
-}
-.popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #FFFFFF;
-    box-shadow: 0rem 0.063rem 0.25rem 0rem #00000029;
-    padding: 10px;
-    border-radius: 35px;
-    color: #FD6202;
-    text-align: center;
-    z-index: 1000;  
-}
-.popup img {
-    width: 70%;
-    max-width: 100%;
-    text-align: center;
-    padding: 10px;
-  }
-.popup h2 {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 40px;
-    text-align: center;
-    color: #FD6202;
-    padding: 30px;
-}
-.close-btn {
-    font-family: 'Montserrat';
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: #4D4D4D;
-    padding: 10px;
-    width: 27px;
-    height: 27px;
-    font-weight: bold;
-}
-.slick-dots {
-    width: fit-content !important;
-    bottom: 15px !important;
-    border-radius: 100px;
-    height: 28px !important;
-    left: 45%;
-    padding: 17px 32px 45px 32px !important;
-}
-.slick-dots li button:before {
-    font-size: 20px !important;
-    opacity: 1;
-}
-.slick-dots li.slick-active button:before {
-    opacity: 1 !important;
-    color: var(--secondary-orange) !important;
-}
-
-.service_area-about{
-    margin-top: 7.813rem;
-    overflow-x: none;
-    background: url('../images/about/banner.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.service_area-one{
-    margin-top: 7.813rem;
-    background: url('../images/about/banner1.png') no-repeat;
-    background-size: cover;
-    /* background-position: center; */
-    width: 100%;
-}
-.ecommerce-transformation-main{
-    height: 450px;     
-}
-.ecommerce-transformation-main h1{
-    font-family: 'Montserrat', sans-serif;
-    color: var(--white);
-    margin-top:0;
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 3.063rem;
-    text-transform: capitalize;
-}
-.ecommerce-transformation-main h2{
-    font-family: 'Montserrat', sans-serif;
-    color:var(--white);
-    margin-top:0;
-    font-weight: 600;
-    font-size: 3.438rem;
-    line-height: 4.188rem;
-    text-transform: capitalize;
-}
-.ecommerce-transformation-main p{
-    font-family: 'Roboto';
-    color:var(--white);
-    margin-top:0;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 2.563rem;
-}
-.about-center{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.about-image-left{
-    height: 434px;     
-    border: 20px solid #fff;
-    border-radius: 40px;
-    margin: 40px;
-}
-.about-image-left img{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    object-fit: cover;
-}
-.about-transformation-non{
-    height: 434px;     
-    margin: 78px 41px 0px 0px;
-}
-.about-transformation-non img{
-    width: 100%;
-}
-.about-digital-what-we{
-    padding: 1.75rem 0;
-}
-.about-us-what-we h1{
-    font-family: 'Montserrat', sans-serif;
-    color: var(--secondary-blue);
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 2.813rem;
-    line-height: 3.313rem;
-    letter-spacing: -1;
-    text-transform: capitalize;
-}
-.about-us-what-we p{
-    font-family: 'Roboto';
-    color: var(--primary-grey);
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-}
-.about-us-what-we h2{
-    font-family: 'Roboto';
-    color: var(--secondary-blue);
-    margin-top:0;
-    font-weight: 700;
-    font-size: 3.125rem;
-    line-height: 4.063rem;
-    text-align: center;
-    text-transform: capitalize;
-}
-.about-us-what-we h6{
-    font-family: 'Roboto';
-    color: var(--primary-grey);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.438rem;
-    text-align: center;
-}
-.about-us-what-we p span{
-    font-family: 'Roboto';
-    color: var(--primary-grey);
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.688rem;
-}
-.colled-rolled-about-banner{
-    padding: 1.75rem 0;
-    background-color: #F0F0F0;
-}
-.about-colled-rolled-content{
-    background: #FD62021A;
-    box-shadow: 0px 4px 28px 0px #0000000D;
-    padding: 12px;
-    border-radius: 8px;
-    margin-top: 20px;
-
-}
-.about-colled-rolled-content h4{
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-    color: var(--secondary-orange);
-
-}
-.about-colled-rolled-content p{
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.4rem;
-    color: #5B5B5B;
-    
-}
-.about-colled-rolled-content-grey{
-    background: #1D36791A;
-    box-shadow: 0px 4px 28px 0px #0000000D;
-    padding: 12px;
-    border-radius: 8px;
-    margin-top: 20px;    
-}
-.about-colled-rolled-content-grey h4{
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-    color: #1D3679;
-
-}
-.about-colled-rolled-content-grey p{
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.4rem;
-    color: #5B5B5B;
-    
-}
-
-.about-transformation-left img{
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-.about-transformation-left h1{
-    font-family: 'Montserrat';
-    color: var(--primary-blue);
-    margin-top:0;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 2.375rem;
-    text-transform: capitalize;
-}
-.about-transformation-left p{
-    font-family: 'Roboto';
-    color: var(--primaary-grey);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.438rem;
-}
-h3.inner_heading-all{
-    font-family: 'Montserrat';
-    font-size: 2.813rem;
-    font-weight: 700;
-    line-height: 3.625rem;
-    text-align: left;
-    letter-spacing: -1px;
-    text-transform: capitalize;
-    color: var(--secondary-blue);
-    margin-bottom: 1.25rem;
-}
-h3.inner_heading-700{
-    font-family: 'Montserrat';
-    font-size: 2.813rem;
-    font-weight: 700;
-    line-height: 3.438rem;
-    text-align: left;
-    text-transform: capitalize;
-    color: var(--white);
-    margin-bottom: 1.25rem;
-}
-h3.inner_heading-700-blue{
-    font-family: 'Montserrat';
-    font-size: 2.813rem;
-    font-weight: 700;
-    line-height: 3.438rem;
-    text-align: left;
-    text-transform: capitalize;
-    color: var(--secondary-blue);
-    margin-bottom: 1.25rem;
-}
 /*====================================================
 Avighna about css
 ======================================================*/
+.banner-content {
+    padding-left: 10%;
+}
 .banner-home{
     position: relative;
     top: 8rem;    
@@ -1013,180 +422,19 @@ Avighna about css
     line-height: 1.688rem;
 }
 /*====================================================
-Avighna footer css
+Avighna old footer css
 ======================================================*/
-.footer-updated-new-design {
-    padding: 0.625rem 0rem 0rem;
-    background: url('../images/footer/footer-main-section.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 494px;
-}
-.newsletters-new-design{
-    padding: 1.875rem 1.875rem;
-}
-.middle-area-new-design {
-    background: linear-gradient(180deg, #1D3679 0%, #162D6C 100%);
-    padding: 20px;
-    top: -20px;
-}
-.bottom-footer-area-new-design {
-    background: var(--secondary-blue);
-    padding: 10px;
-}
-.newsletters-left-sec-new-design{
-    position: relative;
-    height: 400px;
-}
-.newsletters-left-sec-new-design img{
-    max-width: 100%;
-}
-.logo_area-new-design p{
-    font-family: Poppins;
+.footer-button {
     color: var(--white);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    margin-top: 20px;
+    background-color: #FD6202 !important;
+    border: 1px solid red;
 }
-.newsletters-right-sec-new-design{
-    position: relative;
-    left: 5%;
-}
-.newsletters-right-sec-new-design h3{
-    font-size: 2.188rem;
-    font-weight: 600;
-    font-family: 'Roboto';
+.footer-button:hover {
     color: var(--white);
-    margin-top: 25%;
+    background-color: var(--secondary-orange) !important;
+    border-color: var(--secondary-orange) !important;
+    border: none !important;
 }
-.newsletters-right-sec-new-design p{
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 400;
-    font-family: 'Roboto';
-    color: var(--white);
-}
-.newsletters-right-sec-input-new-design{
-    display: flex;
-    margin: 1.25rem auto;
-    left: 0.625rem;
-}
-.newsletters-right-sec-input-new-design input{
-    font-family: 'Roboto';
-    color: var(--off-grey);
-    font-weight: 400;
-    font-size: 0.938rem;
-    line-height: 1.25rem;
-    width: 100%;
-    height: 3.125rem;
-}
-.newsletters-right-sec-input-new-design button{
-    font-family: 'Roboto';
-    color: var(--white);
-    background: var(--secondary-orange);
-    width: 97px;
-    height: 3.125rem;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    margin-left: 0.625rem;
-}
-.btn-primary:hover {
-    color: var(--white);
-    /* border: none; */
-}
-.logo-footer-new-design {
-    max-width: 150px;
-}
-.social-media-icons-new-design {
-    color: var(--white);
-    margin-right: 0.313rem;
-    font-size: 1.375rem;
-    cursor: pointer;
-}
-.social-media-icons-new-design:hover {
-    color: var(--secondary-orange);
-}
-
-.social-address-new-design img{
-    margin: 0.625rem auto;
-    margin-right: -10px;
-}
-.social-address-new-design a img:hover {
-    filter: brightness(0.5);
-    transition: filter 0.3s ease-in-out;
-}
-.footer-head-new-design h4{
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.688rem;
-    color: var(--white);
-    margin-bottom: 1rem;
-    margin-left: 1.85rem;
-    font-family: 'Poppins';
-}
-.footer-head-new-design ul li{
-    font-size: 1rem;
-    list-style: none;
-    font-weight: 400;
-    line-height: 1.875rem;
-    color: var(--white);
-    font-family: 'Poppins';
-}
-.footer-head-contact-new-design h4{
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.688rem;
-    color: var(--white);
-    margin-bottom: 1rem;
-    font-family: 'Poppins';
-}
-.content-new-design h5{
-    color: var(--white);
-    font-size: 1rem;
-    font-weight: 600;
-    margin-top: 0rem;
-    font-family: 'Poppins';
-
-}
-.content-new-design p{
-    color: var(--white);
-    font-size: 1rem;
-    font-weight: 400;
-    font-family: 'Poppins';
-}
-.bottom_area_footer-new-design {
-    display: flex;
-}
-.bottom_area_footer-new-design .bottom_left_area-new-design {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.bottom_left_area-new-design ul {
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-}
-.bottom_left_area-new-design ul li {
-    font-style: normal;
-    font-weight: 400;
-    font-family: 'Roboto';
-    font-size: 0.813rem;
-    line-height: 1.5rem;
-    margin-top: 0.5rem;
-    text-transform: capitalize;
-    color: var(--white);
-    cursor: pointer;
-    margin-right: 1.875rem;
-}
-
-
-
-
-
-
 .footer-updated {
     padding: 0.625rem 0rem 0rem;
     background: #FBF6F2;    
@@ -1202,20 +450,15 @@ Avighna footer css
     margin-top: 20%;
     font-family: 'Roboto';
 }
-/* .social-address img:hover{
-    cursor: pointer;
-    opacity: 0.5;
-    color: #FE7A19;
- } */
- .social-media-icons {
+.social-media-icons {
     color: var(--secondary-blue);
     margin-right: 0.313rem;
     font-size: 1.375rem;
     cursor: pointer;
- }
- .social-media-icons:hover {
+}
+.social-media-icons:hover {
     color: var(--primary-color);
- }
+}
 .social-address img{
     margin: 0.625rem auto;
 }
@@ -1323,6 +566,10 @@ Avighna footer css
     justify-content: flex-end;
     height: fit-content;
 }
+/*====================================================
+Avighna end old footer css
+======================================================*/
+
 
 /*====================================================
 Avighna all section css
@@ -1367,43 +614,6 @@ h3.inner_heading-50{
 h3.inner_heading-50 span{
     display: block;
 }
-.developing_main_ausiness_activities_images-about {
-    position: relative;
-    margin-top: 1.25rem;
-}
-.developing_main_ausiness_activities_images-about img {
-    position: relative;
-    max-width: 100%;
-    height: auto;
-}
-.developing_main_ausiness_activities_content-about h5 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 2.813rem;
-    line-height: 3.813rem;
-    letter-spacing: -1;
-    color: var(--secondary-orange);
-}
-.developing_main_ausiness_activities_content-about h6 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 2.625rem;
-    color: var(--secondary-blue);
-}
-.developing_main_ausiness_activities_content-about p {
-    font-weight: 400;
-    font-family: 'Roboto';
-    font-size: 1.25rem;
-    line-height: 1.75;
-    margin-top: 0.625rem;
-    margin-bottom: 1.25rem;
-    letter-spacing: 0.5px;
-    color: var(--primary-grey);
-}
-
-
-
 .developing_main_ausiness_activities_images {
     position: relative;
     margin-top: 1.25rem;
@@ -1436,17 +646,7 @@ h3.inner_heading-50 span{
     margin-bottom: 1.25rem;
     color: var(--primary-grey);
 }
-p.readmore{
-    font-family: 'Poppins';
-    width: fit-content;
-    padding: 15px 30px 15px 30px;
-    display: block;
-    font-weight: 500;
-    font-size: 1rem;
-    border-radius: 4px;
-    border: 1px solid #1D3679;
-    color: var(--secondary-blue);
-}
+
 span.green{
     font-family: 'Roboto';
     font-weight: 600;
@@ -1464,137 +664,6 @@ span.readmore{
     font-style: italic;
     color: var(--secondary-orange);
 }
-.our-product-range-about {
-    background-color: #1D3679;
-    padding: 40px 0;
-}
-.our-product-range-about-images {
-    height: 157px;
-    width: 157px;
-    border-radius: 16px;
-    background: var(--white);
-    flex: 1;
-    text-align: center;
-    margin: 20px;
-}
-.our-product-range-about h5 {
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 1.563rem;
-    color: var(--white);
-    text-align: left;
-    margin-top: 20px;
-}
-.our-product-range-about p {
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    color: var(--white);
-    text-align: left;
-    margin-top: 10px;
-}
-.our-product-range-about img {
-    margin: 20px auto;
-    transition: transform 0.3s ease;
-}
-.our-product-range-about img:hover {
-    transform: scale(1.1);
-    border-radius: 0.625rem;
-}
-.our-product-range-about img:hover:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: opacity 0.3s ease;
-}
-.our-product-range-about img:hover:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: rgba(255, 255, 255, 0.8);
-    transition: opacity 0.3s ease;
-}  
-.our-product-range-about img:hover:after {
-    opacity: 0;
-}
-
-.our-services-about {
-    background: url('../images/about/our-services-section-main.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 40px 0;
-    height: 75vh;
-}
-.our-services-about-inner {
-    box-shadow: 0px 2px 15px 0px #00000033;
-    background: #FFFFFF;
-    flex: 1;
-    text-align: center;
-    margin: 20px;
-}
-.our-services-about-inner h5{
-    color: var(--secondary-blue);
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.25rem;
-    padding-top: 1.125rem;
-    height: 60px;
-    text-transform: capitalize;
-    font-family: 'Roboto';
-}
-.our-services-about-inner img{
-    margin: 0 auto;
-}
-.our-services-about-inner img {
-    width: 100%;
-    margin: 20px auto;
-    border-radius: 14px;
-    transition: transform 0.3s ease;
-}
-.our-services-about-inner img:hover {
-    transform: scale(1.1);
-    border-radius: 0.625rem;
-}
-.our-services-about-inner img:hover:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: rgba(255, 255, 255, 0.8);
-    transition: opacity 0.3s ease;
-}
-.our-services-about-inner img:hover:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: rgba(255, 255, 255, 0.8);
-    transition: opacity 0.3s ease;
-}  
-.our-services-about-inner img:hover:after {
-    opacity: 0;
-}
-
 .our-product-range-images {
     margin-bottom: 3.75rem;
     margin-top: 2.5rem;
@@ -1810,55 +879,6 @@ span.readmore{
 .our-services-inner img:hover:after {
     opacity: 0;
 }
-.our-suppliers-about{
-    padding: 3.125rem;
-}
-.our-suppliers-about-inner {
-    flex: 1;
-    text-align: center;
-    width: 100%;
-    margin: 0.313rem;
-    height: auto;
-    box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
-    border: 0.063rem solid var(--primary-white);
-}
-.our-suppliers-about-inner img{
-    margin: 0 auto;
-    width: 100%;
-    transition: transform 0.3s ease;
-}    
-.our-suppliers-about-inner img:hover {
-    transform: scale(1.2);
-    border-radius: 0.625rem;
-}
-.our-suppliers-about-inner img:hover:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: rgba(255, 255, 255, 0.8);
-    transition: opacity 0.3s ease;
-}
-.our-suppliers-about-inner img:hover:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: rgba(255, 255, 255, 0.8);
-    transition: opacity 0.3s ease;
-}  
-.our-suppliers-about-inner img:hover:after {
-    opacity: 0;
-}
-
 section.customization-services p{
     font-family: 'Roboto';
     padding: 1.25rem;
@@ -1868,7 +888,6 @@ section.customization-services p{
     text-align: center;
     color: var(--secondary-grey);
 }
-
 .our-services p {
     font-family: 'Roboto';
     padding: 1.25rem;
@@ -2021,128 +1040,9 @@ section.customization-services p{
     line-height: 1.375rem;
     color: var(--off-grey);
 }
-.our-vision{
-    margin-top: 1.125rem;
-    padding: 0.625rem;
-}
-.our-vision-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-.our-vision-content h1{
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 2.813rem;
-    line-height: 3.625rem;
-    color: var(--secondary-blue);
-}
-.our-vision-content p{
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    color: var(--primary-grey);
-}
-.our-vision-images img{
-    width: 100%;
-}
-.row-containerr {
-    display: flex;
-    margin: 10px;
-}
-.our-vision-images-content-main{
-    position: relative;
-    display: flex;
-}
-.our-vision-images-content{
-    box-shadow: 0px 2px 15px 0px #00000033;
-    width: fit-content;
-    height: auto;
-    padding: 30px;
-    border-radius: 24px;
-    position: relative;
-    bottom: 194%;
-    left: 24%;
-    margin: 10px;
-    background: #FFFFFF;
-
-}
-.our-vision-images-content-left{
-    box-shadow: 0px 2px 15px 0px #00000033;
-    width: fit-content;
-    padding: 30px;
-    border-radius: 24px;
-    position: relative;
-    bottom: 174%;
-    left: 7%;
-    margin: 10px;
-    background: #FFFFFF;
-
-}
-.our-vision-content-images p{
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    text-align: center;
-    margin-top: 16px;
-    color: var(--primary-grey);
-}
-.our-vision-content-images{
-    text-align: center;
-}
-.our-vision-content-images img{
-    max-width: 100%;
-    height: auto;
-}
-.service_area-new{
-    margin-top: 3.125rem;
-}
 .banner-home-new{
     position: relative;
     top: 10.625rem;    
-}
-.banner-content {
-    padding-left: 5%;
-}
-.about-digital-new{
-    position: relative;
-}
-.transmission-center-new{
-    display: flex;
-    padding: 5%;
-    position: relative;
-}
-.ecommerce-transformation-new{
-    background-color: var(--clear-white);
-    height: 380px;
-    position: relative;
-    align-items: center;     
-}
-.ecommerce-transformation-new img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.ecommerce-transformation-new h1{
-    font-family: 'Roboto';
-    color: var(--secondary-blue);
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 2.5rem;
-}
-.ecommerce-transformation-new span{
-    display: block;
-}
-.ecommerce-transformation-new p{
-    font-family: 'Roboto';
-    color: var(--primary-grey);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.438rem;
 }
 .galvanized-products{
     margin-top: 1.25rem;
@@ -2187,128 +1087,6 @@ section.customization-services p{
     width: auto;
     margin-right: 0.625rem;
 }
-
-.contact-us-new-design{
-    margin-top: 0.813rem;
-    background: url('../images/about/banner1.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.contact-us-new-design h3{
-    font-family: 'Montserrat';
-    color: var(--white);
-    font-weight: 700;
-    font-size: 3.75rem;
-    line-height: 4.1rem;
-    text-transform: capitalize;
-}
-.contact-us-new-design h4{
-    font-family: 'Roboto';
-    color: var(--white);
-    font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 1.25rem;
-}
-.contact-us-new-design-content{
-    height: 487px;
-    position: relative;
-    /* top: 20%; */
-    left: 5%;
-    bottom: 0;
-    display: inline-grid;
-    align-items: baseline;
-    align-content: center;
-}
-.contact-us-new-design-form{
-    position: relative;
-    margin-bottom: -5%;
-    padding-bottom: 0;
-    background-size: cover;
-    padding: 100px 0;
-    
-}
-.contact-us-new-design-form-content{
-    display: flex;
-}
-.contact-us-new-design-form h4{
-    font-family: 'Roboto';
-    color: var(--dark-blue);
-    font-weight: 600;
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-}
-.contact-us-new-design-form p{
-    font-family: 'Roboto';
-    color: var(--dark-blue);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.75rem;
-}
-.contact-us-new-design-form img{
-    padding-right: 1.25rem;
-}
-.contact-us-new-design-main-form h4{
-    font-family: 'Roboto';
-    color: #1D3679;
-    font-weight: 600;
-    font-size: 1.75rem;
-    line-height: 2.188rem;
-}
-.contact-us-new-design-main-form label{
-    font-family: 'Roboto';
-    color: var(--primary-grey);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.438rem;
-}
-.contact-us-new-design-main-form input{
-    font-family: 'Roboto';
-    color: #5B5B5B !important;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.438rem;
-}
-#name::placeholder {
-    color: #5B5B5B !important;
-}
-#email::placeholder {
-    color: #5B5B5B !important;
-}
-#phone::placeholder {
-    color: #5B5B5B !important;
-}
-#textarea::placeholder {
-    color: #5B5B5B !important;
-}
-.contact-us-new-design-main-form input, .contact-us-main-form textarea{
-    padding: 9px 14px 9px 14px;
-    margin: 0.625rem auto;
-    box-sizing: border-box;
-    border: 1px solid #DDDDDD;
-}
-.contact-us-new-design-main-form button{
-    font-family: 'Roboto';
-    color: var(--white);
-    background: var(--secondary-blue);
-    width: 125px;
-    height: 2.813rem;
-    font-weight: 400;
-    font-size: 0.938rem;
-    line-height: 1.25rem;
-}
-.contact-us-new-design-main-form{
-    box-shadow: 0rem 0.25rem 1.75rem 0rem #0000000D;
-    background: var(--white);
-    padding: 2.5rem;
-    border: 0.063rem solid var(--primary-white);
-    border-radius: 0.313rem;
-    position: absolute;
-    bottom: 60%;
-    height: 30.688rem;
-    left: 69%;
-}
-
 .contact-us{
     margin-top: 3.125rem;
     margin-bottom: 3.125rem;
@@ -2413,6 +1191,7 @@ section.customization-services p{
     bottom: 50%;
     height: 38.25rem;
 }
+
 .specifications-range{
     background: #F5F7FD;
     padding: 1.25rem;
@@ -2479,9 +1258,6 @@ section.customization-services p{
     justify-content: center;
     object-fit: cover;
     margin: 0 auto;
-    /* border-radius: 50%; */
-    /* background: white; */
-    /* border-radius: 60%; */
     height: 90px;
     width: 100%;
     padding: 0.625rem
@@ -2495,60 +1271,6 @@ section.customization-services p{
     color: var(--white) !important;
     position: relative;
     z-index: 1;
-}
-
-.custom-table tbody tr td:first-child {
-    font-family: 'Roboto';
-    font-weight: 500 !important;
-    font-size: 20px !important;
-    line-height: 26px !important;
-    color: #1D3679 !important;
-}
-.custom-table tbody tr td:nth-child(2){
-    font-family: 'Roboto';
-    font-weight: 500 !important;
-    font-size: 20px !important;
-    line-height: 26px !important;
-    color: #FD6202 !important;
-}
-.custom-table tbody tr:nth-child(2) td:nth-child(1) {
-    font-family: 'Roboto';
-    font-weight: 400 !important;
-    font-size: 18px !important;
-    line-height: 23px !important;
-    color: #5B5B5B !important;
-}
-
-.bis-standards{
-    padding: 1.875rem;
-}
-.bis-standards-main-container{
-    background: var(--white);
-    box-shadow: 0px 4px 28px 0px #0000000D;
-    border-radius: 8px;
-    padding: 20px 0px 10px 15px;
-    height: auto;
-    position: relative;
-    border-bottom: 1px solid #DDDDDD;
-}
-.bis-standards-main-container p{
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 26px;
-    text-align: left;
-    color: #1D3679;
-}
-.bis-standards-container-content-color {
-    color: #FD6202;
-}
-.bis-standards-main-container .bis-standards-container-content .row div:nth-child(3) p {
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
-    text-align: left;
-    color: #5B5B5B;
 }
 .bis-standards-main{
     background: var(--white);
@@ -2674,15 +1396,7 @@ section.customization-services p{
     width: auto;
     padding: 1.5rem;
 }
-.colled-rolled-grades-BIS-standards{
-    background-color: #1D3679;
-    padding: 1.5rem 1.5rem !important;
-}
-.cold-rolled-applications{
-    margin-bottom: 6.25rem;
-    background: url('../images/coldrolled/cold-rolled-application.png') no-repeat;
 
-}
 /*====================================================
 Avighna section table css
 ======================================================*/
@@ -3104,40 +1818,18 @@ Avighna end all section css
 /*====================================================
 Avighna responsive Adjust styles for all screens css
 ======================================================*/
- @media (max-width: 768) {    
-    .progress {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10%;
+
+@media (min-width: 280px) and (max-width: 767px) {
+    .home-page{
+        margin-top: 77px;
     }
-    .progress-bar {
-        width: 100% !important;
+    .slick-dotted.slick-slider {
+        margin-bottom: 0px !important;
     }
-    .progress-center {
-        flex-direction: column;
-        align-items: center;
-        margin: 1.25rem 0;
-    }
-    .progress span {
-        font-size: 1rem;
-    }
-    .upicon-style, .downicon-style {
-        margin: 0.625rem 0;
-    }
-    .upicon-text, .downicon-text, .upicon-text-minheight, .downicon-text-minheight {
-        margin: 0.625rem 0;
-        padding: 0;
-        font-size: 0.875rem;
-        width: auto;
-        text-align: center;
-    }    
-}
-@media (min-width: 280) and (max-width: 767) {
     .w-100 {
         text-align: right;
-        position: absolute;
-        top: 1.25rem;
-        right: 0.625rem;
+        /* position: absolute; */
+        margin-top: -3.375rem;
     }
     .navbar-toggler {
         margin-bottom: 1.063rem;
@@ -3145,11 +1837,29 @@ Avighna responsive Adjust styles for all screens css
     div#navbarSupportedContent {
         background-color: var(--white);
     }
+    .service_area-one {
+        margin-top: 85px;
+    }
     .service_area {
         margin-top: 85px;
     }
+    .service_area-about {
+        background-position: left !important;
+    }
+    .about-image-left {
+        display: none;
+    }
+    .about-image-left img {
+        display: none;
+    }
     .ecommerce-transformation img {
         display: none;
+    }
+    .about-transformation-non {
+        display: none;
+    }
+    .ecommerce-transformation-new {
+        height: auto;
     }
     .our-product-range h5 {
         top: 80%;
@@ -3214,8 +1924,25 @@ Avighna responsive Adjust styles for all screens css
     .ecommerce-transformation h1 {
         font-size: 2rem !important;
     }
+    .ecommerce-transformation-main {
+        height: auto;
+        /* margin-top: 10%; */
+    }
     .about-transformation {
         height: auto;
+    }
+    .about-center {
+        padding: 1.25rem;
+    }
+    .about-center h1 {
+        margin-top: 2.813rem;
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+    .about-center h2 {
+        margin-top: 2.813rem;
+        font-size: 35px;
+        line-height: 3.5rem;
     }
     .transmission-center {
         padding: 1.25rem;
@@ -3276,15 +2003,76 @@ Avighna responsive Adjust styles for all screens css
         height: auto;
         width: 100%;
     }
-    .contact-us-main-form {
-        box-shadow: 0rem 0.25rem 1.75rem 0rem #0000000D;
-        background: var(--white);
-        padding: 2.5rem;
-        border: 0.063rem solid var(--primary-white);
-        border-radius: 0.313rem;
-        position: relative;
-        bottom: 0% !important;
+    /* new design footer responsive */
+    .heading-section {
+        position: relative !important;
     }
+    .nav-tabs {
+        display: block !important;
+    }
+    .custom-orange {
+        margin-left: 0px !important;
+    }
+    .quote-image img {
+        width: 374px;
+        height: 382px;
+    }
+    .cold-rolled-main-image img {
+        width: 100% !important;
+    }
+    .process-to-follow-inner {
+        margin-left: 0px !important;
+    }
+    .centered-content h1 {
+        font-size: 32px !important;
+        line-height: normal !important;
+    }
+    .contact-us-new-design-form {
+        padding: 0 !important;
+    }
+    .contact-us-new-design-content {
+        left: 0%;
+    }
+    .contact-us-new-design-main-form {
+        position: relative !important;
+        bottom: 10% !important;
+        left: 0 !important;
+    }
+    .newsletters-left-sec-new-design {
+        height: auto !important;
+    }
+    .newsletters-right-sec-new-design {
+        left: 0 !important;
+    }
+    .newsletters-new-design {
+        padding: 0.5rem 0.5rem !important;
+    }
+    .footer-updated-new-design {
+        background-position: inherit;
+    }
+    .middle-area-new-design {
+        padding: 10px;
+        margin-top: -26px;
+    }
+    .footer-head-new-design h4 {
+        margin-left: 0rem !important;
+    }
+    .footer-head-new-design ul li {
+        margin-left: -25px;
+    }
+    .specifications-range-main-new{
+        height: 231px;
+        width: 100%;
+    }
+    .steel-news-image{
+        padding: 10px;
+        margin: 0;
+        padding-right: 20px;
+        padding-right: 20px;
+    }
+    .contact-us-main-form {
+        bottom: 0% !important;
+    }   
     .galvanized-steel_inner {
         flex: 0 0 100%;
     }
@@ -3324,8 +2112,103 @@ Avighna responsive Adjust styles for all screens css
     .social-address {
         margin-bottom: 1.25rem;
     }
+    .navbar-nav-custom {
+        text-align: center;
+    }
+    .navbar-nav .dropdown-menu {
+        text-align: center;
+    }
+    .specifications-range-main-new {
+        width: 100% !important;
+    }
+    .contact-us-new-design-content {
+        left: 0% !important;
+    }
 }
-@media(min-width:767) and (max-width: 991) {
+@media(min-width:767px) and (max-width: 991px) {
+    .progress {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+    }
+    .progress-bar {
+        width: 100% !important;
+    }
+    .progress-center {
+        flex-direction: column;
+        align-items: center;
+        margin: 1.25rem 0;
+    }
+    .progress span {
+        font-size: 1rem;
+    }
+    .upicon-style, .downicon-style {
+        margin: 0.625rem 0;
+    }
+    .upicon-text, .downicon-text, .upicon-text-minheight, .downicon-text-minheight {
+        margin: 0.625rem 0;
+        padding: 0;
+        font-size: 0.875rem;
+        width: auto;
+        text-align: center;
+    }
+    /* new design footer responsive */
+    .contact-us-new-design-form {
+        position: relative;
+        margin-bottom: -5%;
+        padding-bottom: 0;
+        background-size: cover;
+        padding: 0;
+    }
+    .contact-us-new-design-content {
+        left: 0%;
+    }
+    .contact-us-new-design-main-form {
+        box-shadow: 0rem 0.25rem 1.75rem 0rem #0000000D;
+        background: var(--white);
+        padding: 2.5rem;
+        border: 0.063rem solid var(--primary-white);
+        border-radius: 0.313rem;
+        position: relative;
+        bottom: 10% !important;
+        left: 0;
+    }
+    .newsletters-left-sec-new-design {
+        height: auto;
+    }
+    .newsletters-right-sec-new-design {
+        left: 0;
+    }
+    .newsletters-new-design {
+        padding: 0.5rem 0.5rem;
+    }
+    .footer-updated-new-design {
+        background-position: inherit;
+        height: auto;
+    }
+    .middle-area-new-design {
+        padding: 10px;
+        margin-top: -43px;
+    }
+    .footer-head-new-design h4 {
+        margin-left: 0rem;
+    }
+    .footer-head-new-design ul li {
+        margin-left: -25px;
+    }
+    .newsletters-right-sec-new-design h3 {
+        margin-top: 3%;
+    }
+    .bottom-footer-area-new-design {
+        margin-top: -1px;
+    }
+    .specifications-range-main-new{
+        height: 231px;
+        width: 100%;
+    }
+    .cold-rolled-applications-images img{
+        width: 100%;
+    }
     .galvanized-products-cat{
         height: auto;
     }
@@ -3373,10 +2256,10 @@ Avighna responsive Adjust styles for all screens css
     }
     .search-input{
         border: 0.063rem solid var(--secondary-white);
-        width: 158;
+        width: 265px;
     }
 }
-@media (min-width: 992) and (max-width: 1200) {
+@media (min-width: 992px) and (max-width: 1200px) {
     .shoping_cart {
         margin: 1.563rem 0rem 0.625rem 0rem;
         position: relative;
