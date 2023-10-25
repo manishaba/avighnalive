@@ -510,6 +510,8 @@ Avighna start all section css
     flex: 1;
     text-align: center;
     margin: 20px;
+    display: inline-block;
+    vertical-align: top; 
 }
 .our-product-range-about h5 {
     font-family: 'Montserrat';
@@ -519,6 +521,7 @@ Avighna start all section css
     color: var(--white);
     text-align: left;
     margin-top: 20px;
+    overflow: visible;
 }
 .our-product-range-about p {
     font-family: 'Roboto';
@@ -1855,7 +1858,7 @@ Avighna common class css
     line-height: 1.75;
     margin-top: 0.625rem;
     margin-bottom: 1.25rem;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.08px;
     color: var(--primary-grey);
 }
 h3.inner_heading-all{
