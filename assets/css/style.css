@@ -2279,10 +2279,10 @@ Avighna responsive Adjust styles for all screens css
         position: relative !important;
     }
     .nav-tabs {
-        display: block !important;
+        display: flex !important;
     }
     .custom-orange {
-        margin-left: 0px !important;
+        margin-left: 18px !important;
     }
     .custom-align {
         display: flex !important;
