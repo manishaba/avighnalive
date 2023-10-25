@@ -2180,53 +2180,44 @@ Avighna responsive Adjust styles for all screens css
         height: auto;
     }
     .contact-us-new-design-form {
-        position: relative;
-        margin-bottom: -5%;
-        padding-bottom: 0;
-        background-size: cover;
-        padding: 0;
+        padding: 0 !important;
     }
     .contact-us-new-design-content {
         left: 0%;
     }
     .contact-us-new-design-main-form {
-        box-shadow: 0rem 0.25rem 1.75rem 0rem #0000000D;
-        background: var(--white);
-        padding: 2.5rem;
-        border: 0.063rem solid var(--primary-white);
-        border-radius: 0.313rem;
-        position: relative;
+        position: relative !important;
         bottom: 10% !important;
-        left: 0;
+        left: 0 !important;
     }
     .newsletters-left-sec-new-design {
-        height: auto;
+        height: auto !important;
     }
     .newsletters-right-sec-new-design {
-        left: 0;
+        left: 0 !important;
     }
     .newsletters-new-design {
-        padding: 0.5rem 0.5rem;
+        padding: 0.5rem 0.5rem !important;
     }
     .footer-updated-new-design {
         background-position: inherit;
-        height: auto;
+        height: auto !important;
     }
     .middle-area-new-design {
         padding: 10px;
         margin-top: -43px;
     }
     .footer-head-new-design h4 {
-        margin-left: 0rem;
+        margin-left: 0rem !important;
     }
     .footer-head-new-design ul li {
         margin-left: -25px;
     }
-    .newsletters-right-sec-new-design h3 {
-        margin-top: 3%;
-    }
     .bottom-footer-area-new-design {
         margin-top: -1px;
+    }
+    .newsletters-right-sec-new-design h3 {
+        margin-top: 2% !important;
     }
     .specifications-range-main-new{
         height: 231px;
@@ -2283,6 +2274,22 @@ Avighna responsive Adjust styles for all screens css
     .search-input{
         border: 0.063rem solid var(--secondary-white);
         width: 265px;
+    }
+    .heading-section {
+        position: relative !important;
+    }
+    .nav-tabs {
+        display: block !important;
+    }
+    .custom-orange {
+        margin-left: 0px !important;
+    }
+    .custom-align {
+        display: flex !important;
+        margin-left: 10px !important;
+    }
+    .quote-image img {
+        height: 422px;
     }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
