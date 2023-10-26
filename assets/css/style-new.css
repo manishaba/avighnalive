@@ -530,6 +530,7 @@ Avighna start all section css
     margin-top: 10px;
 }
 .our-product-range-about img {
+    max-width: 100%;
     margin: 20px auto;
     transition: transform 0.3s ease;
 }
