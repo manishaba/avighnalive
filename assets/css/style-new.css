@@ -759,7 +759,8 @@ Avighna start all section css
 }
 
 .service_area-new{
-    margin-top: 3.125rem;
+    margin-top: 0.01rem;
+    margin-bottom: -13px;
 }
 .banner-content-margin {
     padding-left: 5%;
@@ -1617,6 +1618,7 @@ Avighna new footer css
     background-size: cover;
     background-position: center;
     height: 494px;
+    margin-top: 24px;
 }
 .footer-button-new-design {
     background-color:var(--secondary-orange) !important;
