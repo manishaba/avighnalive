@@ -1117,6 +1117,13 @@ Avighna start all section css
     background-position: center;
     height: 423px;
 }
+.custruction-applications{
+    margin-bottom: 3.25rem;
+    background: url('../images/coldrolled/cold-rolled-application.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 423px;
+}
 .cold-rolled-applications-images {
     position: relative;
     box-shadow: 0px 2px 15px 0px #00000033;
@@ -1447,16 +1454,22 @@ Avighna start all section css
     font-size: 1rem;
     line-height: 1.438rem;
 }
-.services-card-wrapper  {
-    margin: 50px 0px;
-}
 .services-card-wrapper h3 {
+    font-family: 'Montserrat';
     color: #1D3679;
     font-size: 50px;
     font-weight: 700;
     line-height: 60px;
     letter-spacing: -1px;
     text-transform: capitalize;
+}
+.services-card-wrapper p {
+    font-family: 'Roboto';
+    color: #747474;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -1px;
 }
 .services-card {
     position: relative;
@@ -1470,10 +1483,19 @@ Avighna start all section css
     background-color: #fff;
     bottom: 0px;
     right: 0px;
-    left: 74px;
+    left: 60px;
     padding: 10px;
-    width: 150px;
+    width: 203px;
+    height: 66px;
     text-align: center;
+}
+.card-title span{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #1D3679;
 }
 #packaging-solutions {
     margin: 50px 0px;
