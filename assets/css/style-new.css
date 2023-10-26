@@ -1812,7 +1812,7 @@ Avighna common class css
     object-fit: cover;
 }
 .ecommerce-transformation-new h1{
-    font-family: 'Roboto';
+    font-family: 'Montserrat';
     color: var(--secondary-blue);
     font-weight: 700;
     font-size: 2rem;
@@ -1825,8 +1825,9 @@ Avighna common class css
     font-family: 'Roboto';
     color: var(--primary-grey);
     font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.438rem;
+    font-size: 1.5rem;
+    line-height: 2.063rem;
+    letter-spacing: 0.08px;
 }
 
 .developing_main_ausiness_activities_images-about {

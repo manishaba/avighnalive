@@ -601,7 +601,7 @@ h3.inner_heading-600 span{
     display: block;
 }
 h3.inner_heading-50{
-    font-family: 'Roboto';
+    font-family: 'Montserrat';
     font-size: 3.125rem;
     font-weight: 700;
     line-height: 4.063rem;
@@ -884,6 +884,7 @@ section.customization-services p{
     padding: 1.25rem;
     font-weight: 400;
     font-size: 1rem;
+    line-height: 1.438rem;
     line-height: 1.438rem;
     text-align: center;
     color: var(--secondary-grey);
@@ -1499,6 +1500,13 @@ Avighna all section css
 ======================================================*/
 .developing_end_to_end_digital_sec{
     padding: 1.875rem 1.875rem;
+}
+.avighna-etp {
+    padding: 2rem;
+    background: url('../images/avighnacustomize/avighna-customize-banner.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 427px;
 }
 .etp_steel_inner p{
     font-weight: 500;
