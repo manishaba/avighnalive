@@ -32,7 +32,7 @@ Template Name: Avighna
 /*============================
  Avighna Main Menu Area Css
 ==============================*/
-body{
+body {
     font-family: 'Roboto';
 }
 
@@ -53,7 +53,7 @@ body{
     --dark-grey: #525252;
     --shadow-color: #00000014;
     --green: #21BE14;
-    --desktop-font:16px;
+    --desktop-font: 16px;
     --tablet-font: 14px;
     --mobile-font: 12px;
 }
@@ -73,18 +73,19 @@ html {
         font-size: var(--mobile-font);
     }
 }
+
 /*====================================================
 Avighna scrool css
 ======================================================*/
 #scrollUp {
     background: var(--primary-color) none repeat scroll 0 0;
     bottom: 1.875rem;
-    color:var(--white);
+    color: var(--white);
     font-family: 'Roboto';
     font-size: 1.375rem;
     height: 2.5rem;
     line-height: 2.5rem;
-    right: 1.25rem !important; 
+    right: 1.25rem !important;
     text-align: center;
     width: 2.5rem;
     border-radius: 50%;
@@ -92,6 +93,7 @@ Avighna scrool css
     align-items: center;
     justify-content: center;
 }
+
 #scrollUp {
     display: none;
 }
@@ -102,12 +104,14 @@ Avighna header css
 .navbar-light .navbar-toggler-icon {
     background-image: url(../images/toggler.png) !important;
 }
+
 .dropdown-toggle:hover::after,
 .dropdown-toggle:active::after,
 .dropdown-toggle:focus::after {
     transform: rotate(180deg);
 }
-.logo-main{
+
+.logo-main {
     position: relative;
     width: 100%;
     height: auto;
@@ -116,49 +120,58 @@ Avighna header css
     margin-bottom: 0.625rem;
     max-width: 150px;
 }
+
 .bg-light {
-    background-color: var(--white)!important;
+    background-color: var(--white) !important;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
 }
+
 .navbar-light .navbar-toggler {
     border-color: var(--secondary-orange);
     background-color: var(--secondary-orange);
     color: var(--white) !important;
 }
-.container-justify{
+
+.container-justify {
     flex-direction: column;
 }
+
 .navbar {
     padding-bottom: 0.0rem !important;
 }
-.navbar-nav-custom{
+
+.navbar-nav-custom {
     position: relative;
     margin-right: 53px;
     display: flex;
 }
-.navbar-main{
+
+.navbar-main {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar-collapse-border{
+
+.navbar-collapse-border {
     margin-left: -0.75rem;
     color: var(--white);
     width: 106%;
     padding: 0.625rem 0.625rem;
     box-shadow: 0rem 0.063rem 0.25rem 0rem #00000029;
 }
-.product-button{
+
+.product-button {
     background: var(--secondary-blue);
     list-style: none;
     border-radius: 4px;
     width: 111px;
 }
-.product-button a{
+
+.product-button a {
     color: var(--white) !important;
     font-size: 0.875rem;
     font-weight: 500;
@@ -167,6 +180,7 @@ Avighna header css
     font-family: 'Poppins';
     text-align: center;
 }
+
 .navbar-light .navbar-nav .nav-link {
     color: #4D4D4D !important;
     font-size: 0.938rem;
@@ -175,19 +189,24 @@ Avighna header css
     padding: 0.531rem 1rem;
     font-family: 'Poppins';
 }
+
 .navbar-light .navbar-nav .nav-link:active {
     color: var(--secondary-orange) !important;
 }
+
 .navbar-light .navbar-nav .nav-link:hover {
     color: var(--secondary-orange) !important;
 }
+
 .navbar-light .navbar-nav .nav-link:focus {
     color: var(--secondary-orange) !important;
 }
+
 .dropdown-item:focus, .dropdown-item:hover {
     color: var(--white) !important;
     background-color: var(--secondary-blue);
 }
+
 .dropdown-item {
     color: var(--secondary-blue) !important;
     font-size: 1rem;
@@ -197,38 +216,46 @@ Avighna header css
     padding: 0.531rem 1rem;
     font-family: 'Poppins';
 }
+
 .dropdown-menu {
     padding: 0;
 }
+
 .dropdown-item:active {
     background-color: var(--secondary-blue) !important;
 }
+
 .input-group .form-control {
     height: 2.5rem;
     font-size: 0.875rem;
     font-family: 400;
     font-family: 'Roboto';
 }
-.search-input{
+
+.search-input {
     border: 0.063rem solid var(--secondary-white);
     width: 632px;
     font-size: 0.875rem;
     font-weight: 400;
     font-family: 'Roboto';
 }
+
 .form-control::placeholder {
     color: #D2D2D2 !important;
 }
+
 .form-control:focus {
     border-color: var(--secondary-white) !important;
     box-shadow: none !important;
 }
-.camera-icon{
+
+.camera-icon {
     position: absolute;
     right: 90%;
     top: 0;
 }
-.searchbar-icon{
+
+.searchbar-icon {
     background: var(--secondary-orange);
     width: 2.688rem;
     height: 2.6rem;
@@ -236,14 +263,17 @@ Avighna header css
     right: 5%;
     border-radius: 0rem 0.625rem 0.625rem 0rem;
 }
-.searchbar-icon img{
+
+.searchbar-icon img {
     padding: 0.75rem;
 }
-.shoping_cart{
+
+.shoping_cart {
     position: relative;
 }
-.shoping_cart a{
-    text-decoration: none!important;
+
+.shoping_cart a {
+    text-decoration: none !important;
     color: var(--dark-grey);
     padding-left: 0.625rem;
     font-family: 'Roboto';
@@ -251,6 +281,7 @@ Avighna header css
     font-size: 14px;
     line-height: 17px;
 }
+
 /*====================================================
 Avighna End header css
 ======================================================*/
@@ -261,152 +292,179 @@ Avighna about css
 .banner-content {
     padding-left: 10%;
 }
-.banner-home{
+
+.banner-home {
     position: relative;
-    top: 8rem;    
+    top: 8rem;
 }
-.about-digital{
+
+.about-digital {
     padding: 3.75rem 0;
 }
-.about-banner{
+
+.about-banner {
     padding: 3.75rem 0;
 }
-.about-transformation{
+
+.about-transformation {
     height: 521px;
 }
-.about-transformation img{
+
+.about-transformation img {
     width: 100%;
     height: 100%;
     object-fit: fill;
 }
-.about-transformation h1{
+
+.about-transformation h1 {
     font-family: 'Roboto';
     color: var(--primary-blue);
-    margin-top:0;
+    margin-top: 0;
     font-weight: 700;
     font-size: 2rem;
     line-height: 2.375rem;
     text-transform: capitalize;
 }
-.about-transformation p{
+
+.about-transformation p {
     font-family: 'Roboto';
     color: var(--primaary-grey);
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.438rem;
 }
-.about-icon{
+
+.about-icon {
     display: flex;
 }
-.about-icon img{
+
+.about-icon img {
     width: 2.625rem;
     padding-right: 0.625rem;
     padding-bottom: 0.625rem;
     height: 2.625rem;
     gap: 1.25rem;
 }
-.about-icon h3{
+
+.about-icon h3 {
     font-family: 'Roboto';
     color: #1A4186;
-    margin-top:0;
+    margin-top: 0;
     font-weight: 500;
     font-size: 1.5rem;
     margin-left: 0.625rem;
     line-height: 1.813rem;
 }
-.service_area{
+
+.service_area {
     margin-top: 7.813rem;
 }
-.transmission-center{
+
+.transmission-center {
     display: flex;
     align-items: center;
     justify-content: left;
 }
-.ecommerce-transformation{
+
+.ecommerce-transformation {
     background-color: var(--secondary-blue);
-    height: 450px;     
+    height: 450px;
 }
-.ecommerce-transformation img{
+
+.ecommerce-transformation img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.ecommerce-transformation h1{
+
+.ecommerce-transformation h1 {
     font-family: 'Roboto';
     color: var(--white);
-    margin-top:0;
+    margin-top: 0;
     font-weight: 700;
     font-size: 3.438rem;
     line-height: 4.063rem;
 }
-.ecommerce-transformation h2{
+
+.ecommerce-transformation h2 {
     font-family: 'Roboto';
-    color:var(--white);
-    margin-top:0;
+    color: var(--white);
+    margin-top: 0;
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 1.75rem;
     text-transform: capitalize;
 }
-.break-word{
+
+.break-word {
     display: block;
 }
-.ecommerce-transformation p{
+
+.ecommerce-transformation p {
     font-family: 'Roboto';
-    color:var(--white);
-    margin-top:0;
+    color: var(--white);
+    margin-top: 0;
     bottom: 0;
     font-weight: 400;
     font-size: 0.938rem;
     line-height: 1.125rem;
 }
+
 .Breadcrum ul {
     display: flex;
     gap: 0.313rem;
     padding-left: 0rem;
 }
+
 .Breadcrum ul li {
     list-style: none;
 }
-.Breadcrum ul li a{
-   text-decoration: none;
-   color:var(--white);
-   font-weight: 400;
-   font-size: 0.938rem;
+
+.Breadcrum ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 0.938rem;
 }
+
 .Breadcrum ul li a:active {
     color: var(--primary-color);
 }
-.selected-page{
+
+.selected-page {
     color: var(--primary-color) !important;
 }
-.about-us h1{
+
+.about-us h1 {
     font-family: 'Roboto';
     color: var(--secondary-blue);
-    margin-top:0;
+    margin-top: 0;
     font-weight: 800;
     font-size: 2.813rem;
     line-height: 3.313rem;
     text-transform: capitalize;
 }
-.about-us p{
+
+.about-us p {
     font-family: 'Roboto';
     color: var(--primaary-grey);
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.688rem;
 }
-.about-us h2{
+
+.about-us h2 {
     font-family: 'Roboto';
     color: var(--secondary-blue);
-    margin-top:0;
+    margin-top: 0;
     font-weight: 700;
     font-size: 3.125rem;
     line-height: 4.063rem;
     text-align: center;
     text-transform: capitalize;
 }
-.about-us h6{
+
+.about-us h6 {
     font-family: 'Roboto';
     color: var(--primary-grey);
     font-weight: 400;
@@ -414,13 +472,15 @@ Avighna about css
     line-height: 1.438rem;
     text-align: center;
 }
-.about-us p span{
+
+.about-us p span {
     font-family: 'Roboto';
     color: var(--primary-grey);
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.688rem;
 }
+
 /*====================================================
 Avighna old footer css
 ======================================================*/
@@ -429,20 +489,24 @@ Avighna old footer css
     background-color: #FD6202 !important;
     border: 1px solid red;
 }
+
 .footer-button:hover {
     color: var(--white);
     background-color: var(--secondary-orange) !important;
     border-color: var(--secondary-orange) !important;
     border: none !important;
 }
+
 .footer-updated {
     padding: 0.625rem 0rem 0rem;
-    background: #FBF6F2;    
+    background: #FBF6F2;
 }
+
 .logo-footer {
     max-width: 150px;
 }
-.social-contact h5{
+
+.social-contact h5 {
     font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.375rem;
@@ -450,19 +514,23 @@ Avighna old footer css
     margin-top: 20%;
     font-family: 'Roboto';
 }
+
 .social-media-icons {
     color: var(--secondary-blue);
     margin-right: 0.313rem;
     font-size: 1.375rem;
     cursor: pointer;
 }
+
 .social-media-icons:hover {
     color: var(--primary-color);
 }
-.social-address img{
+
+.social-address img {
     margin: 0.625rem auto;
 }
-.footer-head h4{
+
+.footer-head h4 {
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.625rem;
@@ -470,7 +538,8 @@ Avighna old footer css
     margin-bottom: 1.5rem;
     font-family: 'Roboto';
 }
-.footer-head-address h4{
+
+.footer-head-address h4 {
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.625rem;
@@ -478,7 +547,8 @@ Avighna old footer css
     margin-bottom: 5%;
     font-family: 'Roboto';
 }
-.our_services_ul_icons a p{
+
+.our_services_ul_icons a p {
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 500;
@@ -486,18 +556,22 @@ Avighna old footer css
     margin-top: 1.25rem;
     font-family: 'Roboto';
 }
-.our_services_ul_icons a p:hover{
+
+.our_services_ul_icons a p:hover {
     color: var(--primary-color);
 }
-.our_services_ul_icons a{
-    text-decoration: none!important;
-    color: var(--primary-grey)!important;
+
+.our_services_ul_icons a {
+    text-decoration: none !important;
+    color: var(--primary-grey) !important;
 }
-.footer-address{
+
+.footer-address {
     display: flex;
     padding: 0rem;
 }
-.content h5{
+
+.content h5 {
     margin-left: 0.625rem;
     color: var(--primary-grey);
     font-size: 1rem;
@@ -506,30 +580,36 @@ Avighna old footer css
     font-family: 'Roboto';
 
 }
-.content p{
+
+.content p {
     margin-left: 0.625rem;
     color: var(--primary-grey);
     font-size: 1rem;
     font-weight: 400;
     font-family: 'Roboto';
 }
-.addressicon img{
+
+.addressicon img {
     position: relative;
     top: 0%;
 }
+
 .bottom_area_footer {
     margin-top: 1rem;
     display: flex;
     padding-top: 1.875rem;
 }
+
 .bottom_area_footer .bottom_left_area {
     width: 45%;
 }
+
 .bottom_left_area ul {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
 }
+
 .bottom_left_area ul li {
     font-style: normal;
     font-weight: 500;
@@ -541,6 +621,7 @@ Avighna old footer css
     cursor: pointer;
     margin-right: 1.875rem;
 }
+
 .bottom_right_area p {
     font-style: normal;
     font-weight: 400;
@@ -550,6 +631,7 @@ Avighna old footer css
     text-transform: capitalize;
     color: var(--off-grey);
 }
+
 .bottom_right_area {
     margin: 0.5rem 1.875rem 0.875rem 0rem;
     display: flex;
@@ -560,12 +642,14 @@ Avighna old footer css
     color: #F85149;
     font-weight: 600;
 }
-.bottom_right_area img{
+
+.bottom_right_area img {
     margin-left: 0.625rem;
     display: flex;
     justify-content: flex-end;
     height: fit-content;
 }
+
 /*====================================================
 Avighna end old footer css
 ======================================================*/
@@ -574,7 +658,7 @@ Avighna end old footer css
 /*====================================================
 Avighna all section css
 ======================================================*/
-h3.inner_heading{
+h3.inner_heading {
     font-family: 'Roboto';
     font-size: 2.813rem;
     font-weight: 800;
@@ -584,10 +668,12 @@ h3.inner_heading{
     color: var(--secondary-blue);
     margin-bottom: 1.25rem;
 }
-h3.inner_heading span{
+
+h3.inner_heading span {
     display: block;
 }
-h3.inner_heading-600{
+
+h3.inner_heading-600 {
     font-family: 'Roboto';
     font-size: 2.813rem;
     font-weight: 600;
@@ -597,11 +683,18 @@ h3.inner_heading-600{
     color: var(--secondary-blue);
     margin-bottom: 1.25rem;
 }
-h3.inner_heading-600 span{
+
+h3.inner_heading-600 span {
     display: block;
 }
+<<<<<<< HEAD
+
+h3.inner_heading-50 {
+    font-family: 'Roboto';
+=======
 h3.inner_heading-50{
     font-family: 'Montserrat';
+>>>>>>> 065ec74cf205a8ac6c6335c439e0946bcdc7d4a9
     font-size: 3.125rem;
     font-weight: 700;
     line-height: 4.063rem;
@@ -611,18 +704,22 @@ h3.inner_heading-50{
     color: var(--secondary-blue);
     margin-bottom: 1.25rem;
 }
-h3.inner_heading-50 span{
+
+h3.inner_heading-50 span {
     display: block;
 }
+
 .developing_main_ausiness_activities_images {
     position: relative;
     margin-top: 1.25rem;
 }
+
 .developing_main_ausiness_activities_images img {
     position: relative;
     max-width: 100%;
     height: auto;
 }
+
 .developing_main_ausiness_activities_content h5 {
     font-family: 'Roboto';
     font-weight: 600;
@@ -630,6 +727,7 @@ h3.inner_heading-50 span{
     line-height: 2.813rem;
     color: var(--secondary-orange);
 }
+
 .developing_main_ausiness_activities_content h6 {
     font-family: 'Roboto';
     font-weight: 600;
@@ -637,6 +735,7 @@ h3.inner_heading-50 span{
     line-height: 2.25rem;
     color: var(--secondary-blue);
 }
+
 .developing_main_ausiness_activities_content p {
     font-weight: 400;
     font-family: 'Roboto';
@@ -647,28 +746,32 @@ h3.inner_heading-50 span{
     color: var(--primary-grey);
 }
 
-span.green{
+span.green {
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 2.375rem;
     line-height: 2.813rem;
     color: var(--green);
 }
-span.green-b{
+
+span.green-b {
     color: var(--green);
 }
-span.readmore{
+
+span.readmore {
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 1rem;
     font-style: italic;
     color: var(--secondary-orange);
 }
+
 .our-product-range-images {
     margin-bottom: 3.75rem;
     margin-top: 2.5rem;
-    position: relative;    
+    position: relative;
 }
+
 .our-product-range h1 {
     position: absolute;
     top: 60%;
@@ -687,6 +790,7 @@ span.readmore{
     text-transform: capitalize;
     box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
 }
+
 .our-product-range h2 {
     position: absolute;
     top: 65%;
@@ -705,6 +809,7 @@ span.readmore{
     text-transform: capitalize;
     box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
 }
+
 .our-product-range h5 {
     position: absolute;
     top: 70%;
@@ -723,6 +828,7 @@ span.readmore{
     text-transform: capitalize;
     box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
 }
+
 .our-product-range h4 {
     position: absolute;
     top: 65%;
@@ -741,6 +847,7 @@ span.readmore{
     text-transform: capitalize;
     box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
 }
+
 .our-product-range h6 {
     position: absolute;
     top: 78%;
@@ -759,6 +866,7 @@ span.readmore{
     text-transform: capitalize;
     box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
 }
+
 .our-product-range p {
     font-family: 'Roboto';
     font-weight: 500;
@@ -767,14 +875,17 @@ span.readmore{
     line-height: 1.438rem;
     color: var(--secondary-grey);
 }
+
 .our-product-range img {
     width: 100%;
     transition: transform 0.3s ease;
 }
+
 .our-product-range img:hover {
     transform: scale(1.1);
     border-radius: 0.625rem;
 }
+
 .our-product-range-images img:hover:after {
     content: '';
     display: block;
@@ -787,6 +898,7 @@ span.readmore{
     background-color: rgba(255, 255, 255, 0.8);
     transition: opacity 0.3s ease;
 }
+
 .our-product-range-images img:hover:before {
     content: '';
     display: block;
@@ -798,14 +910,17 @@ span.readmore{
     z-index: -1;
     background-color: rgba(255, 255, 255, 0.8);
     transition: opacity 0.3s ease;
-}  
+}
+
 .our-product-range-images img:hover:after {
     opacity: 0;
 }
-.our-services{
+
+.our-services {
     margin-top: 3.125rem;
 }
-.our-services-inner h5{
+
+.our-services-inner h5 {
     position: relative;
     color: var(--secondary-blue);
     text-align: center;
@@ -819,7 +934,8 @@ span.readmore{
     border: 0.063rem solid var(--primary-white);
     box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
 }
-.our-services-inner h6{
+
+.our-services-inner h6 {
     position: relative;
     bottom: 10%;
     margin-left: 0.625rem;
@@ -836,22 +952,27 @@ span.readmore{
     border: 0.063rem solid var(--primary-white);
     box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
 }
+
 .our-services-inner {
     flex: 1;
     text-align: center;
 }
-.our-services-inner img{
+
+.our-services-inner img {
     margin: 0 auto;
     width: 100%;
 }
+
 .our-services-inner img {
     width: 100%;
     transition: transform 0.3s ease;
 }
+
 .our-services-inner img:hover {
     transform: scale(1.1);
     border-radius: 0.625rem;
 }
+
 .our-services-inner img:hover:after {
     content: '';
     display: block;
@@ -864,6 +985,7 @@ span.readmore{
     background-color: rgba(255, 255, 255, 0.8);
     transition: opacity 0.3s ease;
 }
+
 .our-services-inner img:hover:before {
     content: '';
     display: block;
@@ -875,11 +997,13 @@ span.readmore{
     z-index: -1;
     background-color: rgba(255, 255, 255, 0.8);
     transition: opacity 0.3s ease;
-}  
+}
+
 .our-services-inner img:hover:after {
     opacity: 0;
 }
-section.customization-services p{
+
+section.customization-services p {
     font-family: 'Roboto';
     padding: 1.25rem;
     font-weight: 400;
@@ -889,6 +1013,7 @@ section.customization-services p{
     text-align: center;
     color: var(--secondary-grey);
 }
+
 .our-services p {
     font-family: 'Roboto';
     padding: 1.25rem;
@@ -897,9 +1022,11 @@ section.customization-services p{
     line-height: 1.813rem;
     color: var(--primary-blue);
 }
-.our-suppliers{
+
+.our-suppliers {
     padding: 3.125rem;
 }
+
 .our-suppliers-inner {
     flex: 1;
     text-align: center;
@@ -909,15 +1036,18 @@ section.customization-services p{
     box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
     border: 0.063rem solid var(--primary-white);
 }
-.our-suppliers-inner img{
+
+.our-suppliers-inner img {
     margin: 0 auto;
     width: 100%;
     transition: transform 0.3s ease;
-}    
+}
+
 .our-suppliers-inner img:hover {
     transform: scale(1.2);
     border-radius: 0.625rem;
 }
+
 .our-suppliers-inner img:hover:after {
     content: '';
     display: block;
@@ -930,6 +1060,7 @@ section.customization-services p{
     background-color: rgba(255, 255, 255, 0.8);
     transition: opacity 0.3s ease;
 }
+
 .our-suppliers-inner img:hover:before {
     content: '';
     display: block;
@@ -941,21 +1072,26 @@ section.customization-services p{
     z-index: -1;
     background-color: rgba(255, 255, 255, 0.8);
     transition: opacity 0.3s ease;
-}  
+}
+
 .our-suppliers-inner img:hover:after {
     opacity: 0;
 }
-.newsletters{
+
+.newsletters {
     padding: 1.875rem 1.875rem;
     /* margin-top: 100px; */
 }
-.newsletter-bg{
+
+.newsletter-bg {
     background-color: var(--off-white);
 }
-.newsletters-left-sec{
+
+.newsletters-left-sec {
     position: relative;
     height: 400px;
 }
+
 .mask-group-icon {
     position: absolute;
     top: 0;
@@ -963,6 +1099,7 @@ section.customization-services p{
     height: 400px;
     width: 100%;
 }
+
 .subscribe-to-our-newsletters-parent {
     position: absolute;
     top: 57px;
@@ -974,17 +1111,20 @@ section.customization-services p{
     justify-content: flex-start;
     gap: 1.563rem;
 }
+
 .and-because-your, .subscribe-to-our {
     position: relative;
     display: inline-block;
 }
-.subscribe-to-our{
+
+.subscribe-to-our {
     font-weight: 600;
     line-height: 3.375rem;
     font-size: 2.813rem;
     color: var(--white);
     font-family: 'Roboto';
 }
+
 .and-because-your {
     font-weight: 400;
     font-size: 1rem;
@@ -992,23 +1132,27 @@ section.customization-services p{
     color: var(--white);
     font-family: 'Roboto';
 }
-.newsletters-right-sec{
+
+.newsletters-right-sec {
     position: relative;
     left: 5%;
 }
-.newsletters-right-sec h3{
+
+.newsletters-right-sec h3 {
     font-size: 2.188rem;
     font-weight: 600;
     font-family: 'Roboto';
     color: var(--secondary-blue);
     margin-top: 25%;
 }
-.newsletters-right-sec-input{
+
+.newsletters-right-sec-input {
     display: flex;
     margin: 1.25rem auto;
     left: 0.625rem;
 }
-.newsletters-right-sec-input input{
+
+.newsletters-right-sec-input input {
     font-family: 'Roboto';
     color: var(--off-grey);
     font-weight: 400;
@@ -1017,7 +1161,8 @@ section.customization-services p{
     width: 60%;
     height: 3.125rem;
 }
-.newsletters-right-sec-input button{
+
+.newsletters-right-sec-input button {
     font-family: 'Roboto';
     color: var(--white);
     background: var(--secondary-blue);
@@ -1028,12 +1173,14 @@ section.customization-services p{
     line-height: 1.25rem;
     margin-left: 0.625rem;
 }
+
 .btn-primary:hover {
     color: var(--white);
     background-color: var(--secondary-blue) !important;
     border-color: var(--secondary-blue) !important;
 }
-.newsletters-right-sec p{
+
+.newsletters-right-sec p {
     position: relative;
     font-size: 1rem;
     font-weight: 400;
@@ -1041,74 +1188,88 @@ section.customization-services p{
     line-height: 1.375rem;
     color: var(--off-grey);
 }
-.banner-home-new{
+
+.banner-home-new {
     position: relative;
-    top: 10.625rem;    
+    top: 10.625rem;
 }
-.galvanized-products{
+
+.galvanized-products {
     margin-top: 1.25rem;
     margin-bottom: 3.125rem;
 }
-.galvanized-center-new{
+
+.galvanized-center-new {
     display: flex;
     padding: 5%;
     position: relative;
 }
-.galvanized-products-cat{
+
+.galvanized-products-cat {
     height: 380px;
     position: relative;
-    align-items: center;     
+    align-items: center;
 }
-.galvanized-products-cat img{
+
+.galvanized-products-cat img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.galvanized-products-cat h1{
+
+.galvanized-products-cat h1 {
     font-family: 'Roboto';
     color: var(--secondary-blue);
     font-weight: 700;
     font-size: 2rem;
     line-height: 2.5rem;
 }
-.galvanized-products-cat span{
+
+.galvanized-products-cat span {
     display: block;
 }
-.galvanized-products-cat p{
+
+.galvanized-products-cat p {
     font-family: 'Roboto';
     color: var(--primary-grey);
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.438rem;
 }
-.galvanized-products-cat-center-image{
+
+.galvanized-products-cat-center-image {
     display: flex;
 }
-.galvanized-products-cat-center-image img{
+
+.galvanized-products-cat-center-image img {
     width: auto;
     margin-right: 0.625rem;
 }
-.contact-us{
+
+.contact-us {
     margin-top: 3.125rem;
     margin-bottom: 3.125rem;
     background: var(--off-white);
     position: relative;
 }
-.contact-us h3{
+
+.contact-us h3 {
     font-family: 'Roboto';
     color: var(--dark-blue);
     font-weight: 600;
     font-size: 2.188rem;
     line-height: 2.5rem;
 }
-.contact-us h4{
+
+.contact-us h4 {
     font-family: 'Roboto';
     color: var(--dark-blue);
     font-weight: 600;
     font-size: 0.938rem;
     line-height: 1.25rem;
 }
-.contact-us-content{
+
+.contact-us-content {
     height: 436px;
     position: relative;
     top: 20%;
@@ -1118,61 +1279,71 @@ section.customization-services p{
     align-items: baseline;
     align-content: center;
 }
-.contact-us-form{
+
+.contact-us-form {
     position: relative;
     /* margin-bottom: -15%; */
     height: auto;
     padding-bottom: 0;
 }
-.contact-us-form-content{
+
+.contact-us-form-content {
     display: flex;
 }
-.contact-us-form h4{
+
+.contact-us-form h4 {
     font-family: 'Roboto';
     color: var(--dark-blue);
     font-weight: 600;
     font-size: 1.125rem;
     line-height: 1.5rem;
 }
-.contact-us-form p{
+
+.contact-us-form p {
     font-family: 'Roboto';
     color: var(--dark-blue);
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.75rem;
 }
-.contact-us-form img{
+
+.contact-us-form img {
     padding-right: 1.25rem;
 }
-.contact-us-main-form h4{
+
+.contact-us-main-form h4 {
     font-family: 'Roboto';
     color: var(--dark-blue);
     font-weight: 600;
     font-size: 1.75rem;
     line-height: 2.188rem;
 }
-.contact-us-main-form label{
+
+.contact-us-main-form label {
     font-family: 'Roboto';
     color: var(--off-grey);
     font-weight: 400;
     font-size: 0.813rem;
     line-height: 1.25rem;
 }
-.contact-us-main-form input{
+
+.contact-us-main-form input {
     font-family: 'Roboto';
     color: var(--off-grey);
     font-weight: 400;
     font-size: 0.938rem;
     line-height: 1.25rem;
 }
-.contact-us-main-form input, .contact-us-main-form textarea{
+
+.contact-us-main-form input, .contact-us-main-form textarea {
     padding: 0.5rem 0rem 0.5rem 0rem;
     margin: 0.625rem auto;
     box-sizing: border-box;
-    border: none;  
+    border: none;
     border-bottom: 0.063rem solid var(--primary-white);
 }
-.contact-us-main-form button{
+
+.contact-us-main-form button {
     font-family: 'Roboto';
     color: var(--white);
     background: var(--secondary-blue);
@@ -1182,7 +1353,8 @@ section.customization-services p{
     font-size: 0.938rem;
     line-height: 1.25rem;
 }
-.contact-us-main-form{
+
+.contact-us-main-form {
     box-shadow: 0rem 0.25rem 1.75rem 0rem #0000000D;
     background: var(--white);
     padding: 2.5rem;
@@ -1193,11 +1365,12 @@ section.customization-services p{
     height: 38.25rem;
 }
 
-.specifications-range{
+.specifications-range {
     background: #F5F7FD;
     padding: 1.25rem;
 }
-.specifications-range-main{
+
+.specifications-range-main {
     background: var(--white);
     box-shadow: 0rem 0rem 1.875rem rgba(31, 45, 61, 0.15);
     border-radius: 0.625rem;
@@ -1210,7 +1383,8 @@ section.customization-services p{
     -webkit-transition: ease all 0.35s;
     transition: ease all 0.35s;
 }
-.specifications-range-main h3{
+
+.specifications-range-main h3 {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 1.5rem;
@@ -1219,7 +1393,8 @@ section.customization-services p{
     color: var(--primary-color);
     margin-top: 0.625rem;
 }
-.specifications-range-main p{
+
+.specifications-range-main p {
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 1.125rem;
@@ -1228,9 +1403,11 @@ section.customization-services p{
     color: var(--secondary-blue);
     margin-top: 0.625rem;
 }
+
 .specifications-range-main:hover {
     top: -0.313rem;
 }
+
 .specifications-range-main:hover:after {
     width: 100%;
     height: 100%;
@@ -1238,6 +1415,7 @@ section.customization-services p{
     left: 0;
     right: auto;
 }
+
 .specifications-range-main:after {
     content: "";
     position: absolute;
@@ -1253,6 +1431,7 @@ section.customization-services p{
     -webkit-transition: ease all 0.35s;
     transition: ease all 0.35s;
 }
+
 .specifications-range-main span {
     display: flex;
     align-items: left;
@@ -1263,17 +1442,20 @@ section.customization-services p{
     width: 100%;
     padding: 0.625rem
 }
-.specifications-range-main:hover span{
+
+.specifications-range-main:hover span {
     color: var(--white);
     position: relative;
     z-index: 1;
- }
-.specifications-range-main:hover h3, .specifications-range-main:hover p, .specifications-range-main:hover a{
+}
+
+.specifications-range-main:hover h3, .specifications-range-main:hover p, .specifications-range-main:hover a {
     color: var(--white) !important;
     position: relative;
     z-index: 1;
 }
-.bis-standards-main{
+
+.bis-standards-main {
     background: var(--white);
     box-shadow: 0rem 0rem 1.875rem rgba(31, 45, 61, 0.15);
     border-radius: 0.625rem;
@@ -1286,7 +1468,8 @@ section.customization-services p{
     -webkit-transition: ease all 0.35s;
     transition: ease all 0.35s;
 }
-.bis-standards-main h3{
+
+.bis-standards-main h3 {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 1.875rem;
@@ -1295,7 +1478,8 @@ section.customization-services p{
     color: var(--primary-color);
     margin-top: 0.625rem;
 }
-.bis-standards-main h4{
+
+.bis-standards-main h4 {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 1.875rem;
@@ -1304,7 +1488,8 @@ section.customization-services p{
     color: var(--primary-color);
     margin-top: 0.625rem;
 }
-.bis-standards-main p{
+
+.bis-standards-main p {
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 1.25rem;
@@ -1313,9 +1498,11 @@ section.customization-services p{
     color: var(--secondary-blue);
     margin-top: 0.625rem;
 }
+
 .bis-standards-main:hover {
     top: -0.313rem;
 }
+
 .bis-standards-main:hover:after {
     width: 100%;
     height: 100%;
@@ -1323,6 +1510,7 @@ section.customization-services p{
     left: 0;
     right: auto;
 }
+
 .bis-standards-main:after {
     content: "";
     position: absolute;
@@ -1338,6 +1526,7 @@ section.customization-services p{
     -webkit-transition: ease all 0.35s;
     transition: ease all 0.35s;
 }
+
 .bis-standards-main span {
     display: flex;
     align-items: left;
@@ -1348,17 +1537,20 @@ section.customization-services p{
     width: 100rem;
     padding: 0.625rem
 }
-.bis-standards-main:hover span{
+
+.bis-standards-main:hover span {
     color: var(--white);
     position: relative;
     z-index: 1;
- }
-.bis-standards-main:hover h3, .bis-standards-main:hover h4, .bis-standards-main:hover p, .bis-standards-main-main:hover a{
+}
+
+.bis-standards-main:hover h3, .bis-standards-main:hover h4, .bis-standards-main:hover p, .bis-standards-main-main:hover a {
     color: var(--white) !important;
     position: relative;
     z-index: 1;
 }
-.bis-standards-main{
+
+.bis-standards-main {
     text-align: center;
     margin: 0.938rem auto;
     padding: 1.375rem 1.375rem 0rem 1.375rem;
@@ -1366,7 +1558,8 @@ section.customization-services p{
     background: var(--white);
     box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
 }
-.bis-standards-content h3{
+
+.bis-standards-content h3 {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 1.25rem;
@@ -1375,7 +1568,8 @@ section.customization-services p{
     color: var(--secondary-blue);
     margin-top: 0.625rem;
 }
-.bis-standards-content h4{
+
+.bis-standards-content h4 {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 1rem;
@@ -1384,7 +1578,8 @@ section.customization-services p{
     color: var(--secondary-orange);
     margin-top: 0.625rem;
 }
-.bis-standards-content p{
+
+.bis-standards-content p {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 1.125rem;
@@ -1393,7 +1588,8 @@ section.customization-services p{
     color: var(--primary-grey);
     margin-top: 0.625rem;
 }
-.bis-standards-content img{
+
+.bis-standards-content img {
     width: auto;
     padding: 1.5rem;
 }
@@ -1404,8 +1600,9 @@ Avighna section table css
 .table {
     margin-top: 1.25rem;
     border: 0.063rem solid var(--primary-grey) !important;
-    
+
 }
+
 .table thead tr {
     background-color: var(--secondary-blue);
     color: var(--white);
@@ -1415,6 +1612,7 @@ Avighna section table css
     text-align: center;
     font-family: 'Roboto';
 }
+
 .table td {
     color: var(--primary-grey);
     font-size: 1rem;
@@ -1423,6 +1621,7 @@ Avighna section table css
     text-align: center;
     font-family: 'Roboto';
 }
+
 th[scope="row"] {
     background: var(--clear-white);
     border: 0.063rem solid var(--primary-grey);
@@ -1433,64 +1632,80 @@ th[scope="row"] {
     color: var(--primary-grey);
     font-family: 'Roboto';
 }
+
 .cold-rolled-grades table td,
 .cold-rolled-grades table th {
     padding: 1.5rem 1.5rem !important;
 }
+
 tr:nth-child(even) {
     background-color: var(--primary-white);
 }
+
 tr:nth-child(odd) {
     background-color: white;
 }
+
 .table-striped>tbody>tr:nth-of-type(odd) {
     --bs-table-accent-bg: none;
 }
+
 .table-hover>tbody>tr:hover {
     color: var(--secondary-grey);
 }
-.table-shadow{
+
+.table-shadow {
     box-shadow: 0rem 0.063rem 0.25rem 0rem #00000029;
 }
-.specifications-tin-free-sheet{
+
+.specifications-tin-free-sheet {
     background-color: #F5F7FD;
 }
+
 .specifications-tin-free-sheet table td,
 .specifications-tin-free-sheet table th {
     padding: 0.5rem 0.5rem !important;
     border: 0.063rem solid var(--primary-grey);
 }
+
 .galvanized-table-section table th {
     padding: 0.5rem 0.5rem !important;
 }
-.specifications-tin-free-sheet table th{
+
+.specifications-tin-free-sheet table th {
     font-size: 1.125rem;
     font-weight: 700;
     font-family: 'Roboto';
 }
-.specifications-tin-free-sheet table td{
+
+.specifications-tin-free-sheet table td {
     font-size: 1rem;
     font-weight: 400;
     font-family: 'Roboto';
 }
+
 .specifications-tin-free-sheet th.centered-header {
     text-align: center;
     font-size: 1.25rem;
     font-weight: 500;
     font-family: 'Roboto';
 }
+
 .specifications-tin-free-sheet td {
     background-color: white;
 }
+
 .table-responsive td[rowspan="2"] {
     text-align: center;
     vertical-align: middle;
     margin: 0.625rem;
     max-width: 150rem;
 }
+
 .specifications-tin-free-sheet td.bg {
     background-color: var(--primary-white);
 }
+
 /*====================================================
 Avighna end table section css
 ======================================================*/
@@ -1498,9 +1713,13 @@ Avighna end table section css
 /*====================================================
 Avighna all section css
 ======================================================*/
-.developing_end_to_end_digital_sec{
+.developing_end_to_end_digital_sec {
     padding: 1.875rem 1.875rem;
 }
+<<<<<<< HEAD
+
+.etp_steel_inner p {
+=======
 .avighna-etp {
     padding: 2rem;
     background: url('../images/avighnacustomize/avighna-customize-banner.png') no-repeat;
@@ -1509,6 +1728,7 @@ Avighna all section css
     height: 427px;
 }
 .etp_steel_inner p{
+>>>>>>> 065ec74cf205a8ac6c6335c439e0946bcdc7d4a9
     font-weight: 500;
     font-family: 'Roboto';
     font-size: 1rem;
@@ -1518,11 +1738,13 @@ Avighna all section css
     margin-top: 0.625rem;
     display: inline-block;
 }
+
 .etp_steel_inner {
     flex: 1;
     text-align: center;
 }
-.etp_steel_inner img{
+
+.etp_steel_inner img {
     margin: 0 auto;
     display: block;
 }
@@ -1531,7 +1753,8 @@ Avighna all section css
     flex: 1;
     text-align: center;
 }
-.galvanized-steel_inner p{
+
+.galvanized-steel_inner p {
     font-weight: 500;
     font-family: 'Roboto';
     font-size: 1.25rem;
@@ -1541,17 +1764,21 @@ Avighna all section css
     margin-top: 0.625rem;
     display: inline-block;
 }
-.galvanized-steel_inner img{
+
+.galvanized-steel_inner img {
     margin: 0 auto;
     display: block;
 }
+
 .galvanized-steel_inner img {
     transition: transform 0.3s ease;
 }
+
 .galvanized-steel_inner img:hover {
     transform: scale(1.4);
     border-radius: 0.625rem;
 }
+
 .galvanized-steel_inner img:hover:after {
     content: '';
     display: block;
@@ -1564,6 +1791,7 @@ Avighna all section css
     background-color: rgba(255, 255, 255, 0.8);
     transition: opacity 0.3s ease;
 }
+
 .galvanized-steel_inner img:hover:before {
     content: '';
     display: block;
@@ -1575,24 +1803,29 @@ Avighna all section css
     z-index: -1;
     background-color: rgba(255, 255, 255, 0.8);
     transition: opacity 0.3s ease;
-}  
+}
+
 .galvanized-steel_inner img:hover:after {
     opacity: 0;
 }
-.advantages-color-coated{
+
+.advantages-color-coated {
     padding: 1.875rem 0rem;
 }
-.advantages-color-coated-main-cate{
+
+.advantages-color-coated-main-cate {
     padding-bottom: 1.25rem;
     height: 100%;
 }
-.advantages-color-coated-main{
+
+.advantages-color-coated-main {
     box-shadow: 0rem 0.25rem 1.875rem 0rem var(--shadow-color);
     background: linear-gradient(180deg, var(--white) 0%, #F4FDFF 100%);
     padding: 1rem;
     height: 100%;
 }
-.advantages-color-coated-main h3{
+
+.advantages-color-coated-main h3 {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 1.5rem;
@@ -1600,7 +1833,8 @@ Avighna all section css
     color: var(--primary-blue);
     margin-top: 1.25rem;
 }
-.advantages-color-coated-main p{
+
+.advantages-color-coated-main p {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 1rem;
@@ -1608,15 +1842,18 @@ Avighna all section css
     color: var(--primary-grey);
     margin-top: 0.625rem;
 }
-.advantages-color-coated-main img{
+
+.advantages-color-coated-main img {
     transition: transform 0.3s ease;
     width: 100%;
 
 }
+
 .advantages-color-coated-main img:hover {
     transform: scale(1.1);
     border-radius: 0.625rem;
 }
+
 .advantages-color-coated-main img:hover:after {
     content: '';
     display: block;
@@ -1629,6 +1866,7 @@ Avighna all section css
     background-color: rgba(255, 255, 255, 0.8);
     transition: opacity 0.3s ease;
 }
+
 .advantages-color-coated-main img:hover:before {
     content: '';
     display: block;
@@ -1640,23 +1878,29 @@ Avighna all section css
     z-index: -1;
     background-color: rgba(255, 255, 255, 0.8);
     transition: opacity 0.3s ease;
-}  
+}
+
 .advantages-color-coated-main img:hover:after {
     opacity: 0;
 }
-.color-coated-steel{
+
+.color-coated-steel {
     padding: 0rem 1.875rem;
 }
-.cold-rolled-application{
+
+.cold-rolled-application {
     margin-bottom: 6.25rem;
 }
-.our-processes{
+
+.our-processes {
     margin-bottom: 3.125rem;
 }
-.our-processes-images{
+
+.our-processes-images {
     height: 100%;
 }
-.our-processes P{
+
+.our-processes P {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 1.25rem;
@@ -1665,14 +1909,17 @@ Avighna all section css
     background-color: var(--secondary-blue);
     padding: 0.625rem;
 }
-.our-processes img{
+
+.our-processes img {
     transition: transform 0.3s ease;
     width: 100%;
 
 }
+
 .right-arrow-heading {
     position: relative;
 }
+
 .right-arrow {
     display: inline-block;
     width: 1.063rem;
@@ -1684,17 +1931,20 @@ Avighna all section css
     right: 0.625rem;
     transform: translateY(-50%);
 }
-.tin-mill-products{
+
+.tin-mill-products {
     margin-bottom: 1.875rem;
 }
 
-.our-processes{
+.our-processes {
     margin-bottom: 3.125rem;
 }
-.tin-catalog{
+
+.tin-catalog {
     height: 100%;
 }
-.tin-catalog P{
+
+.tin-catalog P {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 1.25rem;
@@ -1707,13 +1957,16 @@ Avighna all section css
     margin-right: 0.625rem;
     transform: translateY(-1.25rem);
 }
-.tin-catalog img{
+
+.tin-catalog img {
     transition: transform 0.3s ease;
     width: 100%;
 }
-.avighna-logistics{
+
+.avighna-logistics {
     margin-bottom: 5rem;
 }
+
 .progress {
     margin-top: 15%;
     margin-bottom: 10%;
@@ -1726,11 +1979,13 @@ Avighna all section css
     background-color: var(--white) !important;
     border-radius: 1.25rem;
 }
-.progress-center{
+
+.progress-center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .progress span {
     position: absolute;
     display: flex;
@@ -1746,11 +2001,13 @@ Avighna all section css
     background-color: var(--primary-color);
     color: var(--white);
 }
-.upicon-style{
+
+.upicon-style {
     position: absolute;
     margin-bottom: 4.75rem;
 }
-.upicon-text{
+
+.upicon-text {
     position: absolute;
     width: 203px;
     margin-bottom: 14%;
@@ -1762,7 +2019,8 @@ Avighna all section css
     white-space: normal;
     text-transform: capitalize;
 }
-.upicon-text-minheight{
+
+.upicon-text-minheight {
     position: absolute;
     width: 203px;
     margin-bottom: 10%;
@@ -1774,11 +2032,13 @@ Avighna all section css
     white-space: normal;
     text-transform: capitalize;
 }
-.downicon-style{
+
+.downicon-style {
     position: absolute;
     margin-top: 4.75rem;
 }
-.downicon-text{
+
+.downicon-text {
     position: absolute;
     width: 203px;
     margin-top: 15%;
@@ -1790,7 +2050,8 @@ Avighna all section css
     white-space: normal;
     text-transform: capitalize;
 }
-.downicon-text-minheight{
+
+.downicon-text-minheight {
     position: absolute;
     width: 203px;
     margin-top: 10%;
@@ -1803,22 +2064,25 @@ Avighna all section css
     text-transform: capitalize;
 }
 
-.bg-blue{
+.bg-blue {
     background: var(--secondary-blue);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.bg-white{
+
+.bg-white {
     background: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.in-house-coil{
+
+.in-house-coil {
     margin-bottom: 4.375rem;
     padding: 1.875rem 1.875rem;
 }
+
 /*====================================================
 Avighna end all section css
 ======================================================*/
@@ -1828,175 +2092,223 @@ Avighna responsive Adjust styles for all screens css
 ======================================================*/
 
 @media (min-width: 280px) and (max-width: 767px) {
-    .home-page{
+    .home-page {
         margin-top: 77px;
     }
+
     .slick-dotted.slick-slider {
         margin-bottom: 0px !important;
     }
+
     .w-100 {
         text-align: right;
         /* position: absolute; */
         margin-top: -3.375rem;
     }
+
     .navbar-toggler {
         margin-bottom: 1.063rem;
     }
+
     div#navbarSupportedContent {
         background-color: var(--white);
     }
+
     .service_area-one {
         margin-top: 85px;
     }
+
     .service_area {
         margin-top: 85px;
     }
+
     .service_area-about {
         background-position: left !important;
     }
+
     .about-image-left {
         display: none;
     }
+
     .about-image-left img {
         display: none;
     }
+
     .ecommerce-transformation img {
         display: none;
     }
+
     .about-transformation-non {
         display: none;
     }
+
     .ecommerce-transformation-new {
         height: auto;
     }
+
     .our-product-range h5 {
         top: 80%;
     }
+
     .about-digital {
         padding: 1.875rem 0;
     }
+
     .cold-rolled-application {
         margin-bottom: 0;
     }
+
     .subscribe-to-our-newsletters-parent {
         top: 3%;
         left: 3%;
         gap: 1.125rem;
     }
+
     .container-justify {
         position: relative;
     }
+
     .subscribe-to-our {
         font-size: 1.375rem;
         line-height: 1.563rem;
     }
+
     .and-because-your {
         font-size: 0.75rem;
-    } 
-    .newsletters-right-sec{
+    }
+
+    .newsletters-right-sec {
         left: 0%;
     }
+
     .newsletters-right-sec-input input, .newsletters-right-sec-input button {
         height: 2.375rem;
         padding: 0.313rem;
     }
+
     .newsletters-right-sec-input {
         margin: 0.313rem auto 0.625rem;
     }
+
     .newsletters-right-sec h3 {
         font-size: 1.375rem;
         margin-top: 0;
     }
+
     .contact-us-content {
         left: auto;
         height: auto;
         padding: 80 0rem;
     }
-    .galvanized-products-cat{
+
+    .galvanized-products-cat {
         height: auto;
     }
+
     .shoping_cart {
         display: none;
     }
+
     .d-flex {
         display: none !important;
     }
+
     .ecommerce-transformation {
         background-color: var(--secondary-blue);
         height: auto;
     }
+
     .banner-home {
         position: relative;
         top: 0;
     }
+
     .ecommerce-transformation h1 {
         font-size: 2rem !important;
     }
+
     .ecommerce-transformation-main {
         height: auto;
         /* margin-top: 10%; */
     }
+
     .about-transformation {
         height: auto;
     }
+
     .about-center {
         padding: 1.25rem;
     }
+
     .about-center h1 {
         margin-top: 2.813rem;
         font-size: 28px;
         line-height: 2.5rem;
     }
+
     .about-center h2 {
         margin-top: 2.813rem;
         font-size: 35px;
         line-height: 3.5rem;
     }
+
     .transmission-center {
         padding: 1.25rem;
     }
+
     .transmission-center h1 {
         margin-top: 2.813rem;
         line-height: 2.5rem;
     }
+
     .ecommerce-transformation h2 {
         font-size: 1rem;
         line-height: 1.375rem;
     }
+
     .ecommerce-transformation p {
         font-size: 0.75rem;
         line-height: 1.125rem;
     }
+
     .about-us h1 {
         font-size: 1.5rem;
     }
+
     .about-us p, .about-us p span {
         font-size: 1rem;
     }
+
     .logo-main {
         width: 100%;
         height: 100%;
         margin-bottom: 0.625rem;
         left: 0;
     }
+
     .search-input {
         width: 100%;
     }
+
     .about-transformation h1 {
         font-size: 1.5rem;
     }
-    .inner_heading{
+
+    .inner_heading {
         font-size: 1.5rem;
         top: 0;
         line-height: 0;
     }
+
     h3.inner_heading-50 {
         font-size: 1.5rem;
     }
+
     h3.inner_heading-600 {
         font-size: 1.5rem;
         line-height: 0;
     }
+
     .developing_main_ausiness_activities_images {
         position: relative;
         margin-bottom: 1.25rem;
@@ -2007,17 +2319,21 @@ Avighna responsive Adjust styles for all screens css
         bottom: 0;
         width: 100%;
     }
+
     .mask-group-icon {
         height: auto;
         width: 100%;
     }
+
     /* new design footer responsive */
     .heading-section {
         position: relative !important;
     }
+
     .nav-tabs {
         display: block !important;
     }
+
     .custom-orange {
         margin-left: 0px !important;
     }
@@ -2029,50 +2345,64 @@ Avighna responsive Adjust styles for all screens css
         width: 374px;
         height: 382px;
     }
+
     .cold-rolled-main-image img {
         width: 100% !important;
     }
+
     .process-to-follow-inner {
         margin-left: 0px !important;
     }
+
     .centered-content h1 {
         font-size: 32px !important;
         line-height: normal !important;
     }
+
     .contact-us-new-design-form {
         padding: 0 !important;
     }
+
     .contact-us-new-design-content {
         left: 0%;
     }
+
     .contact-us-new-design-main-form {
         position: relative !important;
         bottom: 10% !important;
         left: 0 !important;
     }
+
     .newsletters-left-sec-new-design {
         height: auto !important;
     }
+
     .newsletters-right-sec-new-design {
         left: 0 !important;
     }
+
     .newsletters-new-design {
         padding: 0.5rem 0.5rem !important;
     }
+
     .footer-updated-new-design {
         background-position: inherit;
     }
+
     .middle-area-new-design {
         padding: 10px;
         margin-top: -26px;
     }
+
     .footer-head-new-design h4 {
         margin-left: 0rem !important;
     }
+
     .footer-head-new-design ul li {
         margin-left: -25px;
     }
-    .specifications-range-main-new{
+
+    .specifications-range-main-new {
         height: 231px;
         width: 100%;
     }
@@ -2083,57 +2413,72 @@ Avighna responsive Adjust styles for all screens css
     .steel-news-content{
         margin-left: 10px;
     }
+
     .contact-us-main-form {
         bottom: 0% !important;
-    }   
+    }
+
     .galvanized-steel_inner {
         flex: 0 0 100%;
     }
+
     .etp_steel_inner {
         flex: 0 0 100%;
     }
+
     .our-services-inner {
         flex: 0 0 100%;
         margin: 0.625rem auto;
     }
+
     .our-suppliers-inner {
         flex: 0 0 100%;
         margin: 0.625rem auto;
     }
+
     .bottom_area_footer {
         margin-top: 1rem;
         display: flex;
         padding-top: 1.875rem;
         flex-direction: column;
-    }    
+    }
+
     .bottom_left_area ul {
         display: flex;
         list-style: none;
         flex-wrap: wrap;
         flex-direction: column;
     }
+
     .about-transformation img {
         height: auto;
         object-fit: cover;
     }
+
     .social-contact h5 {
         margin-top: 5%;
     }
+
     .logo-footer {
         margin-bottom: 0.938rem;
     }
+
     .social-address {
         margin-bottom: 1.25rem;
     }
+
     .navbar-nav-custom {
         text-align: center;
     }
+
     .navbar-nav .dropdown-menu {
         text-align: center;
     }
+
     .specifications-range-main-new {
         width: 100% !important;
     }
+
     .contact-us-new-design-content {
         left: 0% !important;
     }
@@ -2162,20 +2507,25 @@ Avighna responsive Adjust styles for all screens css
         align-items: center;
         margin-top: 10%;
     }
+
     .progress-bar {
         width: 100% !important;
     }
+
     .progress-center {
         flex-direction: column;
         align-items: center;
         margin: 1.25rem 0;
     }
+
     .progress span {
         font-size: 1rem;
     }
+
     .upicon-style, .downicon-style {
         margin: 0.625rem 0;
     }
+
     .upicon-text, .downicon-text, .upicon-text-minheight, .downicon-text-minheight {
         margin: 0.625rem 0;
         padding: 0;
@@ -2183,6 +2533,7 @@ Avighna responsive Adjust styles for all screens css
         width: auto;
         text-align: center;
     }
+
     /* new design footer responsive */
     .bis-standards-container-content {
         height: auto;
@@ -2190,34 +2541,43 @@ Avighna responsive Adjust styles for all screens css
     .contact-us-new-design-form {
         padding: 0 !important;
     }
+
     .contact-us-new-design-content {
         left: 0%;
     }
+
     .contact-us-new-design-main-form {
         position: relative !important;
         bottom: 10% !important;
         left: 0 !important;
     }
+
     .newsletters-left-sec-new-design {
         height: auto !important;
     }
+
     .newsletters-right-sec-new-design {
         left: 0 !important;
     }
+
     .newsletters-new-design {
         padding: 0.5rem 0.5rem !important;
     }
+
     .footer-updated-new-design {
         background-position: inherit;
         height: auto !important;
     }
+
     .middle-area-new-design {
         padding: 10px;
         margin-top: -43px;
     }
+
     .footer-head-new-design h4 {
         margin-left: 0rem !important;
     }
+
     .footer-head-new-design ul li {
         margin-left: -25px;
     }
@@ -2231,44 +2591,55 @@ Avighna responsive Adjust styles for all screens css
         height: 231px;
         width: 100%;
     }
-    .cold-rolled-applications-images img{
+
+    .cold-rolled-applications-images img {
         width: 100%;
     }
-    .galvanized-products-cat{
+
+    .galvanized-products-cat {
         height: auto;
     }
+
     .etp_steel_inner {
         flex: 0 0 48%;
         margin-left: 0;
         margin-bottom: 1.563rem;
     }
+
     .our-services-inner {
         flex: 0 0 48%;
         margin-bottom: 1.563rem;
     }
+
     .our-suppliers-inner {
         flex: 0 0 48%;
         margin-left: 0;
         margin-bottom: 1.563rem;
     }
+
     .galvanized-steel_inner {
         flex: 0 0 100%;
     }
+
     .about-transformation {
         height: auto;
     }
+
     .search-input {
         width: 100%;
     }
-    .shoping_cart {        
+
+    .shoping_cart {
         margin: 1.563rem 0rem 0.625rem 0rem;
         position: relative;
     }
-    .shoping_cart a{
+
+    .shoping_cart a {
         position: relative;
         padding-left: 0rem;
         left: 0rem;
     }
+
     .contact-us-main-form {
         box-shadow: 0rem 0.25rem 1.75rem 0rem #0000000D;
         background: var(--white);
@@ -2279,7 +2650,8 @@ Avighna responsive Adjust styles for all screens css
         bottom: 50%;
         left: 10%;
     }
-    .search-input{
+
+    .search-input {
         border: 0.063rem solid var(--secondary-white);
         width: 265px;
     }
@@ -2300,15 +2672,18 @@ Avighna responsive Adjust styles for all screens css
         height: 422px;
     }
 }
+
 @media (min-width: 992px) and (max-width: 1200px) {
     .shoping_cart {
         margin: 1.563rem 0rem 0.625rem 0rem;
         position: relative;
-    }    
-    .search-input{
+    }
+
+    .search-input {
         border: 0.063rem solid var(--secondary-white);
         width: 300;
     }
+
     .contact-us-main-form {
         box-shadow: 0rem 0.25rem 1.75rem 0rem #0000000D;
         background: var(--white);
@@ -2318,7 +2693,59 @@ Avighna responsive Adjust styles for all screens css
         position: relative;
         bottom: 50%;
     }
+
     .about-transformation {
         height: auto;
     }
+}
+
+#packaging-solutions {
+    margin: 50px 0px;
+}
+
+.card-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.20);
+    padding: 12px;
+}
+
+.card-wrap span {
+    color: #49499A;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card-wrap p {
+    color: #5B5B5B;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.pack-card {
+  padding: 10px;
+}
+
+.tin-content h3 {
+    color: #1D3679;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 58.5px;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+}
+
+.tin-content p {
+    color: #5B5B5B;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.tin-previrew img {
+    max-width: 100%;
 }
