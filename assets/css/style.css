@@ -687,14 +687,9 @@ h3.inner_heading-600 {
 h3.inner_heading-600 span {
     display: block;
 }
-<<<<<<< HEAD
 
 h3.inner_heading-50 {
-    font-family: 'Roboto';
-=======
-h3.inner_heading-50{
     font-family: 'Montserrat';
->>>>>>> 065ec74cf205a8ac6c6335c439e0946bcdc7d4a9
     font-size: 3.125rem;
     font-weight: 700;
     line-height: 4.063rem;
@@ -1716,19 +1711,14 @@ Avighna all section css
 .developing_end_to_end_digital_sec {
     padding: 1.875rem 1.875rem;
 }
-<<<<<<< HEAD
-
-.etp_steel_inner p {
-=======
 .avighna-etp {
-    padding: 2rem;
-    background: url('../images/avighnacustomize/avighna-customize-banner.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 427px;
+  padding: 2rem;
+  background: url('../images/avighnacustomize/avighna-customize-banner.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 427px;
 }
-.etp_steel_inner p{
->>>>>>> 065ec74cf205a8ac6c6335c439e0946bcdc7d4a9
+.etp_steel_inner p {
     font-weight: 500;
     font-family: 'Roboto';
     font-size: 1rem;
@@ -2697,55 +2687,4 @@ Avighna responsive Adjust styles for all screens css
     .about-transformation {
         height: auto;
     }
-}
-
-#packaging-solutions {
-    margin: 50px 0px;
-}
-
-.card-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border-radius: 16px;
-    background: #FFF;
-    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.20);
-    padding: 12px;
-}
-
-.card-wrap span {
-    color: #49499A;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.card-wrap p {
-    color: #5B5B5B;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22.4px;
-}
-
-.pack-card {
-  padding: 10px;
-}
-
-.tin-content h3 {
-    color: #1D3679;
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 58.5px;
-    letter-spacing: -1px;
-    text-transform: capitalize;
-}
-
-.tin-content p {
-    color: #5B5B5B;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-}
-
-.tin-previrew img {
-    max-width: 100%;
 }
