@@ -17,7 +17,7 @@ Avighna start homepage css
 button.custom-link {
     color: #FFFFFF !important;
     background-color: transparent !important;
-    font-family: 'Poppins';
+    font-family: 'Inter';
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
@@ -31,6 +31,7 @@ button.custom-link {
 }
 .custom-align .nav-item {
     text-align: center;
+    margin: 24px;
 }
 .recently-added{
     margin-top: 50px;
@@ -47,13 +48,13 @@ button.custom-link {
 }
 .heading-section{
     position: absolute;
-    margin-top: -10px
+    margin-top: 0px
 }
 .inner_heading-h3{
-    font-family: 'Poppins';
+    font-family: 'Inter';
     font-weight: 600;
     font-size: 32px;
-    line-height: 48px;
+    line-height: 39px;
     color: #1C3F9F;
     border-bottom: 2px solid #1D3679;
     width: fit-content;
@@ -97,7 +98,7 @@ button.custom-link {
 .recently-added-image-content-brand {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0px 0px 10px;
+    padding: 5px 0px 0px 10px;
     border-bottom: 1px solid #DDDDDD;
     margin-top: 0; /* Add this line to remove top margin */
 }
@@ -107,7 +108,7 @@ button.custom-link {
     font-size: 12px;
     line-height: 16px;
     color: #5B5B5B;
-    margin: 0;
+    margin: 3px;
 }
 .recently-added-image-content-brand h2{
     font-family: 'Inter';
@@ -129,10 +130,10 @@ button.custom-link {
     color: #5B5B5B;
     margin: 0;
     text-align: left;
-    padding: 11px 0px 2px 8px;
+    padding: 9px 0px 2px 11px;
 }
 .recently-added-image h3{
-    font-family: 'Poppins';
+    font-family: 'Inter';
     font-weight: 600;
     font-size: 16px;
     line-height: 21px;
@@ -143,11 +144,14 @@ button.custom-link {
 .custom-word{
     font-weight: 500 !important;
 }
+.custom-font-weight{
+    font-weight: 700 !important;
+}
 .btn-group-lg>.btn, .btn-lg {
     width: 100%;
     font-size: 18px;
     font-weight: 600;
-    font-family: 'Poppins';
+    font-family: 'Inter';
     line-height: 27px;
     color: #FFFFFF;
     background: #1D3679;
@@ -200,7 +204,7 @@ button.custom-link {
     height: 100% !important;
 }
 .cold-rolled-image h3{
-    font-family: 'Poppins';
+    font-family: 'Inter';
     font-weight: 600;
     font-size: 16px;
     line-height: 21px;
@@ -227,21 +231,21 @@ button.custom-link {
     padding: 12px 18px 12px 18px;
 }
 .steel-news-content h3{
-    font-family: 'Poppins';
+    font-family: 'Inter';
     font-weight: 600;
     font-size: 20px;
     line-height: 28px;
     color: #4D4D4D;
 }
 .steel-news-content h4{
-    font-family: 'Poppins';
+    font-family: 'Inter';
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     color: #FD6202;
 }
 .steel-news-content p{
-    font-family: 'Poppins';
+    font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -260,6 +264,7 @@ button.custom-link {
     box-shadow: none;
     margin-left: 18px;
     padding: 10px 0px 10px 0px !important;
+    font-family: 'Inter';
 }
 .custom-orange.active {
     border: 0 !important;
