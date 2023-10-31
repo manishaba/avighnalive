@@ -990,7 +990,7 @@ section.customization-services p {
 }
 .btn-primary:hover {
     color: var(--white);
-    background-color: var(--secondary-blue) !important;
+    /* background-color: var(--secondary-blue) !important; */
     border-color: var(--secondary-blue) !important;
 }
 .newsletters-right-sec p {
@@ -2104,8 +2104,12 @@ Avighna responsive Adjust styles for all screens css
     .process-to-follow {
         margin: 24px 0px 24px 0px !important;
     }
+    .side-banner img {
+        transform: none !important;
+    }
 }
 @media(min-width:768px) and (max-width: 991px) {
+    
     .navbar-main {
         margin-right: 0px;
     }

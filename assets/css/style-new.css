@@ -34,17 +34,16 @@ button.custom-link {
     margin: 24px;
 }
 .recently-added{
-    margin-top: 50px;
+    margin: 60px 24px 24px 24px;
 }
 .hot-offer{
-    margin-top: 50px;
+    margin: 60px 24px 24px 24px;
 }
 .get-quote{
     margin-top: 50px;
 }
 .steel-news{
-    margin-top: 50px;
-    margin-bottom: 10rem;
+    margin: 60px 24px 24px 24px;
 }
 .heading-section{
     position: absolute;
@@ -93,7 +92,7 @@ button.custom-link {
 .recently-added-image{
     border: 1px solid #DDDDDD;
     border-radius: 8px;
-    margin-top: 10%;
+    margin-top: 32px;
 }
 .recently-added-image-content-brand {
     display: flex;
@@ -143,6 +142,7 @@ button.custom-link {
 }
 .custom-word{
     font-weight: 500 !important;
+    color: #4D4D4D;
 }
 .custom-font-weight{
     font-weight: 700 !important;
@@ -155,6 +155,7 @@ button.custom-link {
     line-height: 27px;
     color: #FFFFFF;
     background: #1D3679;
+    border-radius: 0px 0px 8px 8px;
 }
 .btn-primary {
     color: #fff;
@@ -193,15 +194,24 @@ button.custom-link {
     background-color: var(--secondary-orange) !important;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 30px 15px 30px;
     border-radius: 5px; 
 }
 .cold-rolled-image{
     border: 1px solid #EDEDED;
     background: white;
+    border-radius: 6px;
+    margin-top: 12px;
 }
-.cold-rolled-main-image{
-    height: 100% !important;
+.custom-table-home-page{
+    margin-top: 24px;
+    background-color: #FFFFFF;
+    /* padding-bottom: 12px; */
+}
+.side-banner img{
+    width: 100%;
+    height: 100%;
+    /* transform: translateX(12px); */
 }
 .cold-rolled-image h3{
     font-family: 'Inter';
@@ -219,7 +229,17 @@ button.custom-link {
     line-height: 18px;
     color: #FFFFFF;
     padding: 10px 20px 10px 20px;
-    margin: 10px;
+    border-radius: 0px 0px 8px 8px;
+    width: 100%;
+}
+.custom-button-steel-news{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding: 10px 20px 10px 20px;
+    margin-top: 32px;
 }
 .steel-news-image img{
     width: 100%;
@@ -243,6 +263,7 @@ button.custom-link {
     font-size: 12px;
     line-height: 12px;
     color: #FD6202;
+    margin-top: 20px;
 }
 .steel-news-content p{
     font-family: 'Inter';
@@ -250,13 +271,14 @@ button.custom-link {
     font-size: 16px;
     line-height: 24px;
     color: #5B5B5B;
+    margin-top: 10px;
 }
 .nav-link{
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
     font-family: 'Poppins';
-    color: var(--secondary-grey) !important
+    color: #4D4D4D !important
 }
 .custom-orange {
     border: 0 !important;
@@ -1656,26 +1678,25 @@ Avighna new footer css
 ======================================================*/
 .footer-updated-new-design {
     padding: 0.625rem 0rem 0rem;
-    background: url('../images/footer/footer-main-section.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 494px;
-    margin-top: 24px;
 }
-.footer-button-new-design {
-    background-color:var(--secondary-orange) !important;
+.newsletters-new-design-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .newsletters-new-design{
-    padding: 1.875rem 1.875rem;
+    /* padding: 1.875rem 1.875rem; */
+    height: 420px;
+    background: linear-gradient(3.31deg, #A4B6E8 -72.75%, rgba(246, 248, 255, 0) 96.62%);
 }
 .middle-area-new-design {
     background: linear-gradient(180deg, #1D3679 0%, #162D6C 100%);
-    padding: 20px;
-    top: -20px;
+    padding: 70px 48px 70px 48px;
+    margin-top: -48px;
 }
 .bottom-footer-area-new-design {
     background: var(--secondary-blue);
-    padding: 10px;
+    padding: 17px 10px 17px 10px;
 }
 .newsletters-left-sec-new-design{
     position: relative;
@@ -1693,22 +1714,22 @@ Avighna new footer css
     margin-top: 20px;
 }
 .newsletters-right-sec-new-design{
-    position: relative;
-    left: 5%;
+    margin-top: 129px;
 }
 .newsletters-right-sec-new-design h3{
-    font-size: 2.188rem;
-    font-weight: 600;
+    font-size: 45px;
+    font-weight: 700;
     font-family: 'Inter';
-    color: var(--white);
-    margin-top: 25%;
+    color: #1D3678;
+    text-align: center;
 }
 .newsletters-right-sec-new-design p{
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 400;
     font-family: 'Inter';
-    color: var(--white);
+    color: #1D3678;
+    text-align: center;
 }
 .newsletters-right-sec-input-new-design{
     display: flex;
@@ -1717,19 +1738,23 @@ Avighna new footer css
 }
 .newsletters-right-sec-input-new-design input{
     font-family: 'Inter';
-    color: var(--off-grey);
     font-weight: 400;
     font-size: 0.938rem;
     line-height: 1.25rem;
     width: 100%;
-    height: 3.125rem;
+    border-radius: 5px;
+    height: auto;
 }
+.custom-placeholder::placeholder {
+    color: #8E8E8E !important;
+  }
 .newsletters-right-sec-input-new-design button{
     font-family: 'Inter';
+    padding: 13px 36px 18px 36px;
     color: var(--white);
-    background: var(--secondary-orange);
-    width: 97px;
-    height: 3.125rem;
+    background: #1C3577;
+    width: 122px;
+    height: 50px;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.25rem;
