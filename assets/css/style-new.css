@@ -94,6 +94,22 @@ button.custom-link {
     border-radius: 8px;
     margin-top: 32px;
 }
+.recently-added-image-content > span:nth-of-type(2) {
+    position: relative;
+    left: 168px;
+    bottom: 157px;
+}
+.recently-added-image-content > span:nth-child(2) {
+    position: relative;
+    left: 0;
+    bottom: 160px;
+    background: #FD6202;
+    color: white;
+    font-size: 12px;
+    font-family: 'Roboto';
+    border-radius: 8px 0px 37px 0px;
+    padding: 6px 25px 6px 6px;
+}
 .recently-added-image-content-brand {
     display: flex;
     justify-content: space-between;
@@ -139,6 +155,7 @@ button.custom-link {
     color: #1D3679;
     padding: 8px 0px 0px 12px;
     margin: 0;
+    margin-top: -24px;
 }
 .custom-word{
     font-weight: 500 !important;
@@ -197,11 +214,14 @@ button.custom-link {
     padding: 15px 30px 15px 30px;
     border-radius: 5px; 
 }
+.cold-rolled-main-image{
+    height: 100%;
+}
 .cold-rolled-image{
     border: 1px solid #EDEDED;
     background: white;
     border-radius: 6px;
-    margin-top: 12px;
+    /* margin-top: 12px; */
 }
 .custom-table-home-page{
     margin-top: 24px;
@@ -229,8 +249,8 @@ button.custom-link {
     line-height: 18px;
     color: #FFFFFF;
     padding: 10px 20px 10px 20px;
-    border-radius: 0px 0px 8px 8px;
-    width: 100%;
+    border-radius: 4px;
+    margin: 14px;
 }
 .custom-button-steel-news{
     font-family: 'Inter';
@@ -243,7 +263,7 @@ button.custom-link {
 }
 .steel-news-image img{
     width: 100%;
-    height: 258px;
+    height: 100%;
 }
 .steel-news-content{
     background: #EDEDED80;
@@ -336,19 +356,29 @@ button.custom-link {
     box-shadow: none;
     border: 0;
 }
+.modal-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
 .popup {
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #FFFFFF;
     box-shadow: 0rem 0.063rem 0.25rem 0rem #00000029;
     padding: 10px;
     border-radius: 35px;
     color: #FD6202;
+    background: #FFFFFF;
     text-align: center;
-    z-index: 1000;  
+    z-index: 1000;
 }
 .popup img {
     width: 70%;
