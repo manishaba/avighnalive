@@ -308,6 +308,17 @@ button.custom-link {
     padding: 10px 0px 10px 0px !important;
     font-family: 'Inter';
 }
+.custom-orange-steel {
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none;
+    margin-left: 18px;
+    padding: 10px 0px 10px 0px !important;
+    font-family: 'Inter';
+    font-size: 15px;
+    color: #1D3679 !important;
+    font-weight: 700;
+}
 .custom-orange.active {
     border: 0 !important;
     color: var(--secondary-orange) !important;
@@ -581,7 +592,7 @@ Avighna start all section css
     line-height: 1.25rem;
     color: var(--white);
     text-align: left;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 .our-product-range-about img {
     max-width: 100%;
@@ -755,6 +766,7 @@ Avighna start all section css
     font-size: 1.25rem;
     line-height: 1.75rem;
     color: var(--primary-grey);
+    margin-top: 14px;
 }
 .our-vision-images img{
     width: 100%;
@@ -903,7 +915,7 @@ Avighna start all section css
     background: #FE7A191A;
     padding: 1.25rem;
 }
-.specifications-range-main-new{
+.specifications-range-new{
     background: var(--white);
     box-shadow: 0rem 0rem 1.875rem rgba(31, 45, 61, 0.15);
     border-radius: 0.5rem;
@@ -1741,7 +1753,7 @@ Avighna new footer css
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    margin-top: 20px;
+    margin-top: 18px;
 }
 .newsletters-right-sec-new-design{
     margin-top: 129px;
@@ -1815,7 +1827,7 @@ Avighna new footer css
     transition: filter 0.3s ease-in-out;
 }
 .footer-head-new-design h4{
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.688rem;
     color: var(--white);
@@ -1832,7 +1844,7 @@ Avighna new footer css
     font-family: 'Inter';
 }
 .footer-head-contact-new-design h4{
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.688rem;
     color: var(--white);
@@ -1907,8 +1919,9 @@ Avighna common class css
     font-family: 'Montserrat';
     color: var(--secondary-blue);
     font-weight: 700;
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 2.813rem;
+    line-height: 3.625rem;
+    letter-spacing: -1px;
 }
 .ecommerce-transformation-new span{
     display: block;
@@ -1924,6 +1937,7 @@ Avighna common class css
 .main-ausiness-activities{
     background-color: #F4F7FF;
     height: 100%;
+    padding: 0rem 0px 0rem 0px;
 }
 .developing_main_ausiness_activities_images-about {
     position: relative;
@@ -1938,7 +1952,7 @@ Avighna common class css
     font-weight: 700;
     font-size: 2.813rem;
     line-height: 3.813rem;
-    letter-spacing: -1;
+    letter-spacing: -1px;
     padding: 24px 0px 0px 24px;
     color: var(--secondary-blue);
 }
@@ -1949,6 +1963,7 @@ Avighna common class css
     line-height: 2.625rem;
     color: var(--secondary-orange);
     padding: 0px 24px 0px 24px;
+    text-transform: capitalize;
 }
 .developing_main_ausiness_activities_content-about p {
     font-weight: 400;
