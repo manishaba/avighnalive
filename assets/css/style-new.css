@@ -34,16 +34,16 @@ button.custom-link {
     margin: 24px;
 }
 .recently-added{
-    margin: 60px 24px 24px 24px;
+    margin: 60px 36px 0px 36px;
 }
 .hot-offer{
-    margin: 60px 24px 24px 24px;
+    margin: 60px 36px 0px 36px;
 }
 .get-quote{
     margin-top: 50px;
 }
 .steel-news{
-    margin: 60px 24px 24px 24px;
+    margin: 60px 36px 0px 36px;
 }
 .heading-section{
     position: absolute;
@@ -60,7 +60,7 @@ button.custom-link {
     position: relative;
 }
 .process-to-follow{
-    margin: 24px;
+    margin: 60px 36px 0px 36px;
 }
 .process-to-follow-inner {
     flex: 1;
@@ -81,7 +81,7 @@ button.custom-link {
     line-height: 21px;
     text-transform: capitalize;
     color: #FFFFFF;
-    padding: 8px;
+    /* padding: 8px; */
     display: inline-block;
     text-decoration: none;
 }
@@ -96,13 +96,13 @@ button.custom-link {
 }
 .recently-added-image-content > span:nth-of-type(2) {
     position: relative;
-    left: 168px;
-    bottom: 157px;
+    left: 160px;
+    bottom: 152px;
 }
 .recently-added-image-content > span:nth-child(2) {
     position: relative;
     left: 0;
-    bottom: 160px;
+    bottom: 157px;
     background: #FD6202;
     color: white;
     font-size: 12px;
@@ -417,6 +417,9 @@ button.custom-link {
     height: 27px;
     font-weight: bold;
 }
+.slick-dotted.slick-slider {
+    margin-bottom: 0px !important;
+}
 .slick-dots {
     width: fit-content !important;
     bottom: 15px !important;
@@ -516,7 +519,7 @@ Avighna start all section css
     width: 100%;
 }
 .about-digital-what-we{
-    padding: 1.75rem 0px 1.75rem 24px;
+    margin: 21px 36px 0px 36px;
 }
 .about-us-what-we h1{
     font-family: 'Montserrat', sans-serif;
@@ -562,7 +565,7 @@ Avighna start all section css
 }
 .our-product-range-about {
     background-color: #1D3679;
-    padding: 40px 24px;
+    padding: 60px 36px;
 }
 .our-product-range-about-images {
     height: 157px;
@@ -633,7 +636,7 @@ Avighna start all section css
     background: url('../images/about/our-services-section-main.png') no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 40px 24px;
+    padding: 40px 36px;
     height: 100%;
 }
 .our-services-about-inner {
@@ -695,7 +698,7 @@ Avighna start all section css
     opacity: 0;
 }
 .our-suppliers-about{
-    padding: 3.125rem 24px;
+    padding: 60px 36px;
 }
 .our-suppliers-about-inner {
     flex: 1;
@@ -744,7 +747,7 @@ Avighna start all section css
 }
 .our-vision{
     margin-top: 1.125rem;
-    padding: 0.625rem 24px;
+    padding: 0.625rem 36px;
 }
 .our-vision-center {
     display: flex;
@@ -827,23 +830,23 @@ Avighna start all section css
 }
 .colled-rolled-grades-BIS-standards{
     background-color: #1D3679;
-    padding: 1.5rem 1.5rem !important;
+    padding: 1.5rem 48px !important;
 }
 .colled-rolled-about-banner{
-    padding: 1.75rem 0px;
+    padding: 1.75rem 36px;
     background-color: #F0F0F0;
 }
 .galvanized-steel-about-banner{
-    padding: 1.75rem 0;
+    padding: 1.75rem 36px;
 }
 .electrolytic-tinplate-about-banner{
-    padding: 1.75rem 0;
+    padding: 1.75rem 36px;
 }
 .cold-rolled{
     margin-top: 50px;
     background: url('../images/index/cold-rolled.png') no-repeat;
     width: 100%;
-    padding: 0px 50px 50px 50px;
+    padding: 0px 48px 48px 48px;
     background-size: cover;
 }
 .about-colled-rolled-content{
@@ -906,14 +909,14 @@ Avighna start all section css
 }
 .about-transformation-left p{
     font-family: 'Roboto';
-    color: var(--primaary-grey);
+    color: #5B5B5B;
     font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.438rem;
+    font-size: 1.25rem;
+    line-height: 140%;
 }
 .specifications-range-section{
     background: #FE7A191A;
-    padding: 1.25rem;
+    padding: 1.25rem 48px;
 }
 .specifications-range-new{
     background: var(--white);
@@ -996,7 +999,7 @@ Avighna start all section css
     z-index: 1;
 }
 .bis-standards{
-    padding: 1.875rem;
+    padding: 1.875rem 48px;
 }
 .bis-standards-main-container{
     background: var(--white);
@@ -1058,18 +1061,18 @@ Avighna start all section css
 }
 .galvanized-specifications-range{
     background: #F5F7FD;
-    padding: 1.25rem;
+    padding: 1.25rem 48px;
 }
 .specifications-ETP{
     background: #F5F7FD;
-    padding: 1.25rem;
+    padding: 1.25rem 48px;
 }
 .galvanized-bis-standards{
-    padding: 1.875rem;
+    padding: 1.875rem 48px;
     background: #1D3679;
 }
 .types-galvanization-products{
-    padding: 1.875rem;
+    padding: 1.875rem 48px;
     margin-top: 40px;
 }
 .electrolytic-tinplate-tabs{
@@ -1131,7 +1134,7 @@ Avighna start all section css
 }
 .types-galvanization-products-center{
     display: flex;
-    padding: 5%;
+    /* padding: 5%; */
     position: relative;
 }
 .types-galvanization-products-content h3{
@@ -1155,14 +1158,31 @@ Avighna start all section css
 }
 .grades-per-BIS-standards{
     background-color: #1D3679;
-    padding: 1.5rem 1.5rem !important;
+    padding: 1.5rem 48px !important;
+}
+.energy-application{
+    margin-bottom: 6.25rem;
+    background: url('../images/coldrolled/cold-rolled-application.png') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 501px;
+    padding: 60px 36px;
+}
+.tin-free-stee-electrolytic-tinplate{
+    margin-bottom: 6.25rem;
+    background: url('../images/coldrolled/cold-rolled-application.png') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 501px;
+    padding: 105px 36px;
 }
 .cold-rolled-applications{
     margin-bottom: 6.25rem;
     background: url('../images/coldrolled/cold-rolled-application.png') no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     height: 423px;
+    padding: 0rem 48px;
 }
 .custruction-applications{
     margin-bottom: 3.25rem;
@@ -1170,6 +1190,7 @@ Avighna start all section css
     background-size: cover;
     background-position: center;
     height: 423px;
+    padding: 0rem 48px;
 }
 .cold-rolled-applications-images {
     position: relative;
@@ -1194,17 +1215,18 @@ Avighna start all section css
     text-transform: capitalize;
 }
 .benefits-galvanized-sheet-metal{
-    background: url('../images/galvanized/benefits-galvanized-sheet-metal-main.png') no-repeat;
+    background: url(../images/galvanized/benefits-galvanized-sheet-metal-main.png) no-repeat;
     width: 100%;
     height: 100%;
-    padding-bottom: 100px;
+    padding: 48px 53px 113px 48px;
     background-size: cover;
+    margin-bottom: 20px;
 }
 .benefits-galvanized-sheet-metal-content{
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     margin-top: 50%;
 }
 .benefits-galvanized-sheet-metal-content h3{
@@ -1305,7 +1327,7 @@ Avighna start all section css
 }
 .specifications-range-color-coted-section{
     background: #F5F7FD;
-    padding: 1.25rem;
+    padding: 1.25rem 48px;
 }
 .specifications-range-color-coted{
     background: var(--white);
@@ -1388,7 +1410,8 @@ Avighna start all section css
     background: url('../images/colorcoated/advantages-color-coated-background.png') no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;  
+    width: 100%;
+    padding: 1.25rem 36px;
 }
 .advantages-color-coated-content {
     display: flex;
@@ -1479,7 +1502,7 @@ Avighna start all section css
 }
 /* .avighna-logistics section css  */
 .about-wrapper {
-    padding: 1.75rem 35px;
+    padding: 1.75rem 48px;
 }
 .about-wrapper h3 {
     font-family: 'Montserrat';
@@ -1494,8 +1517,8 @@ Avighna start all section css
     font-family: 'Roboto';
     color: #5B5B5B;
     font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.438rem;
+    font-size: 1.25rem;
+    line-height: 140%;
 }
 .services-card-wrapper h3 {
     font-family: 'Montserrat';
@@ -1513,6 +1536,9 @@ Avighna start all section css
     font-weight: 500;
     line-height: 26px;
     letter-spacing: -1px;
+}
+#services-card {
+    padding: 0rem 36px;
 }
 .services-card {
     position: relative;
@@ -1541,7 +1567,14 @@ Avighna start all section css
     color: #1D3679;
 }
 #packaging-solutions {
-    margin: 50px 0px;
+    margin: 50px 24px;
+}
+#processing {
+    margin: 0px 36px;
+}
+.processing-wrap img {
+    width: 100%;
+    max-width: 100%;
 }
 .card-wrap {
     display: flex;
@@ -1575,6 +1608,7 @@ Avighna start all section css
     line-height: 58.5px;
     letter-spacing: -1px;
     text-transform: capitalize;
+    margin: 0px 0px 0px 24px
 }
 .tin-content p {
     font-family: 'Roboto';
@@ -1582,6 +1616,7 @@ Avighna start all section css
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
+    margin: 0px 0px 0px 24px
 }
 .tin-previrew img {
     max-width: 100%;
@@ -1594,10 +1629,11 @@ Avighna end all css
 Avighna start query new design css
 ======================================================*/
 .contact-us-new-design{
-    margin-top: 0.813rem;
-    background: url('../images/about/banner1.png') no-repeat;
+    margin-top: 0rem;
+    background: url(../images/about/banner1.png) no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 54px 0 0px 10px;
 }
 .contact-us-new-design h3{
     font-family: 'Montserrat';
@@ -1629,7 +1665,7 @@ Avighna start query new design css
     margin-bottom: -5%;
     padding-bottom: 0;
     background-size: cover;
-    padding: 100px 0;
+    padding: 28px 0;
     
 }
 .contact-us-new-design-form-content{
@@ -1708,7 +1744,7 @@ Avighna start query new design css
     border: 0.063rem solid var(--primary-white);
     border-radius: 0.313rem;
     position: absolute;
-    bottom: 60%;
+    bottom: 0%;
     height: 30.688rem;
     left: 69%;
 }
@@ -1733,7 +1769,7 @@ Avighna new footer css
 }
 .middle-area-new-design {
     background: linear-gradient(180deg, #1D3679 0%, #162D6C 100%);
-    padding: 70px 48px 70px 48px;
+    padding: 70px 36px 70px 36px;
     margin-top: -48px;
 }
 .bottom-footer-area-new-design {
@@ -1901,7 +1937,7 @@ Avighna common class css
 }
 .transmission-center-new{
     display: flex;
-    padding: 5%;
+    padding: 7%;
     position: relative;
 }
 .ecommerce-transformation-new{
@@ -1937,7 +1973,7 @@ Avighna common class css
 .main-ausiness-activities{
     background-color: #F4F7FF;
     height: 100%;
-    padding: 0rem 0px 0rem 0px;
+    margin: 48px 0px 0px 0px;
 }
 .developing_main_ausiness_activities_images-about {
     position: relative;
@@ -1953,7 +1989,7 @@ Avighna common class css
     font-size: 2.813rem;
     line-height: 3.813rem;
     letter-spacing: -1px;
-    padding: 24px 0px 0px 24px;
+    padding: 24px 0px 0px 36px;
     color: var(--secondary-blue);
 }
 .developing_main_ausiness_activities_content-about h6 {
@@ -1962,7 +1998,7 @@ Avighna common class css
     font-size: 2rem;
     line-height: 2.625rem;
     color: var(--secondary-orange);
-    padding: 0px 24px 0px 24px;
+    padding: 0px 24px 0px 36px;
     text-transform: capitalize;
 }
 .developing_main_ausiness_activities_content-about p {
@@ -1974,7 +2010,7 @@ Avighna common class css
     margin-bottom: 1.25rem;
     letter-spacing: 0.08px;
     color: var(--primary-grey);
-    padding: 0px 24px 0px 24px;
+    padding: 0px 24px 0px 36px;
 }
 p.readmore{
     font-family: 'Poppins';
@@ -1984,7 +2020,7 @@ p.readmore{
     font-weight: 500;
     font-size: 1rem;
     border-radius: 4px;
-    margin-left: 24px;
+    margin-left: 36px;
     border: 1px solid #1D3679;
     color: var(--secondary-blue);
 }
