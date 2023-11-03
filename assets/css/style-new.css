@@ -93,6 +93,7 @@ button.custom-link {
     border: 1px solid #DDDDDD;
     border-radius: 8px;
     margin-top: 32px;
+    margin-left: -1px;
 }
 .recently-added-image-content > span:nth-of-type(2) {
     position: relative;
@@ -1230,31 +1231,7 @@ Avighna start all section css
     color: var(--secondary-blue);
     margin-top: 0.625rem;
 }
-.specifications-ETP-content:hover {
-    top: -0.313rem;
-}
-.specifications-ETP-content:hover:after {
-    width: 100%;
-    height: 100%;
-    border-radius: 0.625rem;
-    left: 0;
-    right: auto;
-}
-.specifications-ETP-content:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: auto;
-    right: 0;
-    border-radius: 0.625rem;
-    width: 0;
-    background: var(--primary-color);
-    -moz-transition: ease all 0.35s;
-    -o-transition: ease all 0.35s;
-    -webkit-transition: ease all 0.35s;
-    transition: ease all 0.35s;
-}
+
 .specifications-ETP-content span {
     display: flex;
     align-items: left;
@@ -1264,16 +1241,6 @@ Avighna start all section css
     height: 90px;
     width: 100%;
     padding: 0.625rem
-}
-.specifications-ETP-content:hover span{
-    color: var(--white);
-    position: relative;
-    z-index: 1;
- }
-.specifications-ETP-content:hover h3, .specifications-ETP-content:hover p, .specifications-ETP-content:hover a{
-    color: var(--white) !important;
-    position: relative;
-    z-index: 1;
 }
 .specifications-range-color-coted-section{
     background: #F5F7FD;
@@ -1311,31 +1278,6 @@ Avighna start all section css
     color: var(--secondary-blue);
     margin-top: 0.625rem;
 }
-.specifications-range-color-coted:hover {
-    top: -0.313rem;
-}
-.specifications-range-color-coted:hover:after {
-    width: 100%;
-    height: 100%;
-    border-radius: 0.625rem;
-    left: 0;
-    right: auto;
-}
-.specifications-range-color-coted:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: auto;
-    right: 0;
-    border-radius: 0.625rem;
-    width: 0;
-    background: var(--primary-color);
-    -moz-transition: ease all 0.35s;
-    -o-transition: ease all 0.35s;
-    -webkit-transition: ease all 0.35s;
-    transition: ease all 0.35s;
-}
 .specifications-range-color-coted span {
     display: flex;
     align-items: left;
@@ -1345,16 +1287,6 @@ Avighna start all section css
     height: 90px;
     width: 100%;
     padding: 0.625rem
-}
-.specifications-range-color-coted:hover span{
-    color: var(--white);
-    position: relative;
-    z-index: 1;
- }
-.specifications-range-color-coted:hover h3, .specifications-range-color-coted:hover p, .specifications-range-color-coted:hover a{
-    color: var(--white) !important;
-    position: relative;
-    z-index: 1;
 }
 .advantages-color-coated{
     background: url('../images/colorcoated/advantages-color-coated-background.png') no-repeat;
