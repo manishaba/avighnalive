@@ -47,7 +47,7 @@ button.custom-link {
 }
 .heading-section{
     position: absolute;
-    margin-top: 0px
+    margin-top: -2px
 }
 .inner_heading-h3{
     font-family: 'Inter';
@@ -96,13 +96,13 @@ button.custom-link {
 }
 .recently-added-image-content > span:nth-of-type(2) {
     position: relative;
-    left: 160px;
-    bottom: 152px;
+    left: 196px;
+    bottom: 171px;
 }
 .recently-added-image-content > span:nth-child(2) {
     position: relative;
     left: 0;
-    bottom: 157px;
+    bottom: 177px;
     background: #FD6202;
     color: white;
     font-size: 12px;
