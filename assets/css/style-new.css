@@ -913,6 +913,7 @@ Avighna start all section css
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 140%;
+    margin-top: 17px;
 }
 .specifications-range-section{
     background: #FE7A191A;
@@ -1468,6 +1469,7 @@ Avighna start all section css
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 140%;
+    margin-top: 17px;
 }
 .services-card-wrapper h3 {
     font-family: 'Montserrat';
@@ -1519,7 +1521,8 @@ Avighna start all section css
     margin: 50px 24px;
 }
 #processing {
-    margin: 0px 36px;
+    padding: 40px 36px 39px;
+    background: #F5F7FD;
 }
 .processing-wrap img {
     width: 100%;
@@ -1565,7 +1568,7 @@ Avighna start all section css
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
-    margin: 0px 0px 0px 24px
+    margin: 14px 0px 0px 24px
 }
 .tin-previrew img {
     max-width: 100%;

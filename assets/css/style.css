@@ -1461,7 +1461,7 @@ Avighna all section css
   padding: 3rem;
   background: url('../images/avighnacustomize/avighna-customize-banner.png') no-repeat;
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   height: 427px;
 }
 .etp_steel_inner p {
@@ -1477,6 +1477,7 @@ Avighna all section css
 .etp_steel_inner {
     flex: 1;
     text-align: center;
+    margin-top: 12px;
 }
 .etp_steel_inner img {
     margin: 0 auto;
