@@ -862,7 +862,8 @@ Avighna start all section css
     box-shadow: 0px 4px 28px 0px #0000000D;
     padding: 12px;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 44px;
+    margin-bottom: 8px; 
 }
 .about-colled-rolled-content h4{
     font-family: 'Montserrat';
@@ -884,7 +885,8 @@ Avighna start all section css
     box-shadow: 0px 4px 28px 0px #0000000D;
     padding: 12px;
     border-radius: 8px;
-    margin-top: 20px;    
+    margin-top: 44px;
+    margin-bottom: 8px; 
 }
 .about-colled-rolled-content-grey h4{
     font-family: 'Montserrat';
@@ -1026,7 +1028,7 @@ Avighna start all section css
 }
 .galvanized-specifications-range{
     background: #F5F7FD;
-    padding: 1.25rem 48px;
+    padding: 60px 48px;
 }
 .specifications-ETP{
     background: #F5F7FD;
@@ -1139,7 +1141,7 @@ Avighna start all section css
     background-size: cover;
     background-position: bottom;
     height: 501px;
-    padding: 105px 36px;
+    padding: 74px 36px;
 }
 .cold-rolled-applications{
     margin-bottom: 6.25rem;
@@ -1187,6 +1189,14 @@ Avighna start all section css
     background-size: contain;
     /* margin-bottom: 20px; */
 }
+.benefits-electrolytic-tinplate-sheet-metal{
+    background: url(../images/galvanized/benefits-galvanized-sheet-metal-main.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    padding: 48px 53px 32px 48px;
+    background-size: contain;
+    /* margin-bottom: 20px; */
+}
 .benefits-galvanized-sheet-metal-content{
     position: relative;
     display: flex;
@@ -1210,8 +1220,7 @@ Avighna start all section css
     left: 3%;
 }
 .BIS-standards-tinplate{
-    margin-bottom: -13px;
-    margin-top: -10px;
+    margin-top: 15px;
 }
 .specifications-ETP-content{
     background: var(--white);
@@ -1467,12 +1476,13 @@ Avighna start all section css
     margin: 50px 24px;
 }
 #processing {
-    padding: 40px 36px 39px;
+    padding: 40px 48px 39px;
     background: #F5F7FD;
 }
 .processing-wrap img {
     width: 100%;
     max-width: 100%;
+    margin-top: 40px;
 }
 .card-wrap {
     display: flex;
@@ -1552,7 +1562,7 @@ Avighna start query new design css
     height: 487px;
     position: relative;
     /* top: 20%; */
-    left: 5%;
+    left: 32px;
     bottom: 0;
     display: inline-grid;
     align-items: baseline;
