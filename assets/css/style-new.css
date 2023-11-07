@@ -1183,9 +1183,9 @@ Avighna start all section css
     background: url(../images/galvanized/benefits-galvanized-sheet-metal-main.png) no-repeat;
     width: 100%;
     height: 100%;
-    padding: 48px 53px 113px 48px;
-    background-size: cover;
-    margin-bottom: 20px;
+    padding: 48px 53px 67px 48px;
+    background-size: contain;
+    /* margin-bottom: 20px; */
 }
 .benefits-galvanized-sheet-metal-content{
     position: relative;
@@ -1204,10 +1204,10 @@ Avighna start all section css
     color: var(--white);
 }
 .benefits-galvanized-sheet-metal-image img{
-    width: 90%;
+    width: 100%;
     position: relative;
-    margin-top: 7%;
-    left: -5%;
+    margin-top: 10%;
+    left: 3%;
 }
 .BIS-standards-tinplate{
     margin-bottom: -13px;
