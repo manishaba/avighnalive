@@ -1,6 +1,10 @@
 /*====================================================
 Avighna start homepage css
 ======================================================*/
+.container-fluid-custom {
+    margin-left: 48px;
+    margin-right: 48px;
+}
 .nav-tabs {
     display: flex;
     justify-content: end;
@@ -60,7 +64,7 @@ button.custom-link {
     position: relative;
 }
 .process-to-follow{
-    margin: 60px 48px 0px 48px;
+    margin: 60px 48px 0px 36px;
 }
 .process-to-follow-inner {
     flex: 1;
@@ -89,6 +93,9 @@ button.custom-link {
     margin: 10px auto;
     width: fit-content;
 }
+.recently-added-image-content{
+    position: relative;
+}
 .recently-added-image{
     border: 1px solid #DDDDDD;
     border-radius: 8px;
@@ -96,14 +103,14 @@ button.custom-link {
     margin-left: -1px;
 }
 .recently-added-image-content > span:nth-of-type(2) {
-    position: relative;
-    left: 196px;
-    bottom: 171px;
+    position: absolute;
+    right: 2%;
+    top: 4px;
 }
 .recently-added-image-content > span:nth-child(2) {
-    position: relative;
+    position: absolute;
+    top: 0;
     left: 0;
-    bottom: 177px;
     background: #FD6202;
     color: white;
     font-size: 12px;
@@ -116,7 +123,7 @@ button.custom-link {
     justify-content: space-between;
     padding: 5px 0px 0px 10px;
     border-bottom: 1px solid #DDDDDD;
-    margin-top: 0; /* Add this line to remove top margin */
+    margin-top: 0;
 }
 .recently-added-image-content-brand h1{
     font-family: 'Inter';
@@ -156,7 +163,7 @@ button.custom-link {
     color: #1D3679;
     padding: 8px 0px 0px 12px;
     margin: 0;
-    margin-top: -24px;
+    /* margin-top: -24px; */
 }
 .custom-word{
     font-weight: 500 !important;
@@ -637,7 +644,7 @@ Avighna start all section css
     background: url('../images/about/our-services-section-main.png') no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 40px 36px;
+    padding: 60px 36px;
     height: 100%;
 }
 .our-services-about-inner {
@@ -645,7 +652,7 @@ Avighna start all section css
     background: #FFFFFF;
     flex: 1;
     text-align: center;
-    margin: 20px;
+    margin: 40px 20px 20px 20px;
     border-radius: 16px;
 }
 .our-services-about-inner h5{
@@ -827,7 +834,7 @@ Avighna start all section css
     margin-bottom: -13px;
 }
 .banner-content-margin {
-    padding-left: 5%;
+    padding-left: 36px;
 }
 .colled-rolled-grades-BIS-standards{
     background-color: #1D3679;
@@ -938,6 +945,13 @@ Avighna start all section css
     text-align: center;
     color: var(--secondary-blue);
     margin-top: 0.625rem;
+}
+.specifications-range-main-new {
+    box-shadow: 0px 4px 28px 0px #0000000D;
+    height: 243px;
+    padding: 18px;
+    border-radius: 8px;
+    background: #FFFFFF;
 }
 .specifications-range-main-new span {
     display: flex;
@@ -1132,8 +1146,8 @@ Avighna start all section css
     background: url('../images/coldrolled/cold-rolled-application.png') no-repeat;
     background-size: cover;
     background-position: bottom;
-    height: 423px;
-    padding: 0rem 48px;
+    /* height: 423px; */
+    padding: 63px 36px;
 }
 .custruction-applications{
     margin-bottom: 3.25rem;
@@ -1252,7 +1266,7 @@ Avighna start all section css
     border-radius: 0.5rem;
     padding: 1.25rem;
     height: 262px;
-    width: 204px;
+    width: 190px;
     margin-bottom: 1.25rem;
     position: relative;
     -moz-transition: ease all 0.35s;
@@ -1301,7 +1315,7 @@ Avighna start all section css
     align-items: center;
     justify-content: center;
     height: 239px;
-    width: 204px;
+    width: 190px;
     border-radius: 24px;
     margin: 30px auto;
     background: #FFFFFF;
@@ -1857,15 +1871,17 @@ Avighna common class css
 .main-ausiness-activities{
     background-color: #F4F7FF;
     height: 100%;
-    margin: 48px 0px 0px 0px;
+    margin: 44px 0px 24px 0px;
 }
-.developing_main_ausiness_activities_images-about {
-    position: relative;
+.developing_main_ausiness_activities_content-about {
     height: 472px;
 }
 .developing_main_ausiness_activities_images-about img {
     position: relative;
     max-width: 100%;
+    width: 100%;
+    height: 472px;
+    margin-bottom: 24px;
 }
 .developing_main_ausiness_activities_content-about h5 {
     font-family: 'Montserrat', sans-serif;
@@ -1873,7 +1889,7 @@ Avighna common class css
     font-size: 2.813rem;
     line-height: 3.813rem;
     letter-spacing: -1px;
-    padding: 24px 0px 0px 36px;
+    padding: 24px 0px 0px 48px;
     color: var(--secondary-blue);
 }
 .developing_main_ausiness_activities_content-about h6 {
@@ -1882,7 +1898,8 @@ Avighna common class css
     font-size: 2rem;
     line-height: 2.625rem;
     color: var(--secondary-orange);
-    padding: 0px 24px 0px 36px;
+    letter-spacing: -1px;
+    padding: 0px 24px 0px 48px;
     text-transform: capitalize;
 }
 .developing_main_ausiness_activities_content-about p {
@@ -1891,10 +1908,10 @@ Avighna common class css
     font-size: 1.25rem;
     line-height: 1.75;
     margin-top: 0.625rem;
-    margin-bottom: 1.25rem;
-    letter-spacing: 0.08px;
+    /* margin-bottom: 1.25rem; */
+    letter-spacing: 0.1px;
     color: var(--primary-grey);
-    padding: 0px 24px 0px 36px;
+    padding: 0px 24px 0px 48px;
 }
 p.readmore{
     font-family: 'Poppins';
@@ -1904,7 +1921,7 @@ p.readmore{
     font-weight: 500;
     font-size: 1rem;
     border-radius: 4px;
-    margin-left: 36px;
+    margin-left: 48px;
     border: 1px solid #1D3679;
     color: var(--secondary-blue);
 }
