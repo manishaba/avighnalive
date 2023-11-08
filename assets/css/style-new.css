@@ -1542,6 +1542,7 @@ Avighna start query new design css
     background-size: cover;
     background-position: center;
     padding: 54px 0 0px 10px;
+    height: 487px;
 }
 .contact-us-new-design h3{
     font-family: 'Montserrat';
@@ -1629,9 +1630,12 @@ Avighna start query new design css
 #textarea::placeholder {
     color: #5B5B5B !important;
 }
+.buttum-query{
+    margin-top: 6px;
+}
 .contact-us-new-design-main-form input, .contact-us-main-form textarea{
     padding: 9px 14px 9px 14px;
-    margin: 0.625rem auto;
+    margin: 22px auto;
     box-sizing: border-box;
     border: 1px solid #DDDDDD;
 }
@@ -1652,9 +1656,12 @@ Avighna start query new design css
     border: 0.063rem solid var(--primary-white);
     border-radius: 0.313rem;
     position: absolute;
-    bottom: 0%;
+    bottom: -48px;
     height: 30.688rem;
-    left: 69%;
+    right: 63px;
+    width: 459px;
+    
+
 }
 /*====================================================
 Avighna end query new design css
@@ -1700,7 +1707,7 @@ Avighna new footer css
     margin-top: 18px;
 }
 .newsletters-right-sec-new-design{
-    margin-top: 129px;
+    margin-top: 153px;
 }
 .newsletters-right-sec-new-design h3{
     font-size: 45px;
