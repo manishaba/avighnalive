@@ -109,7 +109,7 @@ Avighna header css
     width: 100%;
     height: auto;
     object-fit: cover;
-    left: 48px;
+    left: 72px;
     margin-bottom: 0.625rem;
     max-width: 118px;
 }
@@ -141,10 +141,10 @@ Avighna header css
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 48px;
+    margin-right: 70px;
 }
 .navbar-collapse-border {
-    margin-left: -1.75rem;
+    margin-left: -36px;
     color: var(--white);
     width: 106%;
     padding: 0.625rem 0.625rem;
