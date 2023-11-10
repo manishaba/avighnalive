@@ -144,9 +144,9 @@ Avighna header css
     margin-right: 70px;
 }
 .navbar-collapse-border {
-    margin-left: -36px;
+    margin-left: -10px;
     color: var(--white);
-    width: 106%;
+    width: 104%;
     padding: 0.625rem 0.625rem;
     box-shadow: 0rem 0.063rem 0.25rem 0rem #00000029;
 }
@@ -1360,7 +1360,7 @@ section.customization-services p {
 Avighna section table css
 ======================================================*/
 .table {
-    margin-top: 1.25rem;
+    margin-top: 39px;
     border: 0.063rem solid var(--primary-grey) !important;
 }
 .table thead tr {
@@ -1390,9 +1390,8 @@ th[scope="row"] {
     color: var(--primary-grey);
     font-family: 'Roboto';
 }
-.cold-rolled-grades table td,
-.cold-rolled-grades table th {
-    padding: 1.5rem 1.5rem !important;
+.cold-rolled-grades table td{
+    padding: 1.5rem 1.5rem;
 }
 tr:nth-child(even) {
     background-color: var(--primary-white);
