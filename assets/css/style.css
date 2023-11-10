@@ -146,7 +146,7 @@ Avighna header css
 .navbar-collapse-border {
     margin-left: -10px;
     color: var(--white);
-    width: 104%;
+    width: 103%;
     padding: 0.625rem 0.625rem;
     box-shadow: 0rem 0.063rem 0.25rem 0rem #00000029;
 }
@@ -2296,6 +2296,6 @@ Avighna responsive Adjust styles for all screens css
 @media (min-width: 1201px) and (max-width: 1600px) {
     .navbar-collapse-border {
         margin-left: -10px !important;
-        width: 104% !important;
+        width: 103.5% !important;
     }
 }
