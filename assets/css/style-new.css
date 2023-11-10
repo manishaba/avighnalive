@@ -266,8 +266,8 @@ button.custom-link {
     font-size: 15px;
     line-height: 18px;
     color: #FFFFFF;
-    padding: 10px 20px 0px 20px;
-    margin-top: 32px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
 }
 .steel-news-image img{
     width: 100%;
@@ -276,7 +276,7 @@ button.custom-link {
 .steel-news-content{
     background: #EDEDED80;
     height: 100%;
-    padding: 12px 18px 12px 18px;
+    padding: 12px 18px 0px 18px;
 }
 .steel-news-content h3{
     font-family: 'Inter';
