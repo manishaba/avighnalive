@@ -464,7 +464,6 @@ Avighna start all section css
     background-size: cover;
     /* background-position: center; */
     width: 100%;
-    padding-bottom: 30px;
 }
 .ecommerce-transformation-main{
     height: 450px;     
@@ -521,13 +520,13 @@ Avighna start all section css
     object-fit: cover;
 }
 .about-transformation-non{
-    height: 434px;     
+    min-height: 434px;     
     margin: 78px 41px 0px 0px;
 }
-/* .about-transformation-non img{
+.about-transformation-non img{
     width: 100%;
     max-width: 100%;
-} */
+}
 .about-digital-what-we{
     margin: 21px 36px 0px 36px;
 }
