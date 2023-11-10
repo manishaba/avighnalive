@@ -2298,11 +2298,15 @@ Avighna responsive Adjust styles for all screens css
         margin-left: -10px !important;
         width: 103.5% !important;
     }
+    .our-product-range-about p {
+        margin-top: 30px !important;
+    }
+    
 }
 @media (min-width: 1601px) and (max-width: 2000px) {
 
     .our-product-range-about p {
-        margin-top: 15px !important;
+        margin-top: 25px !important;
     }
     .our-product-range-about h5 {
         width: max-content;
