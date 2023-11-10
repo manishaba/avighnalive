@@ -2109,7 +2109,6 @@ Avighna responsive Adjust styles for all screens css
     }
 }
 @media(min-width:768px) and (max-width: 991px) {
-    
     .navbar-main {
         margin-right: 0px;
     }
@@ -2269,6 +2268,10 @@ Avighna responsive Adjust styles for all screens css
     }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
+    .navbar-collapse-border {
+        margin-left: -10px !important;
+        width: 103% !important;
+    }  
     .shoping_cart {
         margin: 1.563rem 0rem 0.625rem 0rem;
         position: relative;
@@ -2288,5 +2291,11 @@ Avighna responsive Adjust styles for all screens css
     }
     .about-transformation {
         height: auto;
+    }
+}
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .navbar-collapse-border {
+        margin-left: -10px !important;
+        width: 104% !important;
     }
 }

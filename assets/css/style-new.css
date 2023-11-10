@@ -47,7 +47,7 @@ button.custom-link {
     margin-top: 50px;
 }
 .steel-news{
-    margin: 60px 36px 0px 36px;
+    margin: 60px 36px 80px 36px;
 }
 .heading-section{
     position: absolute;
@@ -266,7 +266,7 @@ button.custom-link {
     font-size: 15px;
     line-height: 18px;
     color: #FFFFFF;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px 0px 20px;
     margin-top: 32px;
 }
 .steel-news-image img{
@@ -464,6 +464,7 @@ Avighna start all section css
     background-size: cover;
     /* background-position: center; */
     width: 100%;
+    padding-bottom: 30px;
 }
 .ecommerce-transformation-main{
     height: 450px;     
@@ -523,10 +524,10 @@ Avighna start all section css
     height: 434px;     
     margin: 78px 41px 0px 0px;
 }
-.about-transformation-non img{
+/* .about-transformation-non img{
     width: 100%;
     max-width: 100%;
-}
+} */
 .about-digital-what-we{
     margin: 21px 36px 0px 36px;
 }
@@ -1608,7 +1609,7 @@ Avighna start query new design css
 }
 .contact-us-new-design-form{
     position: relative;
-    margin-bottom: -5%;
+    /* margin-bottom: -5%; */
     padding-bottom: 0;
     background-size: cover;
     padding: 28px 0;
@@ -1745,7 +1746,7 @@ Avighna new footer css
     margin-top: 18px;
 }
 .newsletters-right-sec-new-design{
-    margin-top: 153px;
+    margin-top: 129px;
 }
 .newsletters-right-sec-new-design h3{
     font-size: 45px;
