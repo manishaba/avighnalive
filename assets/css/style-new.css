@@ -608,7 +608,7 @@ Avighna start all section css
 }
 .our-product-range-about img {
     max-width: 100%;
-    width: 100%;
+    /* width: 100%; */
     margin: 20px auto;
     transition: transform 0.3s ease;
 }
