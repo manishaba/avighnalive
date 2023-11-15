@@ -1,10 +1,6 @@
 /*====================================================
 Avighna start homepage css
 ======================================================*/
-.container-fluid-custom {
-    margin-left: 48px;
-    margin-right: 48px;
-}
 .nav-tabs {
     display: flex;
     justify-content: end;
@@ -85,7 +81,6 @@ button.custom-link {
     line-height: 21px;
     text-transform: capitalize;
     color: #FFFFFF;
-    /* padding: 8px; */
     display: inline-block;
     text-decoration: none;
 }
@@ -163,7 +158,6 @@ button.custom-link {
     color: #1D3679;
     padding: 8px 0px 0px 12px;
     margin: 0;
-    /* margin-top: -24px; */
 }
 .custom-word{
     font-weight: 500 !important;
@@ -229,17 +223,14 @@ button.custom-link {
     border: 1px solid #EDEDED;
     background: white;
     border-radius: 6px;
-    /* margin-top: 12px; */
 }
 .custom-table-home-page{
     margin-top: 24px;
     background-color: #FFFFFF;
-    /* padding-bottom: 12px; */
 }
 .side-banner img{
     width: 100%;
     height: 480px;
-    /* transform: translateX(12px); */
 }
 .cold-rolled-image h3{
     font-family: 'Inter';
@@ -331,7 +322,6 @@ button.custom-link {
     border: 0 !important;
     color: var(--secondary-orange) !important;
     border-bottom: 2px solid #FD6202 !important;
-    /* padding: 7px 0px 10px 0px; */
 }
 .custom-link {
     border: 0 !important;
@@ -447,7 +437,6 @@ button.custom-link {
 /*====================================================
 Avighna end homepage css
 ======================================================*/
-
 /*====================================================
 Avighna start all section css
 ======================================================*/
@@ -462,7 +451,6 @@ Avighna start all section css
     margin-top: 7.813rem;
     background: url('../images/about/banner1.png') no-repeat;
     background-size: cover;
-    /* background-position: center; */
     width: 100%;
 }
 .ecommerce-transformation-main{
@@ -608,8 +596,6 @@ Avighna start all section css
     margin-top: 30px;
 }
 .our-product-range-about img {
-    /* max-width: 100%; */
-    /* width: 100%; */
     margin: 20px auto;
     transition: transform 0.3s ease;
 }
@@ -904,8 +890,7 @@ Avighna start all section css
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.4rem;
-    color: #5B5B5B;
-    
+    color: #5B5B5B;    
 }
 .about-transformation-left img{
     width: 100%;
@@ -933,7 +918,6 @@ Avighna start all section css
     background: #FE7A191A;
     padding: 1.25rem 48px;
 }
-
 .specifications-range-main-new h3{
     font-family: 'Roboto';
     font-weight: 500;
@@ -1048,7 +1032,6 @@ Avighna start all section css
 }
 .electrolytic-tinplate-tabs{
     background: white;
-    /* padding: 1.25rem; */
     margin-bottom: 10px;
     margin-top: 50px;
 }
@@ -1097,7 +1080,6 @@ Avighna start all section css
     text-align: center;
     color: #5B5B5B;   
 }
-
 .types-galvanization-products-content{
     height: 380px;
     position: relative;
@@ -1105,7 +1087,6 @@ Avighna start all section css
 }
 .types-galvanization-products-center{
     display: flex;
-    /* padding: 5%; */
     position: relative;
 }
 .types-galvanization-products-content h3{
@@ -1152,7 +1133,6 @@ Avighna start all section css
     background: url('../images/coldrolled/cold-rolled-application.png') no-repeat;
     background-size: cover;
     background-position: bottom;
-    /* height: 423px; */
     padding: 63px 36px;
 }
 .custruction-applications{
@@ -1191,7 +1171,6 @@ Avighna start all section css
     height: 100%;
     padding: 48px 53px 67px 48px;
     background-size: contain;
-    /* margin-bottom: 20px; */
 }
 .benefits-electrolytic-tinplate-sheet-metal{
     background: url(../images/galvanized/benefits-galvanized-sheet-metal-main.png) no-repeat;
@@ -1199,13 +1178,11 @@ Avighna start all section css
     height: 100%;
     padding: 48px 53px 32px 48px;
     background-size: contain;
-    /* margin-bottom: 20px; */
 }
 .benefits-galvanized-sheet-metal-content{
     position: relative;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     margin-top: 50%;
 }
 .benefits-galvanized-sheet-metal-content h3{
@@ -1231,8 +1208,6 @@ Avighna start all section css
     box-shadow: 0rem 0rem 1.875rem rgba(31, 45, 61, 0.15);
     border-radius: 0.5rem;
     padding: 1.25rem;
-    /* height: 231px; */
-    /* width: 202px; */
     margin-bottom: 1.25rem;
     position: relative;
     -moz-transition: ease all 0.35s;
@@ -1258,7 +1233,6 @@ Avighna start all section css
     color: var(--secondary-blue);
     margin-top: 0.625rem;
 }
-
 .specifications-ETP-content span {
     display: flex;
     align-items: left;
@@ -1407,9 +1381,7 @@ Avighna start all section css
 }
 .bis-standards-rad-all{
     border-radius: 8px;
-    /* overflow: hidden; */
 }
-/* .avighna-logistics section css  */
 .about-wrapper {
     padding: 1.75rem 48px;
 }
@@ -1535,8 +1507,6 @@ Avighna start all section css
     max-width: 100%;
     width: 100%;
 }
-
-
 .tin-sheet-printing {
     height: 423px;
     margin: 25px 0px 85px 12px;
@@ -1566,11 +1536,9 @@ Avighna start all section css
     line-height: 28px;
     margin: 14px 0px 0px 24px
 }
-
 /*====================================================
 Avighna end all css
 ======================================================*/
-
 /*====================================================
 Avighna start query new design css
 ======================================================*/
@@ -1600,7 +1568,6 @@ Avighna start query new design css
 .contact-us-new-design-content{
     height: 487px;
     position: relative;
-    /* top: 20%; */
     left: 32px;
     bottom: 0;
     display: inline-grid;
@@ -1609,11 +1576,9 @@ Avighna start query new design css
 }
 .contact-us-new-design-form{
     position: relative;
-    /* margin-bottom: -5%; */
     padding-bottom: 0;
     background-size: cover;
-    padding: 28px 0;
-    
+    padding: 28px 0;    
 }
 .contact-us-new-design-form-content{
     display: flex;
@@ -1698,8 +1663,6 @@ Avighna start query new design css
     height: 30.688rem;
     right: 63px;
     width: 459px;
-    
-
 }
 /*====================================================
 Avighna end query new design css
@@ -1716,7 +1679,6 @@ Avighna new footer css
     align-items: center;
 }
 .newsletters-new-design{
-    /* padding: 1.875rem 1.875rem; */
     height: 420px;
     background: linear-gradient(3.31deg, #A4B6E8 -72.75%, rgba(246, 248, 255, 0) 96.62%);
 }
@@ -1779,7 +1741,7 @@ Avighna new footer css
 }
 .custom-placeholder::placeholder {
     color: #8E8E8E !important;
-  }
+}
 .newsletters-right-sec-input-new-design button{
     font-family: 'Inter';
     padding: 13px 36px 18px 36px;
@@ -1794,7 +1756,6 @@ Avighna new footer css
 }
 .btn-primary:hover {
     color: var(--white);
-    /* border: none; */
 }
 .logo-footer-new-design {
     max-width: 150px;
@@ -1879,7 +1840,6 @@ Avighna new footer css
     cursor: pointer;
     margin-right: 1.875rem;
 }
-
 /*====================================================
 Avighna end new footer css
 ======================================================*/
@@ -1965,7 +1925,6 @@ Avighna common class css
     font-size: 1.25rem;
     line-height: 1.75;
     margin-top: 0.625rem;
-    /* margin-bottom: 1.25rem; */
     letter-spacing: 0.1px;
     color: var(--primary-grey);
     padding: 0px 24px 0px 48px;

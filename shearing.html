@@ -184,49 +184,49 @@
             </div>
         </section>
         <div id="query1"></div>
-    <div id="footer1"></div>
-    <script type="text/javascript" src="./assets/js/popper.min.js"></script>
-      <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
-      <script type="text/javascript" src="./assets/js/Breadcrum.js"></script>
-      <script type="text/javascript" src="./assets/js/jquery-1.11.1.min.js"></script>
-      <script type="text/javascript" src="./assets/js/common.js"></script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-      <script>
-         jQuery(document).ready(function(){
-           jQuery('#banner-carousel').slick({
-             slidesToShow: 1,
-             slidesToScroll: 1,
-             autoplay: true,
-             autoplaySpeed: 2000,
-             arrows: false,
-             dots: true
-           });
-         });
-      </script>
-      <script>
-         AOS.init({
-             offset: 300,
-             duration: 1000,
-         });
-      </script>
-      <script>
-         const openButtons = document.querySelectorAll('.openPopup');
-         openButtons.forEach(openButton => {
-           openButton.addEventListener('click', (e) => {
-             const popup = openButton.nextElementSibling;
-             popup.style.display = 'block';
-           });
-         });
-         const closeButtons = document.querySelectorAll('.closePopup');
-         closeButtons.forEach(closeButton => {
-             closeButton.addEventListener('click', () => {
-                 const popup = closeButton.parentElement;
-                 popup.style.display = 'none';
-             });
-         });
-      </script>     
+        <div id="footer1"></div>
+        <script type="text/javascript" src="./assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="./assets/js/Breadcrum.js"></script>
+        <script type="text/javascript" src="./assets/js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="./assets/js/common.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script>
+            jQuery(document).ready(function(){
+                jQuery('#banner-carousel').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    arrows: false,
+                    dots: true
+                });
+            });
+        </script>
+        <script>
+            AOS.init({
+                offset: 300,
+                duration: 1000,
+            });
+        </script>
+        <script>
+            const openButtons = document.querySelectorAll('.openPopup');
+            openButtons.forEach(openButton => {
+            openButton.addEventListener('click', (e) => {
+                const popup = openButton.nextElementSibling;
+                popup.style.display = 'block';
+            });
+            });
+            const closeButtons = document.querySelectorAll('.closePopup');
+            closeButtons.forEach(closeButton => {
+                closeButton.addEventListener('click', () => {
+                    const popup = closeButton.parentElement;
+                    popup.style.display = 'none';
+                });
+            });
+        </script>     
    </body>
 </html>
